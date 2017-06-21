@@ -1,9 +1,13 @@
 @import "../../styles/addons.scss";
 
-
 .product-view {
 
 	.page-header{
+		display: flex;
+
+		.header {
+			margin-bottom: 0;
+		}
 
 		.page-title {	
 			@include kpc-layout-equal(6);
@@ -11,7 +15,24 @@
 
 		.page-filter {
 			@include kpc-layout-equal(6);
+			.list-filter {
+				list-style: none;
+				display: inline-flex;
+				li {
+					padding: 7px 10px;
+					&.add-product {
+						padding: 0 10px;
+					}
+				}
+			}
 		}
 	}
 	
+	.content {
+		width: 100%;
+
+		.product-tab {
+	
+		}
+	}
 }
