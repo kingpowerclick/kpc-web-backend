@@ -1,0 +1,42 @@
+.highlight-input {
+  -webkit-transition: border-color 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out;
+
+  &:focus {
+    outline: 0;
+    border-color: $ss-blue;
+  }
+}
+
+input[type=text], input[type=password], input[type=email] {
+  @include ss-text2();
+  @include shopspot-border();
+  @extend .highlight-input;
+  
+  background: #fff;
+  height: 45px;
+  width: 100%;
+  padding-left: 10px;
+
+  &.input-sm {
+    height: 28px;
+  }
+}
+
+input[type=checkbox] {
+  margin-left: 5px !important;
+
+  &+span {
+    margin-left: 25px;
+  }
+}
+
+textarea {
+  @include ss-text2();
+  @extend .highlight-input;
+  @include shopspot-border();
+
+  background: #fff;
+  padding-left: 10px;
+  width: 100%;
+}

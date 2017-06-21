@@ -1,0 +1,160 @@
+@mixin shopspot-btn ($height: 45px) {
+  color: #fff;
+  border: 0;
+  -webkit-transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+@mixin button-icon ($bg, $bg-hover, $padding: 2px) {
+  background-color: $bg;
+
+  &:hover {
+    // background-color: $bg-hover;
+    background-color: lighten($bg, 10%);
+  }
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.btn-xs {
+  &:not(.btn-white) {
+    @include shopspot-btn(26px);
+  }
+}
+.btn-sm {
+  &:not(.btn-white) {
+    @include shopspot-btn(38px);
+  }
+}
+.btn {
+  &:not(.btn-white) {
+    @include shopspot-btn();
+  }
+
+/*   &.fb-big {
+    height: inherit;
+    padding-left: 35px;
+    padding-right: 22px;
+    > span {
+      margin-left: 15px;
+    }
+  } */
+}
+.btn-lg {
+  @include shopspot-btn(50px);
+}
+
+.btn-white {
+  border-color: $line-gray-dark;
+  background-color: white;
+  -webkit-transition: border-color 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out;
+
+  &:hover {
+    border-color: $ss-blue;
+  }
+}
+
+button {
+  border-radius: 3px;
+  
+  > span {
+    &.small {
+      font-size: 12px;
+    }
+    &.med {
+      @include font-bold();
+      font-size: 14px;
+      color: #fff;  
+      letter-spacing: 1px
+    }
+    &.large {
+      @include font-bold();
+      font-size: 16px;
+      color: #fff;    
+    }
+  }
+
+  // old style is not supported
+  &.small {
+    height: 26px;
+  }
+  &.med {
+    height: 38px;
+  }
+  &.large {
+    height: 50px;
+  }
+  &.xlarge {
+    height: 45px;
+  }
+
+  &.light-black {
+    @include button-icon(#333, #5c5c5c);
+    &.active {
+      @include button-icon(#a22430, #b55059); 
+    }
+  }
+  &.light-red {
+    @include button-icon(#a22430, #b55059);
+  }
+  &.light-green {
+    @include button-icon(#8cc63f, #a3d165);
+  }
+  &.light-grey {
+    @include button-icon(#b3b3b3, #cccccc);
+  }
+  &.light-blue {
+    @include button-icon(#467895, #6b93aa);
+  }
+  &.light-cyan {
+    @include button-icon(#5cade2, #7dbde8);
+  }
+  &.facebook {
+    @include button-icon(#3b589d, #0099FF);
+  }
+  &.twitter {
+    @include button-icon(#03ABEA, #5cadc9);
+  }
+  &.pinterest {
+    @include button-icon(#C92228, #cd6055);
+  }
+  &.instagram {
+    @include button-icon(#125688, #6b93aa);
+  }
+  &.edit {
+    @include button-icon(#000000, #5c5c5c);
+  }
+  &.authen {
+    @include button-icon(#1a1a1a, #5c5c5c);
+  }
+
+  &.gray {
+    @include button-icon(#f0f0f0, #a9a9a9);
+  }
+
+  &.new-blue {
+    @include button-icon(#2a82d1, #2a82d1);
+  }
+  &.new-gray {
+    @include button-icon(#686868, #686868);
+  }
+  &.new-green {
+    @include button-icon(#45B38E, #45B38E);
+  }
+}
+
+.follow-btn {
+  button {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #fff;
+    font-family: "Open Sans";
+    font-weight: 600;
+  }
+}

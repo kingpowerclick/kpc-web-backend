@@ -1,0 +1,519 @@
+@mixin icon-mixin ($x, $y, $width: 20px, $height: 20px) {
+  width: $width;
+  height: $height;
+  background-position : $x $y;
+  display: inline-block;
+}
+
+@mixin icon-menu-mixin ($x, $y) {
+  width: 20px;
+  height: 20px;
+  background: url("../../styles/theme/icons/icon_button_set1_menu.png") no-repeat;
+  background-position : $x $y;
+  display: inline-block;
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), 
+  only screen and (min--moz-device-pixel-ratio: 1.5), 
+  only screen and (min-resolution: 240dpi) {
+    background: url("../../styles/theme/icons/icon_button_set1_menu@2x.png") no-repeat;
+    background-size: 100px 270px;
+    background-position : $x $y;
+  }
+}
+
+@mixin icon-setting-mixin ($x, $y) {
+  width: 20px;
+  height: 20px;
+  background: url("../../styles/theme/icons/icon_button_set2_setting.png") no-repeat;
+  background-position : $x $y;
+  display: inline-block;
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), 
+  only screen and (min--moz-device-pixel-ratio: 1.5), 
+  only screen and (min-resolution: 240dpi) {
+    background: url("../../styles/theme/icons/icon_button_set2_setting@2x.png") no-repeat;
+    background-size: 63px 158px;
+    background-position : $x $y;
+  }
+}
+
+@mixin icon-set3-mixin ($x, $y) {
+  width: 20px;
+  height: 20px;
+  background: url("../../styles/theme/icons/icon_button_set3.png") no-repeat;
+  background-position : $x $y;
+  display: inline-block;
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), 
+  only screen and (min--moz-device-pixel-ratio: 1.5), 
+  only screen and (min-resolution: 240dpi) {
+    background: url("../../styles/theme/icons/icon_button_set3@2x.png") no-repeat;
+    background-size: 120px 630px;
+    background-position : $x $y;
+  }
+}
+
+@mixin icon-set4-mixin ($x, $y) {
+  width: 15px;
+  height: 15px;
+  background: url("../../styles/theme/icons/icon_button_set4.png") no-repeat;
+  background-position : $x $y;
+  display: inline-block;
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), 
+  only screen and (min--moz-device-pixel-ratio: 1.5), 
+  only screen and (min-resolution: 240dpi) {
+    background: url("../../styles/theme/icons/icon_button_set4@2x.png") no-repeat;
+    background-size: 59px 550px;
+    background-position : $x $y;
+  }
+}
+
+@mixin icon-set5-mixin ($x, $y) {
+  width: 20px;
+  height: 20px;
+  background: url("../../styles/theme/icons/icon_button_set5.png") no-repeat;
+  background-position : $x $y;
+  display: inline-block;
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), 
+  only screen and (min--moz-device-pixel-ratio: 1.5), 
+  only screen and (min-resolution: 240dpi) {
+    background: url("../../styles/theme/icons/icon_button_set5@2x.png") no-repeat;
+    background-size: 69px 361px;
+    background-position : $x $y;
+  }
+}
+
+// @mixin icon-subcate-men-mixin ($x, $y) {
+//   width: 40px;
+//   height: 40px;
+//   background: url("../../styles/theme/icons/icon_button_subcate_men.png") no-repeat;
+//   background-position : $x $y;
+//   display: inline-block;
+
+//   @media only screen and (-webkit-min-device-pixel-ratio: 1.5), 
+//   only screen and (min--moz-device-pixel-ratio: 1.5), 
+//   only screen and (min-resolution: 240dpi) {
+//     background: url("../../styles/theme/icons/icon_button_subcate_men@2x.png") no-repeat;
+//     background-size: 40px 820px;
+//     background-position : $x $y;
+//   }
+// }
+
+@mixin icon-maincate-mixin ($x, $y) {
+  width: 20px;
+  height: 20px;
+  background: url("../../styles/theme/icons/icon_category.png") no-repeat;
+  background-position : $x $y;
+  display: inline-block;
+}
+
+@mixin icon-subcate-men-mixin ($x, $y) {
+  width: 20px;
+  height: 20px;
+  background: url("../../styles/theme/icons/icon_subcategory_man.png") no-repeat;
+  background-position : $x $y;
+  display: inline-block;
+}
+
+@mixin icon-subcate-women-mixin ($x, $y) {
+  width: 20px;
+  height: 20px;
+  background: url("../../styles/theme/icons/icon_subcategory_woman.png") no-repeat;
+  background-position : $x $y;
+  display: inline-block;
+}
+
+@mixin icon-subcate-lifestyle-mixin ($x, $y) {
+  width: 20px;
+  height: 20px;
+  background: url("../../styles/theme/icons/icon_subcategory_lifestyle.png") no-repeat;
+  background-position : $x $y;
+  display: inline-block;
+}
+
+i {
+  vertical-align: middle;
+
+  &.fb-big {
+    @include icon-mixin(0px, 0px, 30px, 49px);
+    background: url("../../styles/theme/icons/icon_facebook_log_in.png") no-repeat;
+  }
+
+  //new menu icon
+
+  &.feed {
+    @include icon-menu-mixin(0px, 0px);
+  }
+  &.feed-active {
+    @include icon-menu-mixin(-40px, 0px);
+  }
+
+  &.noti-dark {
+    @include icon-menu-mixin(0px, -40px);
+  }
+  &.noti-dark-active {
+    @include icon-menu-mixin(-40px, -40px);
+  }
+
+  &.profile {
+    @include icon-menu-mixin(0px, -80px);
+  }
+  &.profile-active {
+    @include icon-menu-mixin(-40px, -80px);
+  }
+
+  &.add {
+    @include icon-menu-mixin(0px, -120px);
+  }
+  &.add-active {
+    @include icon-menu-mixin(-40px, -120px);
+  }
+
+  &.logout {
+    @include icon-menu-mixin(0px, -160px);
+  }
+  &.logout-active {
+    @include icon-menu-mixin(-40px, -160px);
+  }
+
+  &.setting-menu {
+    @include icon-menu-mixin(0px, -200px);
+  }
+  &.setting-active {
+    @include icon-menu-mixin(-40px, -200px);
+  }
+
+  &.magnifier {
+    @include icon-menu-mixin(0px, -240px);
+  }
+
+  //new setting icon
+
+  &.noti {
+    @include icon-setting-mixin(0px, 0px);
+  }
+  &.noti-active {
+    @include icon-setting-mixin(-40px, 0px);
+  }
+
+  &.general {
+    @include icon-setting-mixin(0px, -40px);
+  }
+  &.general-active {
+    @include icon-setting-mixin(-40px, -40px);
+  }
+
+  &.market {
+    @include icon-setting-mixin(0px, -80px);
+  }
+  &.market-active {
+    @include icon-setting-mixin(-40px, -80px);
+  }
+
+  &.link {
+    @include icon-setting-mixin(0px, -120px);
+  }
+  &.link-active {
+    @include icon-setting-mixin(-40px, -120px);
+  }
+
+  //new set3 icon
+
+  &.inbox {
+    @include icon-set3-mixin(0px, -40px);
+  }
+  &.msg-to-buy {
+    @include icon-set3-mixin(0px, -80px);
+  }
+  &.follow {
+    @include icon-set3-mixin(0px, -120px);
+  }
+  &.instagram {
+    @include icon-set3-mixin(0px, -160px);
+  }
+  &.twitter {
+    @include icon-set3-mixin(0px, -200px);
+  }
+  &.pinterest {
+    @include icon-set3-mixin(0px, -240px);
+  }
+  &.fb {
+    @include icon-set3-mixin(0px, -280px);
+  }
+  &.ext-stuff {
+    @include icon-set3-mixin(0px, -320px);
+  }
+  &.share-collection {
+    @include icon-set3-mixin(0px, -360px);
+  }
+  &.create-collection {
+    @include icon-set3-mixin(0px, -440px);
+  }
+  &.delete-collection {
+    @include icon-set3-mixin(0px, -480px);
+  }
+  &.fb-gray {
+    @include icon-set3-mixin(0px, -520px);
+  }
+  &.twitter-gray {
+    @include icon-set3-mixin(0px, -560px);
+  }
+  &.pinterest-gray {
+    @include icon-set3-mixin(0px, -600px);
+  }
+  //new set 4
+
+  &.save {
+    @include icon-set4-mixin(0px, 0px);
+  }
+  &.save-dark {
+    @include icon-set4-mixin(0px, -40px);
+  }
+  &.view {
+    @include icon-set4-mixin(0px, -80px);
+  }
+  &.msg {
+    @include icon-set4-mixin(0px, -120px);
+  }
+  &.like-dark {
+    @include icon-set4-mixin(0px, -160px);
+  }
+  &.clock {
+    @include icon-set4-mixin(0px, -200px);
+  }
+  &.edit-dark {
+    @include icon-set4-mixin(0px, -240px);
+  }
+  &.edit {
+    @include icon-set4-mixin(0px, -280px);
+  }
+  &.arrow-next {
+    @include icon-set4-mixin(0px, -320px);
+  }
+  &.arrow-prev {
+    @include icon-set4-mixin(0px, -360px);
+  }
+  &.help {
+    @include icon-set4-mixin(0px, -400px);
+  }
+  &.closed {
+    @include icon-set4-mixin(0px, -440px);
+  }
+  &.msg-gray {
+    @include icon-set4-mixin(0px, -480px);
+  }
+  &.like-blue {
+    @include icon-set4-mixin(0px, -520px);
+  }
+
+  //new set5 icon
+
+  &.following {
+    @include icon-set5-mixin(0px, -80px);
+  } 
+  &.follow-stylist-sm {
+    @include icon-set5-mixin(0px, -120px);
+  }
+  &.follow-shop-sm {
+    @include icon-set5-mixin(0px, -160px);
+  }
+  &.follow-stylist {
+    @include icon-set5-mixin(0px, -200px);
+  }
+  &.follow-shop {
+    @include icon-set5-mixin(0px, -240px);
+  }
+  &.copyright {
+    @include icon-set5-mixin(0px, -280px);
+  }
+  &.message {
+    @include icon-set5-mixin(0px, -320px);
+  }
+
+  // main category
+  &.main-category {
+    &-recent {
+      @include icon-maincate-mixin(0px, 0px);
+    }
+    &-pop {
+      @include icon-maincate-mixin(0px, -40px);
+    }
+    &-women {
+      @include icon-maincate-mixin(0px, -80px);
+    }
+    &-men {
+      @include icon-maincate-mixin(0px, -120px);
+    }
+    &-lifestyle {
+      @include icon-maincate-mixin(0px, -160px);
+    }
+    &-editorspicks {
+      @include icon-maincate-mixin(0px, -200px);
+    }
+  }
+
+  // men subcategory
+  &.men {
+    &-recent {
+      @include icon-subcate-men-mixin(0px, 0px);
+    }
+    &-pop {
+      @include icon-subcate-men-mixin(0px, -40px);
+    }
+    &-tops {
+      @include icon-subcate-men-mixin(0px, -80px);
+    }
+    &-pants {
+      @include icon-subcate-men-mixin(0px, -120px);
+    }
+    &-shorts {
+      @include icon-subcate-men-mixin(0px, -160px);
+    }
+    &-jackets-blazers {
+      @include icon-subcate-men-mixin(0px, -200px);
+    }
+    &-shoes {
+      @include icon-subcate-men-mixin(0px, -240px);
+    }
+    &-bags-wallets {
+      @include icon-subcate-men-mixin(0px, -280px);
+    }
+    &-glasses {
+      @include icon-subcate-men-mixin(0px, -320px);
+    }
+    &-watches {
+      @include icon-subcate-men-mixin(0px, -360px);
+    }
+    &-hats {
+      @include icon-subcate-men-mixin(0px, -400px);
+    }
+    &-jewelry {
+      @include icon-subcate-men-mixin(0px, -440px);
+    }
+    &-sports {
+      @include icon-subcate-men-mixin(0px, -480px);
+    }
+    &-swimwear {
+      @include icon-subcate-men-mixin(0px, -520px);
+    }
+    &-underwear {
+      @include icon-subcate-men-mixin(0px, -560px);
+    }
+    &-other {
+      @include icon-subcate-men-mixin(0px, -600px);
+    }
+  }
+
+  // women subcategory
+  &.women {
+    &-recent {
+      @include icon-subcate-women-mixin(0px, 0px);
+    }
+    &-pop {
+      @include icon-subcate-women-mixin(0px, -40px);
+    }
+    &-dress {
+      @include icon-subcate-women-mixin(0px, -80px);
+    }
+    &-tops {
+      @include icon-subcate-women-mixin(0px, -120px);
+    }
+    &-pants-leggings {
+      @include icon-subcate-women-mixin(0px, -160px);
+    }
+    &-shorts {
+      @include icon-subcate-women-mixin(0px, -200px);
+    }
+    &-skirts {
+      @include icon-subcate-women-mixin(0px, -240px);
+    }
+    &-jackets-blazers {
+      @include icon-subcate-women-mixin(0px, -280px);
+    }
+    &-shoes {
+      @include icon-subcate-women-mixin(0px, -320px);
+    }
+    &-bags-wallets {
+      @include icon-subcate-women-mixin(0px, -360px);
+    }
+    &-beauty-skincare {
+      @include icon-subcate-women-mixin(0px, -400px);
+    }
+    &-glasses {
+      @include icon-subcate-women-mixin(0px, -440px);
+    }
+    &-watches {
+      @include icon-subcate-women-mixin(0px, -480px);
+    }
+    &-jewelry {
+      @include icon-subcate-women-mixin(0px, -520px);
+    }
+    &-hats {
+      @include icon-subcate-women-mixin(0px, -560px);
+    }
+    &-sports {
+      @include icon-subcate-women-mixin(0px, -600px);
+    }
+    &-swimwear {
+      @include icon-subcate-women-mixin(0px, -640px);
+    }
+    &-underwear {
+      @include icon-subcate-women-mixin(0px, -680px);
+    }
+    &-other {
+      @include icon-subcate-women-mixin(0px, -720px);
+    }
+  }
+
+  // lifestyle subcatogory
+  &.lifestyle {
+    &-recent {
+      @include icon-subcate-lifestyle-mixin(0px, 0);
+    }
+    &-pop {
+      @include icon-subcate-lifestyle-mixin(0px, -40px);
+    }
+    &-gift-ideas {
+      @include icon-subcate-lifestyle-mixin(0px, -80px);
+    }
+    &-gadget-tech {
+      @include icon-subcate-lifestyle-mixin(0px, -120px);
+    }
+    &-phone-accessories {
+      @include icon-subcate-lifestyle-mixin(0px, -160px);
+    }
+    &-for-home {
+      @include icon-subcate-lifestyle-mixin(0px, -200px);
+    }
+    &-stationeries {
+      @include icon-subcate-lifestyle-mixin(0px, -240px);
+    }
+    &-crafts {
+      @include icon-subcate-lifestyle-mixin(0px, -280px);
+    }
+    &-toys-collectibles {
+      @include icon-subcate-lifestyle-mixin(0px, -320px);
+    }
+    &-sports {
+      @include icon-subcate-lifestyle-mixin(0px, -360px);
+    }
+    &-books {
+      @include icon-subcate-lifestyle-mixin(0px, -400px);
+    }
+    &-for-kids {
+      @include icon-subcate-lifestyle-mixin(0px, -440px);
+    }
+    &-pets {
+      @include icon-subcate-lifestyle-mixin(0px, -480px);
+    }
+    &-other {
+      @include icon-subcate-lifestyle-mixin(0px, -520px);
+    }
+  }
+
+  &.icon-hint {
+    margin-right: 5px;
+  }
+}

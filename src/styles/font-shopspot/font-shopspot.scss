@@ -1,0 +1,51 @@
+// @font-face {
+//   font-family: 'Font Shopspot';
+//   font-style: normal;
+//   font-weight: 300;
+//   src: url('../fonts/OpenSans-Light.ttf');
+// }
+
+@font-face {
+  font-family: 'Font Shopspot';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../styles/font-shopspot/OpenSans-Regular.ttf');
+}
+
+// @font-face {
+//   font-family: 'Font Shopspot';
+//   font-style: normal;
+//   font-weight: 600;
+//   src: url('../../styles/font-shopspot/OpenSans-Semibold.ttf');
+// }
+
+@font-face {
+  font-family: 'Font Shopspot';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../../styles/font-shopspot/OpenSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Font Shopspot';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../styles/font-shopspot/sarabunmai-reg-webfont.ttf');
+  unicode-range: U+0E00-0E7F;
+}
+
+@font-face {
+  font-family: 'Font Shopspot';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../../styles/font-shopspot/sarabunmai-ita-webfont.ttf');
+  unicode-range: U+0E00-0E7F;
+}
+
+@font-face {
+  font-family: 'Font Shopspot';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../../styles/font-shopspot/sarabunmai-bld-webfont.ttf');
+  unicode-range: U+0E00-0E7F;
+}

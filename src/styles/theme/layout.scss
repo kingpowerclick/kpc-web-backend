@@ -1,0 +1,110 @@
+// ibox
+
+.ibox {
+  // clear: both;
+  margin-bottom: 25px;
+  margin-top: 0;
+  padding: 0;
+}
+
+.ibox.collapsed .ibox-content{
+  display: none;
+}
+.ibox.collapsed .fa.fa-chevron-up:before {
+  content: "\f078";
+}
+.ibox.collapsed .fa.fa-chevron-down:before {
+  content: "\f077";
+}
+
+.ibox:after, .ibox:before {
+  display: table;
+}
+
+.ibox-title {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background-color: $ibox-title-bg;
+  border-color: $border-color;
+  border-image: none;
+  border-style: solid solid none;
+  border-width: 3px 0 0;
+  color: inherit;
+  margin-bottom: 0;
+  padding: 11px 20px 7px;
+  min-height: 42px;
+  font-weight: 600;
+}
+
+.ibox-content {
+  background-color: $ibox-content-bg;
+  color: inherit;
+  padding: 20px;
+  // padding: 15px 20px 20px 20px;
+
+  border-color: $border-color;
+  border-image: none;
+  border-style: solid solid none;
+  border-width: 1px 0px;
+}
+
+.ibox-footer {
+  color: inherit;
+  border-top: 1px solid $border-color;
+  font-size: 90%;
+  background: #ffffff;
+  padding: 10px 15px;
+}
+
+// tabs
+
+.tabs-container {
+  .panel-body {
+    background: #fff;
+    // border: 1px solid $border-color;
+    border-radius: 2px;
+    padding: 20px;
+    position: relative;
+  }
+
+  .nav-tabs {
+    border-bottom: 1px solid $border-color;
+
+    > li {
+      float: left;
+      margin-bottom: -1px;
+      padding: 10px 20px;
+      font-weight: 700;
+
+      &.active {
+        border: 1px solid $border-color;
+        border-bottom-color: transparent;
+        background-color: #fff;
+      }
+
+      &:not(.active) {
+        color: $nav-tabs-inactive-color;
+
+        &:hover {
+          color: inherit;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .tab-pane .panel-body {
+    border-top: none;
+  }
+
+  .nav-tabs > li a:hover {
+    background: transparent;
+    border-color: transparent;
+  }
+
+  .tab-content > .tab-pane {
+    display: block;
+  }
+}

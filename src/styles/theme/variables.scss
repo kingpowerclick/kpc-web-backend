@@ -1,0 +1,117 @@
+/**
+ *  Define scss variables here.
+ *
+ *  Available options for Bootstrap:
+ *  http://getbootstrap.com/customize/
+ *
+ */
+
+// Custom Colors
+$cyan: #33e0ff;
+$humility: #777;
+
+// Bootstrap Variables
+$brand-primary: darken(#428bca, 6.5%);
+$brand-secondary: #e25139;
+$brand-success: #5cb85c;
+$brand-warning: #f0ad4e;
+$brand-danger: #d9534f;
+$brand-info: #5bc0de;
+
+$text-color: #333;
+
+$font-size-base: 14px;
+$font-family-sans-serif: "Helvetica Neue", Helvetica, sans-serif;
+
+
+// ShopSpot variables
+
+// $base-image-url: "../images";
+// $ss-base-image-url: "../../images";
+
+
+/* $navbar-control-height: 54px;
+$navbar-control-submenu-height: 36px;
+$navbar-category-height: 36px;
+ */
+/* $white: #FFFFFF;
+
+$line-gray: #EAEAEA;
+$line-gray-soft: #DEDEDE;
+$line-gray-dark: #CCCCCC;
+
+$font-black: #4d4d4d;
+$font-red: #A22430;
+$font-gray: #808080;
+$font-gray-light: #B3B3B3; */
+
+$navbar-control-height: 48px;
+$navbar-category-height: 24px;
+// $header-height: $navbar-control-height + $navbar-category-height;
+
+$download-mobile-height: 60px;
+
+$line-gray: #EAEAEA;
+$line-gray-soft: #DEDEDE;
+$line-gray-dark: #CCCCCC;
+
+$bg-red-light: #B55059;
+$bg-red: #A22430;
+$bg-white-light: #F5F5F5;
+$bg-shopspot: #f3f3f4;
+
+$bg-button-black: #1a1a1a;
+$bg-button-gray: #808080;
+$bg-button-orange: #F8AC59;
+$bg-button-red: #ED5565;
+$bg-button-green: #1AB394;
+$bg-button-blue: #1C84C6;
+$bg-button-default: #D1DADE;
+
+// new font
+$ss-black: #333333;
+$ss-dark-gray: #808080;
+$ss-gray: #a9a9a9;
+$ss-light-gray: #f0f0f0;
+$ss-red: #d82e20;
+// $ss-blue: #0071b4;
+$ss-blue: #63a0d3;
+$ss-green: #22b573;
+$ss-white: #FFFFFF;
+$ss-new-blue: #5393d0;
+$ss-dark-blue: #348dc3;
+$ss-new-red: #d82e20;
+
+$ss-header-fixed: 72px;
+$ss-header-fixed-xs: 0px;
+$ss-non-login-bar-height: 50px;
+$ss-navbar-control-height: 48px;
+$ss-navbar-category-height: 24px;
+$ss-show-header-download-xs: 65px;
+
+$ss-font28: 28px;   // 28/16
+$ss-font26: 26px;  // 26/16
+$ss-font24: 24px;    // 24/16
+$ss-font18: 18px;  // 18/16
+$ss-font16: 16px;      // 16/16
+$ss-font14: 14px;  // 14/16
+$ss-font12: 12px;   // 12/16
+$ss-font11: 11px; // 11/16
+$ss-font10: 10px;  // 10/16
+
+
+// $ss-font28: 1.75em;   // 28/16
+// $ss-font26: 1.625em;  // 26/16
+// $ss-font24: 1.5em;    // 24/16
+// $ss-font18: 1.125em;  // 18/16
+// $ss-font16: 1em;      // 16/16
+// $ss-font14: 0.875em;  // 14/16
+// $ss-font12: 0.75em;   // 12/16
+// $ss-font11: 0.6875em; // 11/16
+// $ss-font10: 0.625em;  // 10/16
+
+// for theme
+$border-color: #e7eaec;     // IBox border
+$ibox-title-bg: #ffffff;     // IBox Background header
+$ibox-content-bg: #ffffff;
+$nav-tabs-inactive-color: #a7b1c2;
