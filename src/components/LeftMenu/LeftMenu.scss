@@ -16,10 +16,14 @@
         }
     }
     .logo{
+        img{
+          display: block;
+          margin: auto;
+        }
         background: #0b56a4;
         border-top: none;
         height: 75px;
-        padding: 10px 20px;
+        padding-top: 27px;
     }
     height: 100%;
     position: fixed;
