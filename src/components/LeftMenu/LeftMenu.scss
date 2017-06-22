@@ -1,5 +1,5 @@
 .sidenav {
-    a{
+    .sub-menu{
         padding: 25px;
         width: 70px;
         height: 75px;
@@ -26,7 +26,7 @@
         padding-top: 27px;
     }
     height: 100%;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     top: 0;
     left: 0;
