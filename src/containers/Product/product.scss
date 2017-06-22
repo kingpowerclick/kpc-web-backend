@@ -1,12 +1,18 @@
 @import "../../styles/addons.scss";
 
 .product-view {
+	padding-top: 50px;
 
 	.page-header{
 		display: flex;
+		margin-bottom: 30px;
 
 		.header {
-			margin-bottom: 0;
+			@include kpc-header();
+		}
+
+		.page-breadcrumb {
+			color: #909090;
 		}
 
 		.page-title {	
@@ -15,24 +21,193 @@
 
 		.page-filter {
 			@include kpc-layout-equal(6);
+			text-align: right;
+			margin-top: 30px;
+
 			.list-filter {
 				list-style: none;
 				display: inline-flex;
-				li {
-					padding: 7px 10px;
+				.filter {
+					padding: 0px 15px;
+					height: 20px;
+					border-right: 1px solid #d7d7d7;
+					margin-top: 14px;
+
+					i {
+						margin-right: 10px;
+					}
+
 					&.add-product {
 						padding: 0 10px;
+						margin-top: 0;
+						.button-blue {
+							background-color: $kpc-blue;
+							font-size: $kpc-font16;
+							padding: 12px 30px;
+						}
+					}
+
+					&.filter-mda {
+						border-right: none;
 					}
 				}
 			}
 		}
 	}
-	
-	.content {
-		width: 100%;
+	.wrapper-content {
+		@include kpc-layout-equal(12);
+		.content {
+			width: 100%;
 
-		.product-tab {
-	
+			.wrapper-product-tab {
+				font-size: $kpc-font16;
+
+				.product-tab a{
+					padding: 10px 60px;
+					border-radius: 5px 5px 0 0;
+				}
+
+				.tab-active a{
+					background-color: $kpc-blue;
+					color: $kpc-white;
+				}
+			}
+
+			.filter-product {
+				margin-top: 30px;
+
+				.wrapper-filter {
+
+					.filter-left {
+						@include kpc-layout-equal(6);
+						.filter-action {
+
+							@include kpc-layout-equal(4);
+							.btn-action {
+								width: 210px;
+							}
+
+							.btn-action-select {
+								width: 35px;
+							}
+						}
+
+						.filter-id {
+							@include kpc-layout-equal(8);
+						}
+					}
+
+					.filter-right {
+						@include kpc-layout-equal(6);
+
+						.filter-records {
+							@include kpc-layout(6, 6, 8);
+							display: flex;
+
+							text-align: right;
+
+							.btn-record {
+								width: 120px;
+							}
+
+							.btn-record-select {
+								width: 35px;
+							}
+
+							.per-page {
+								margin-left: 10px;
+								font-size: $kpc-font16;
+								color: $kpc-black;
+								line-height: 31px;
+							}
+						}
+
+						.filter-pagination {
+							@include kpc-layout(6, 6 ,4);
+							text-align: right;
+
+							.pagination-ul {
+								margin:0;
+							}
+						}
+					}
+
+				}
+			}
+			.table-detail {
+
+				.tab-content {
+					overflow-x: scroll;
+					table {
+						table-layout: fixed;
+
+						thead {
+
+							.title-table {
+								color: $kpc-blue;
+								font-size: $kpc-font14
+							}
+
+							.product-checkbox {
+								width: 20px;
+							}
+
+							.product-id {
+								width: 55px;
+							}
+
+							.product-thumbnail {
+								width: 90px;
+							}
+
+							.product-sku {
+								width: 85px;
+							}
+
+							.product-name {
+								width: 130px;
+							}
+
+							.product-type {
+								width: 60px;
+							}
+
+							.product-price {
+								width: 95px;
+							}
+
+							.product-qty {
+								width: 50px;
+							}
+
+							.produt-brand {
+								width: 130px;
+							}
+
+							.product-merchiandise {
+								width: 120px;
+							}
+
+							.product-visibility {
+								width: 65px;
+							}
+
+							.product-status {
+								width: 65px;
+							}
+						}
+
+						tbody {
+							font-size: 14px;
+						}
+
+						tbody > tr:nth-of-type(odd) {
+							background-color: #f9fcff;
+						}
+					}
+				}
+			}
 		}
+		
 	}
 }
