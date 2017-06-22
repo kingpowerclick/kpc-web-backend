@@ -25,11 +25,10 @@
         height: 75px;
         padding-top: 27px;
     }
-    height: 100%;
+    min-height: 100%;
     position: absolute;
     z-index: 1;
     top: 0;
     left: 0;
     background-color: #eee;
-    overflow-x: hidden;
 }
