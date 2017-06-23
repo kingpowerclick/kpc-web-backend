@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
+
 export default class AddGwpByExcel extends Component {
   render() {
     const styles = require('./addGwpByExcel.scss');
+
     return (
       <div className="container-fulid">
         <div className="row">
