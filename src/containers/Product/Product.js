@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import classNames from 'classnames';
 import { FilterPage } from 'components';
 
-export default class Hello extends Component {
+export default class Product extends Component {
   render() {
     const styles = require('./product.scss');
 
@@ -12,7 +12,7 @@ export default class Hello extends Component {
 		    	<div className={ classNames(styles['product-view']) }>
 			    	<header className={ styles['page-header']}>
 			    		<div className={ styles['page-title']}>
-			        		<h1 className={ styles.header }>Product</h1>
+			        		<h1 className={ styles.header }><strong>Product</strong></h1>
 			        		<div className={ styles['page-breadcrumb']}>
 								<span>Products</span>
 			        		</div>

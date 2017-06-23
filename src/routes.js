@@ -15,6 +15,8 @@ import {
     Hello,
     Product,
     CustomerOrder,
+    AddNewCustomAttribute,
+    AddGwpByExcel,
   } from 'containers';
 
 export default (store) => {
@@ -58,7 +60,8 @@ export default (store) => {
       <Route path="hello" component={Hello}/>
       <Route path="product" component={Product}/>
       <Route path="customerorder" component={CustomerOrder}/>
-
+      <Route path="customattribute" component={AddNewCustomAttribute}/>
+      <Route path="addgwpbyexcel" component={AddGwpByExcel}/>
       { /* Catch all route */ }
       <Route path="*" component={NotFound} status={404} />
     </Route>

@@ -197,8 +197,12 @@
 @mixin kpc-header() {
   font-size: $kpc-font36;
   color: $kpc-dark-gray;
-  font-weight: bold;
   margin-bottom: 0;
+}
+
+@mixin kpc-width() {
+  padding-top: 50px;
+  min-width: 1440px;
 }
 
 
