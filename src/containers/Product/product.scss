@@ -1,7 +1,7 @@
 @import "../../styles/addons.scss";
 
 .product-view {
-	padding-top: 50px;
+	@include kpc-width();
 
 	.page-header{
 		display: flex;
