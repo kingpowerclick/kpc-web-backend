@@ -1,7 +1,7 @@
 @import "../../styles/addons.scss";
 
-.product-view {
-
+.add-gwp-by-excel-view {
+  @include kpc-width();
 	.page-header{
 		display: flex;
 

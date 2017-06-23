@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
 
-export default class Hello extends Component {
+export default class AddGwpByExcel extends Component {
   render() {
     const styles = require('./addGwpByExcel.scss');
 
     return (
       <div className="container-fulid">
         <div className="row">
-        	<div className={ classNames(styles['product-view']) }>
+        	<div className={ classNames(styles['add-gwp-by-excel-view']) }>
     	    	<header className={ styles['page-header']}>
     	    		<div className={ styles['page-title']}>
     	        		<h1 className={ styles.header }>Add Parent Product</h1>
