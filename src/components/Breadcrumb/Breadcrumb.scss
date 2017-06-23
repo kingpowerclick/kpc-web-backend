@@ -1,0 +1,7 @@
+@import "../../styles/addons.scss";
+
+.page-breadcrumb {
+    @include kpc-layout-equal(12);
+    color: $breadcrumb;
+    padding: 5px 15px 20px;
+}

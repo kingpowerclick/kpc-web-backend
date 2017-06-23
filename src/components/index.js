@@ -14,3 +14,12 @@ export WidgetForm from './WidgetForm/WidgetForm';
 export LeftMenu from './LeftMenu/LeftMenu';
 export Footer from './Footer/Footer';
 export FilterPage from './FilterPage/FilterPage';
+
+export Breadcrumb from './Breadcrumb/Breadcrumb';
+
+export CustomerDetail from './CustomerDetail/CustomerDetail';
+
+export CustomerFiltes from './Product/CustomerFiltes';
+export CustomerColumes from './Product/CustomerColumes';
+export CustomerManageDynamicAttribute from './Product/CustomerManageDynamicAttribute';
+export CustomerButtonAdd from './Product/CustomerButtonAdd';

@@ -1,0 +1,32 @@
+@import "../../styles/addons.scss";
+.filter {
+    padding: 0px 15px;
+    height: 20px;
+    border-right: 1px solid #d7d7d7;
+    margin-top: 14px;
+
+    i {
+        margin-right: 10px;
+    }
+
+    &.add-product {
+        padding: 0 10px;
+        margin-top: 0;
+        border-right: none;
+
+        .button-blue {
+            background-color: $kpc-blue;
+            font-size: $kpc-font16;
+            padding: 12px 30px;
+            color: $kpc-white;
+
+            i {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    &.filter-mda {
+        border-right: none;
+    }
+}
