@@ -57,7 +57,7 @@ export default (store) => {
       <Route path="widgets" component={Widgets}/>
       <Route path="hello" component={Hello}/>
       <Route path="product" component={Product}/>
-      <Route path="customerOrder" component={CustomerOrder}/>
+      <Route path="customerorder" component={CustomerOrder}/>
 
       { /* Catch all route */ }
       <Route path="*" component={NotFound} status={404} />
