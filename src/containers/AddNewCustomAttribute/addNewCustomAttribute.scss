@@ -1,0 +1,27 @@
+@import "../../styles/addons.scss";
+
+.custom-attribute-view {
+	@include kpc-width();
+
+	.page-header{
+		display: flex;
+		margin-bottom: 30px;
+
+		.header {
+			@include kpc-header();
+		}
+
+		.page-breadcrumb {
+			color: #909090;
+		}
+
+		.page-title {	
+			@include kpc-layout(4, 4, 6);
+		}
+
+	}
+	.wrapper-content {
+		@include kpc-layout-equal(12);
+		
+	}
+}

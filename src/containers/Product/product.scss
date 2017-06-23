@@ -1,7 +1,7 @@
 @import "../../styles/addons.scss";
 
 .product-view {
-	padding-top: 50px;
+	@include kpc-width();
 
 	.page-header{
 		display: flex;
@@ -16,11 +16,11 @@
 		}
 
 		.page-title {	
-			@include kpc-layout-equal(6);
+			@include kpc-layout(4, 4, 6);
 		}
 
 		.page-filter {
-			@include kpc-layout-equal(6);
+			@include kpc-layout(8, 8, 6);
 			text-align: right;
 			margin-top: 30px;
 
@@ -41,10 +41,13 @@
 					&.add-product {
 						padding: 0 10px;
 						margin-top: 0;
+						border-right: none;
+
 						.button-blue {
 							background-color: $kpc-blue;
 							font-size: $kpc-font16;
 							padding: 12px 30px;
+							color: $kpc-white;
 
 							i {
 								margin-left: 10px;
@@ -85,12 +88,29 @@
 				.wrapper-filter {
 
 					.filter-left {
+		
 						float: left;
+						margin-right: 20px;
+						@media (max-width: $screen-md-max) {
+							margin-bottom: 20px;
+						}
 
 						.filter-action {
 							width: 245px;
 							float: left;
 							margin-right: 30px;
+
+							@media (max-width: $screen-md-max) {
+								width: 145px;
+
+								.btn-action {
+									width: 100px!important;
+								}
+
+								.btn-action-select {
+									width: 45px!important;
+								}
+							}	
 				
 							.btn-action {
 								width: 210px;
@@ -102,23 +122,26 @@
 						}
 
 						.filter-id {
-							width: 575px;
+
 							float: left;
+							width: 285px;
 
 							button {
-								width: 140px;
+								width: 100px;
 							}
 
 							.input-productid {
-								width: 435px;
+								width: 175px;
 								height: 33px;
 							}
 						}
-						margin-right: 85px;
+						
 					}
 
 					.filter-right {
 						float: right;
+						@media (max-width: $screen-md-max) {
+						}
 
 						.filter-records {
 							width: 145px;
@@ -164,7 +187,11 @@
 
 							.title-table {
 								color: $kpc-blue;
-								font-size: $kpc-font14
+								font-size: $kpc-font14;
+
+								th {
+									padding: 25px 8px;
+								}
 							}
 
 							.product-checkbox {
@@ -226,8 +253,7 @@
 					}
 				}
 				.filter-bottom {
-				 	@include kpc-layout-equal(4);
-				 	@include kpc-layout-offset(0,8);
+				 	@include kpc-layout-equal(12);
 				}
 			}
 		}
