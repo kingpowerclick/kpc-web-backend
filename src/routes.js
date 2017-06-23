@@ -14,6 +14,7 @@ import {
     Pagination,
     Hello,
     Product,
+    AddNewCustomAttribute,
   } from 'containers';
 
 export default (store) => {
@@ -56,6 +57,9 @@ export default (store) => {
       <Route path="widgets" component={Widgets}/>
       <Route path="hello" component={Hello}/>
       <Route path="product" component={Product}/>
+      <Route path="customattribute" component={AddNewCustomAttribute}/>
+
+      AddNewCustomAttribute
 
       { /* Catch all route */ }
       <Route path="*" component={NotFound} status={404} />
