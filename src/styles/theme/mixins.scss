@@ -194,6 +194,13 @@
   border-top: 1px solid #EDEDED;
 }
 
+@mixin kpc-header() {
+  font-size: $kpc-font36;
+  color: $kpc-dark-gray;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
 
 /* .icon-hint {
   margin-right: 5px;
