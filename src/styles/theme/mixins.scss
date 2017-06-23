@@ -200,9 +200,9 @@
   margin-bottom: 0;
 }
 
-@mixin kpc-width() {
+@mixin kpc-width($min-width: 1440px) {
   padding-top: 50px;
-  min-width: 1440px;
+  min-width: $min-width;
 }
 
 
