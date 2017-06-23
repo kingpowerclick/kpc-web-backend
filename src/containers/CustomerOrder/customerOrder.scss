@@ -1,6 +1,7 @@
 @import "../../styles/addons.scss";
 
 .customer-order-view{
+	@include kpc-width(1280px);
 	.page-header{
 		display: block;
 		margin-bottom: 30px;
