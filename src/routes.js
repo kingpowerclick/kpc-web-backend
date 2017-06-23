@@ -15,6 +15,7 @@ import {
     Hello,
     Product,
     AddNewCustomAttribute,
+    AddGwpByExcel,
   } from 'containers';
 
 export default (store) => {
@@ -58,6 +59,7 @@ export default (store) => {
       <Route path="hello" component={Hello}/>
       <Route path="product" component={Product}/>
       <Route path="customattribute" component={AddNewCustomAttribute}/>
+      <Route path="addgwpbyexcel" component={AddGwpByExcel}/>
 
       AddNewCustomAttribute
 
