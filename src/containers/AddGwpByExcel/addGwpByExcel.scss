@@ -1,58 +1,54 @@
 @import "../../styles/addons.scss";
-
 .add-gwp-by-excel-view {
   @include kpc-width();
-	.page-header{
-		display: flex;
-
-		.header {
-			margin-bottom: 0;
-		}
-
-		.page-title {
-			@include kpc-layout-equal(6);
-		}
-
-	}
-
-	.sub-header{
-        margin-bottom: 30px;
-			@include kpc-layout-equal(12);
-				 h2{
-					 padding-bottom: 5px;
-					 border-bottom: 2px solid #EEEEEE;
-				}
-	}
+  .page-header {
+    display: flex;
+    .header {
+      margin-bottom: 0;
+    }
+    .page-title {
+      @include kpc-layout-equal(6);
+    }
+  }
+  .sub-header {
+    margin-bottom: 30px;
+    @include kpc-layout-equal(12);
+    h2 {
+      padding-bottom: 5px;
+      border-bottom: 2px solid #EEEEEE;
+    }
+  }
   .timeline {
     margin: 90px 50px;
-    padding: 0px;
+    padding: 0;
     width: 90%;
     position: relative;
-    &:before{
+    &:before {
       content: "";
       width: 1px;
       height: 100%;
       background: #e7e7e7;
       left: 0;
-      top: 0px;
+      top: 0;
       position: absolute;
     }
-    &:after{
+    &:after {
       content: "";
       clear: both;
       display: table;
       width: 100%;
     }
-    .timeline-item{
+
+    .timeline-item {
       margin-bottom: 180px;
       position: relative;
-      &:before{
+      &:before {
         content: '';
         display: block;
         width: 100%;
         clear: both;
       }
-      .timeline-milestone{
+      .timeline-milestone {
         background: #fff;
         border: 2px solid $kpc-blue;
         width: 50px;
@@ -66,37 +62,30 @@
         -moz-border-radius: 50%;
         -ms-border-radius: 50%;
         border-radius: 50%;
-        span{
+        span {
           color: $kpc-blue;
           font-size: $kpc-font16;
           position: relative;
           left: 19px;
           top: 12px;
-
-
         }
       }
-      .timeline-content{
+      .timeline-content {
         width: 90%;
         float: right;
         margin-bottom: 70px;
-        input{
+        input {
           margin-top: 30px;
         }
-        .upload-button{
+        .upload-button {
           margin-top: 30px;
-        .btn-blue{
-          background-color: $kpc-blue;
-          color: #fff;
-          padding: 8px auto;
-        }
+          .btn-blue {
+            background-color: $kpc-blue;
+            color: #fff;
+            padding: 8px auto;
+          }
         }
       }
     }
-}
-
-	.content {
-		width: 100%;
-	}
-
+  }
 }

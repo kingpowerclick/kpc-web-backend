@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-
 export default class AddGwpByExcel extends Component {
   render() {
     const styles = require('./addGwpByExcel.scss');
-
     return (
       <div className="container-fulid">
         <div className="row">
@@ -17,11 +15,9 @@ export default class AddGwpByExcel extends Component {
                   </div>
     	    		</div>
     	    	</header>
-
             <div className={ styles['sub-header']}>
               <h2>Add Product by Upload Excel File</h2>
             </div>
-
               <div className={styles.timeline}>
                 <div className={styles['timeline-item']}>
                     <div className={ styles['timeline-milestone']}>
@@ -48,9 +44,7 @@ export default class AddGwpByExcel extends Component {
                           </div>
                     </div>
                 </div>
-
                 </div>
-
             </div>
           </div>
       	</div>
