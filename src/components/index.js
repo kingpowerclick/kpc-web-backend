@@ -12,4 +12,5 @@ export MiniInfoBar from './MiniInfoBar/MiniInfoBar';
 export SurveyForm from './SurveyForm/SurveyForm';
 export WidgetForm from './WidgetForm/WidgetForm';
 export LeftMenu from './LeftMenu/LeftMenu';
+export Footer from './Footer/Footer';
 export FilterPage from './FilterPage/FilterPage';
