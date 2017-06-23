@@ -12,6 +12,7 @@ import { isLoaded as isAuthLoaded, load as loadAuth, logout } from 'redux/module
 import { push } from 'react-router-redux';
 import config from '../../config';
 import { asyncConnect } from 'redux-async-connect';
+import { LeftMenu } from 'components';
 
 @asyncConnect([{
   promise: ({store: {dispatch, getState}}) => {
@@ -65,6 +66,7 @@ export default class App extends Component {
       <div className={styles.app}>
         <Helmet {...config.app.head}/>
         <div className={styles.appContent}>
+          <LeftMenu/>
           {this.props.children}
         </div>
 

@@ -27,6 +27,7 @@
 			.list-filter {
 				list-style: none;
 				display: inline-flex;
+
 				.filter {
 					padding: 0px 15px;
 					height: 20px;
@@ -44,6 +45,10 @@
 							background-color: $kpc-blue;
 							font-size: $kpc-font16;
 							padding: 12px 30px;
+
+							i {
+								margin-left: 10px;
+							}
 						}
 					}
 
@@ -56,8 +61,8 @@
 	}
 	.wrapper-content {
 		@include kpc-layout-equal(12);
+		
 		.content {
-			width: 100%;
 
 			.wrapper-product-tab {
 				font-size: $kpc-font16;
@@ -74,15 +79,19 @@
 			}
 
 			.filter-product {
+				@include clearfix();
 				margin-top: 30px;
 
 				.wrapper-filter {
 
 					.filter-left {
-						@include kpc-layout-equal(6);
-						.filter-action {
+						float: left;
 
-							@include kpc-layout-equal(4);
+						.filter-action {
+							width: 245px;
+							float: left;
+							margin-right: 30px;
+				
 							.btn-action {
 								width: 210px;
 							}
@@ -93,19 +102,27 @@
 						}
 
 						.filter-id {
-							@include kpc-layout-equal(8);
+							width: 575px;
+							float: left;
+
+							button {
+								width: 140px;
+							}
+
+							.input-productid {
+								width: 435px;
+								height: 33px;
+							}
 						}
+						margin-right: 85px;
 					}
 
 					.filter-right {
-						@include kpc-layout-equal(6);
+						float: right;
 
 						.filter-records {
-							@include kpc-layout(6, 6, 8);
-							display: flex;
-
-							text-align: right;
-
+							width: 145px;
+	
 							.btn-record {
 								width: 120px;
 							}
@@ -123,7 +140,7 @@
 						}
 
 						.filter-pagination {
-							@include kpc-layout(6, 6 ,4);
+
 							text-align: right;
 
 							.pagination-ul {
@@ -138,6 +155,8 @@
 
 				.tab-content {
 					overflow-x: scroll;
+					margin-bottom: 40px;
+
 					table {
 						table-layout: fixed;
 
@@ -205,6 +224,10 @@
 							background-color: #f9fcff;
 						}
 					}
+				}
+				.filter-bottom {
+				 	@include kpc-layout-equal(4);
+				 	@include kpc-layout-offset(0,8);
 				}
 			}
 		}
