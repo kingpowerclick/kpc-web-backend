@@ -41,10 +41,13 @@
 					&.add-product {
 						padding: 0 10px;
 						margin-top: 0;
+						border-right: none;
+
 						.button-blue {
 							background-color: $kpc-blue;
 							font-size: $kpc-font16;
 							padding: 12px 30px;
+							color: $kpc-white;
 
 							i {
 								margin-left: 10px;
@@ -164,7 +167,11 @@
 
 							.title-table {
 								color: $kpc-blue;
-								font-size: $kpc-font14
+								font-size: $kpc-font14;
+
+								th {
+									padding: 25px 8px;
+								}
 							}
 
 							.product-checkbox {
