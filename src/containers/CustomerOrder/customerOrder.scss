@@ -1,0 +1,96 @@
+@import "../../styles/addons.scss";
+
+.customer-order-view{
+	.page-header{
+		display: block;
+		margin-bottom: 30px;
+        .page-title {
+			@include kpc-layout-equal(12);
+		}
+        .header {
+			@include kpc-header();
+		}
+        .back{
+            @include kpc-layout-equal(12);
+        }
+    }
+	.wrapper-content{
+		@include kpc-layout-equal(12);
+		.wrapper-customer-order-tab {
+			font-size: $kpc-font16;
+			.customer-order-tab a{
+				padding: 10px 60px;
+				border-radius: 5px 5px 0 0;
+			}
+			.tab-active a{
+				background-color: $kpc-blue;
+				color: $kpc-white;
+			}
+		}
+		.filter-customer-order {
+			@include clearfix();
+			margin-top: 30px;
+            .customer-order-title{
+                font-size: 21px;
+                @include font-bold();
+            }
+			.filter-left{
+				display: inline-table;
+			}
+			.filter-radio {
+				label{
+					padding-right: 20px;
+				}
+				float: left;
+				margin-right: 30px;
+			}
+			.filter-right {
+				float: right;
+			}
+		}
+        .table-detail{
+            .tab-content {
+                overflow-x: scroll;
+                margin-bottom: 40px;
+            }
+            table {
+                table-layout: fixed;
+                thead {
+                    .title-table {
+                        color: $kpc-blue;
+                        font-size: $kpc-font14;
+                        th {
+                            padding: 25px 8px;
+                            text-align: center;
+                        }
+                    }
+                    .order-no{
+                        width: 100px;
+                    }
+                    .order-date{
+                        width: 150px;
+                    }
+                    .ship-to-name{
+                        width: 250px;
+                    }
+                    .order-total{
+                        width: 150px;
+                    }
+                    .order-status{
+                        width: 200px;
+                    }
+                }
+                tbody {
+                    font-size: 14px;
+                    text-align: center;
+                    td{
+                        padding: 20px 8px;
+                    }
+                }
+                tbody > tr:nth-of-type(odd) {
+                    background-color: #f9fcff;
+                }
+            }
+        }
+    }
+}

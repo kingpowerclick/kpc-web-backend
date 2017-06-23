@@ -1,0 +1,26 @@
+@import "../../styles/addons.scss";
+
+.customer-detail{
+    .customer-id{
+        min-width: 120px
+    }
+    .customer-name, .customer-email, .register-date, .lastest-login{
+        min-width: 250px;
+    }
+    .customer-level{
+        min-width: 150px;
+    }
+    .detail{
+        display: table-cell;
+        padding: 0 15px;
+        border-right: 1px solid #e7e7e7;
+        .headline{
+            font-size: 13px;
+            color: $breadcrumb;
+        }
+    }
+    .lastest-login{
+        border-right: none;
+    }
+    padding: 20px 0px;
+}
