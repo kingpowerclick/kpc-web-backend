@@ -24,7 +24,7 @@ export default class Product extends Component {
 								<li className={ classNames( styles.filter, styles['filter-mda'])}><i className="fa fa-share-square-o"></i>Manage Dynamic Attribute</li>
 								<li className={ classNames( styles.filter, styles['add-product'])}>
 									<div className="dropdown">
-										<button className={ classNames(styles['button-blue'], 'btn', 'btn-default', 'dropdown-toggle')} type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+										<button className={ classNames(styles['btn-blue'], 'btn', 'btn-default', 'dropdown-toggle')} type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 									    	Add Products
 											<span className="caret"></span>
 										</button>
