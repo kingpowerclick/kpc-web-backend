@@ -1,7 +1,7 @@
 @import "../../styles/addons.scss";
 
 .custom-attribute-view {
-	@include kpc-width(1280);
+	@include kpc-width();
 
 	.page-header{
 		display: block;
