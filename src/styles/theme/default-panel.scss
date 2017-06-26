@@ -1,0 +1,10 @@
+@import "../styles/addons.scss";
+.panel{
+    .panel-test{
+        border: 1px solid $line;
+        border-radius: 0px;
+        .panel-heading{
+            color: $text-color;
+        }
+    }
+}

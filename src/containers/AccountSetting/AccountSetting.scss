@@ -1,0 +1,27 @@
+@import "../../styles/addons.scss";
+
+.account-setting-view{
+    @include kpc-width(1280px);
+    .page-header{
+		display: block;
+		margin-bottom: 30px;
+        .page-title {
+			@include kpc-layout-equal(12);
+		}
+        .header {
+			@include kpc-header();
+		}
+        .back{
+            @include kpc-layout-equal(12);
+        }
+        .bottom-line{
+            border-bottom: 1px solid $line;
+            @include kpc-layout-equal(12);
+            padding-top: 20px;
+        }
+    }
+    .wrapper-content{
+        @include kpc-layout-equal(12);
+        padding-top: 20px;
+    }
+}
