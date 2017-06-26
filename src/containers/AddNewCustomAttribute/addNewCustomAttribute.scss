@@ -4,8 +4,12 @@
 	@include kpc-width();
 
 	.page-header{
-		display: flex;
+		display: block;
 		margin-bottom: 30px;
+		
+		padding-right: 15px;
+
+		@include clearfix();
 
 		.header {
 			@include kpc-header();
@@ -15,13 +19,233 @@
 			color: #909090;
 		}
 
-		.page-title {	
-			@include kpc-layout(4, 4, 6);
+		.page-title {
+			@include kpc-layout-equal(12);
+		}
+
+		.sub-menu {
+			@include kpc-layout-equal(12);
+			margin-bottom: 10px;
+
+			ul { 
+				list-style: none;
+				padding: 0;
+
+				li {
+					display: inline-flex;
+					padding-right: 15px;
+					padding-left: 15px;
+					border-right: 1px solid #d7d7d7;
+
+					&:first-child {
+						padding-left: 7px;
+					}
+
+					&:last-child {
+					  border: none;
+					}
+				}
+			}
+		}
+
+		.kpc-line{
+			@include kpc-border-bottom();
 		}
 
 	}
-	.wrapper-content {
+	.custom-attribute {
+		@include clearfix();
+
 		@include kpc-layout-equal(12);
+
+		.content {
+
+			.custom-attribute {
+
+				.section-title {
+					h2 {
+						@include kpc-header2();
+					}
+				}
+
+				.input-form {
+
+					label {
+						font-size: $kpc-font16;
+						font-weight: normal;
+						
+					}
+
+					.input-form-left {
+						@include kpc-layout-equal(6);
+
+						.form-label {
+							@include kpc-layout-equal(3);
+						}
+
+						.form-input {
+							@include kpc-layout-equal(7);
 		
+						}
+
+						.form-select {
+							@include kpc-layout-offset(3, 3);
+							@include kpc-layout-equal(7);
+
+							.title-form-select {
+								font-size: $kpc-font14;
+							}
+
+
+							.form-radio {
+								display: inline-flex;
+								margin-right: 50px;
+
+								label {
+									color: $kpc-white-gray;
+								}
+							}
+						}
+					}
+
+					.input-form-right {
+						@include kpc-layout-equal(6);
+
+						.form-select {
+
+							.title-form-select {
+								font-size: $kpc-font14;
+							}
+
+
+							.form-radio {
+								display: inline-flex;
+								margin-right: 50px;
+
+								label {
+									color: $kpc-dark-gray;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.add-selection {
+		@include kpc-layout-equal(12);
+		padding-top: 30px;
+
+		.wrapper-attribute {
+			@include kpc-layout-equal(12);
+			@include kpc-border-top();
+			@include kpc-border-bottom2();
+			padding-top: 30px;
+
+			h2 {
+				@include kpc-header2();
+			}
+
+			.attribute {
+				@include kpc-layout-equal(4);
+				margin-bottom: 30px;
+
+				.inner-attribute {
+					@include kpc-layout-equal(12);
+					border: 1px solid $border-gray;
+					padding-top: 20px;
+					padding-bottom: 20px;
+
+					.attribute-hedder {
+						@include make-row();
+
+						.attribute-title {
+							font-size: $kpc-font16;
+							color: $kpc-dark-gray;
+							@include kpc-layout-equal(10);
+
+							.star {
+								color: $kpc-red;
+							}
+
+						}
+
+						.attribute-close {
+							@include kpc-layout-equal(2);
+							text-align: right;
+						}
+					}
+
+					.attribute-form {
+						padding-top: 20px;
+						label {
+							font-weight: normal;
+							font-size: $kpc-font14;
+							color: $kpc-dark-gray;
+						}
+
+						.form-radio {
+							display: inline-flex;
+							margin-right: 50px;
+
+							label {
+								color: $kpc-white-gray;
+							}
+						}
+
+						.upload-file {
+
+							.img-support {
+								margin-top: 10px;
+								margin-bottom: 30px;
+								font-weight: bold;
+							}
+
+							.upload-img {
+								img {
+									margin-bottom: 10px;
+								}
+
+								.choose-file {
+									width: 100%;
+								}
+							}
+						}
+
+						.button-blue {
+							margin-top: 15px;
+							background-color: $kpc-blue;
+							font-size: $kpc-font16;
+							padding: 11px 55px;
+							color: $kpc-white;
+						}
+					}
+				}
+			}
+
+			.add-new {
+				text-align:  center;
+
+				.inner-attribute {
+					padding: 274px 0;
+
+					.button-blue {
+						margin-top: 15px;
+						background-color: $kpc-blue;
+						font-size: $kpc-font16;
+						padding: 11px 55px;
+						color: $kpc-white;
+					}
+				}
+
+			}
+		}
+	}
+
+	.save-button {
+		@include kpc-layout-equal(12);
+		margin-top: 30px;
+		text-align: right;
 	}
 }
