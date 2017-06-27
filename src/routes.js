@@ -22,6 +22,7 @@ import {
     AccountSetting,
     ProductBestSeller,
     ProductExclusive,
+    ProductHotItem,
   } from 'containers';
 
 export default (store) => {
@@ -66,6 +67,7 @@ export default (store) => {
       <Route path="product" component={Product}/>
       <Route path="product/exclusive" component={ProductExclusive}/>
       <Route path="product/bestseller" component={ProductBestSeller}/>
+      <Route path="product/hotitem" component={ProductHotItem}/>
       <Route path="customerorder" component={CustomerOrder}/>
       <Route path="customattribute" component={AddNewCustomAttribute}/>
       <Route path="addgwpbyexcel" component={AddGwpByExcel}/>
