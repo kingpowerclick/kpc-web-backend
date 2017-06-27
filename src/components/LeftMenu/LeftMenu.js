@@ -15,7 +15,7 @@ export default class LeftMenu extends Component {
       }
     }
     render() {
-      const styles = require('./LeftMenu.scss');
+      const styles = require('./leftMenu.scss');
       const logoImg = require('./KP-white.png');
       return (
             <div id="mySidenav" className={ styles.sidenav }>

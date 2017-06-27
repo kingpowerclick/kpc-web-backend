@@ -19,9 +19,21 @@
             @include kpc-layout-equal(12);
             padding-top: 20px;
         }
+        .sub-breadcrumb{
+            padding: 0 10px;
+            color: #e7e7e7;
+            display: inline-block;
+        }
     }
     .wrapper-content{
         @include kpc-layout-equal(12);
         padding-top: 20px;
+        .title{
+            @include font-bold();
+        }
+        .detail{
+            font-weight: 300;
+            padding-top: 15px;
+        }
     }
 }
