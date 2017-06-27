@@ -12,7 +12,7 @@ export default class OrderDetailCancelDetail extends Component {
         	<div className={ classNames(styles['order-detail-cancel-detail-view']) }>
     	    	<header className={ styles['page-header']}>
     	    		<div className={ styles['page-title']}>
-    	        		<h1 className={ styles.header }>Order #88810002386</h1>
+    	        		<h1 className={ styles.header }><strong>Order #88810002386</strong></h1>
     	    		</div>
               <Breadcrumb breadcrumb={ "Orders >  No.#88810002386" }/>
               <OrderCustomerDetail/>
@@ -149,7 +149,7 @@ export default class OrderDetailCancelDetail extends Component {
                          </div>
                      </div>
                      <div className="row">
-                     <section className={ styles['wrapper-content']}>
+                     <section className={ classNames(styles['wrapper-content'], 'campaign')}>
  			    			<div className={ styles['table-detail'] }>
  			    				<div className={ styles['tab-content'] }>
  									<table className="table table-striped">
