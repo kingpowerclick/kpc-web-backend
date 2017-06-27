@@ -166,7 +166,6 @@ export default class OrderDetailCancelDetail extends Component {
  									    		<td>New Customer Get Free 200 THB (BEAUTY10)</td>
  									    		<td>Discount 200 THB from Net. total when buy order minimum 1,000 THB</td>
  									    	</tr>
-
  									    	<tr>
  									    		<td>Brighter face with SULWHASOO</td>
  									    		<td>GWP: Free 1 First Care Activating Serum</td>
@@ -212,7 +211,7 @@ Free 1 SULWHASOO First Care Activating Serum EX 90ml SKU: 631405</td>
                                 <label>Visible this comment on Storefront</label>
                             </div>
                         <div className={ styles['add-comment'] }>
-                            <div className={ styles['btn-blue'] }>
+                            <div className={ classNames(styles['btn-blue'], 'btn') }>
                             Add Comment
                             </div>
                         </div>
