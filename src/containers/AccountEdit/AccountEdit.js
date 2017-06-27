@@ -44,7 +44,13 @@ export default class AccountSetting extends Component {
                                         </div>
                                         <div className={ classNames(styles['panel-form-group'], 'form-group') }>
                                             <label className={ styles['panel-label'] }>Interface local <span className="text-danger">*</span></label>
-                                            <input className={ classNames('form-control', styles['panel-control']) } id="interfaceLocal" placeholder="shiningshinee"/>
+                                            <div className={ styles['select-style'] }>
+                                                <select className={ classNames('form-control', styles['panel-control']) } id="interfaceLocal">
+                                                    <option> English (USA) </option>
+                                                    <option> Thai </option>
+                                                    <option> China </option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
                                     <div className={ styles['panel-heading'] }>Change Password</div>
