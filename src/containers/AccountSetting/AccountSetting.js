@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 import classNames from 'classnames';
 import { Breadcrumb } from 'components';
 
@@ -17,7 +18,7 @@ export default class AccountSetting extends Component {
                         <div className={ styles.back }>
                             <a href="#"> <i className="fa fa-chevron-left"></i> Back </a>
                             <div className={ styles['sub-breadcrumb'] }>|</div>
-                            <a href="#"> <i className="fa fa-pencil"></i> Edit </a>
+                            <Link to={'/accountedit'}> <i className="fa fa-pencil"></i> Edit </Link>
                             <div className={ styles['bottom-line'] }></div>
                         </div>
 			    	</header>

@@ -1,0 +1,44 @@
+@import "../../styles/addons.scss";
+
+.account-edit-view{
+    @include kpc-width(1280px);
+    .page-header{
+		display: block;
+		margin-bottom: 30px;
+        .page-title {
+			@include kpc-layout-equal(12);
+		}
+        .header {
+			@include kpc-header();
+		}
+        .back{
+            @include kpc-layout-equal(12);
+        }
+        .bottom-line{
+            border-bottom: 1px solid $line;
+            @include kpc-layout-equal(12);
+            padding-top: 20px;
+        }
+        .sub-breadcrumb{
+            padding: 0 10px;
+            color: #e7e7e7;
+            display: inline-block;
+        }
+    }
+    .wrapper-content{
+        @include kpc-layout-equal(12);
+        padding-top: 20px;
+        .title{
+            @include font-bold();
+        }
+        .detail{
+            font-weight: 300;
+            padding: 15px 15px 25px;
+        }
+        .panel-control{
+            font-weight: 300;
+            font-size: 16px;
+            padding: 10px;
+        }
+    }
+}
