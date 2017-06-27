@@ -23,3 +23,5 @@ export CustomerFiltes from './Product/CustomerFiltes';
 export CustomerColumes from './Product/CustomerColumes';
 export CustomerManageDynamicAttribute from './Product/CustomerManageDynamicAttribute';
 export CustomerButtonAdd from './Product/CustomerButtonAdd';
+
+export OrderCustomerDetail from './OrderCustomerDetail/OrderCustomerDetail';
