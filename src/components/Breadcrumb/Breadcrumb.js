@@ -5,7 +5,7 @@ export default class Breadcrumb extends Component {
       breadcrumb: PropTypes.string
     }
     render() {
-      const styles = require('./Breadcrumb.scss');
+      const styles = require('./breadcrumb.scss');
       const {breadcrumb} = this.props;
       return (
           <div className={ styles['page-breadcrumb'] }>
