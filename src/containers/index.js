@@ -13,3 +13,5 @@ export Product from './Product/Product';
 export CustomerOrder from './CustomerOrder/CustomerOrder';
 export AddNewCustomAttribute from './AddNewCustomAttribute/AddNewCustomAttribute';
 export AddGwpByExcel from './AddGwpByExcel/AddGwpByExcel';
+export ProductExclusive from './ProductExclusive/ProductExclusive';
+export ProductBestSeller from './ProductBestSeller/ProductBestSeller';

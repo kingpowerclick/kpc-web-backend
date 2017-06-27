@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import classNames from 'classnames';
 
-export default class CustomerButtonAdd extends Component {
+export default class ProductButtonAdd extends Component {
   render() {
-    const styles = require('./CustomerFiltes.scss');
+    const styles = require('./productFilters.scss');
     return (
         <li className={ classNames( styles.filter, styles['add-product'])}>
             <div className="dropdown">
