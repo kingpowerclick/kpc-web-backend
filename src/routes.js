@@ -17,6 +17,7 @@ import {
     CustomerOrder,
     AddNewCustomAttribute,
     AddGwpByExcel,
+    OrderDetailCancelDetail,
     AccountEdit,
     AccountSetting,
     ProductBestSeller,
@@ -68,6 +69,7 @@ export default (store) => {
       <Route path="customerorder" component={CustomerOrder}/>
       <Route path="customattribute" component={AddNewCustomAttribute}/>
       <Route path="addgwpbyexcel" component={AddGwpByExcel}/>
+      <Route path="orderdetailcanceldetail" component={OrderDetailCancelDetail}/>
       <Route path="accountsetting" component={AccountSetting}/>
       <Route path="accountedit" component={AccountEdit}/>
       { /* Catch all route */ }
