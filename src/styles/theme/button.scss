@@ -70,6 +70,18 @@
     background-color: $kpc-dark-blue;
     color: $kpc-white; 
   }
+  >span {
+    margin-right: 5px;
+  }
+}
+
+.btn-ghost { 
+  background-color: #ffffff;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 

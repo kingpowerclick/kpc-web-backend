@@ -1,58 +1,96 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
 import { FilterPage,
-		ProductFilters,
-		ProductColumes,
-		ProductManageDynamicAttribute,
-		} from 'components';
+		Breadcrumb } from 'components';
 
-export default class Product extends Component {
+import { DropdownButton, MenuItem, Modal } from 'react-bootstrap';
+
+export default class ProductExclusive extends Component {
+
+state = {
+  displayCompleteModal: false
+}
+
+handleOpenAddProductExcModal = () => {
+  this.setState({
+    displayCompleteModal: true
+  });
+}
+
+handleCloseModal = () => {
+  this.setState({
+    displayCompleteModal: false
+  });
+}
+
+handleOpenModal = (styles) => {
+  const { displayCompleteModal } = this.state;
+  	return (
+		<Modal show={ displayCompleteModal } dialogClassName={ styles['addproduct-exclusive-modal'] } >
+			<Modal.Header>
+	    		<Modal.Title>Add product for Exclusive launch at King Power
+	    			<button
+	    				className={ classNames(styles['btn-ghost'], styles['close-modal'])}
+	    				onClick={ this.handleCloseModal }>
+	    				<i className="fa fa-times"></i>
+	    			</button>
+	    		</Modal.Title>
+	    	</Modal.Header>
+			<Modal.Body>
+	    		<div className={ styles['addproduct-exclusive-box'] }>
+					<div className={ styles['modal-body'] }>
+						<div className={ styles['select-file']}>
+							<span>Select file to Import</span>
+						</div>
+						<div className="input-group">
+					    	<input type="text" className="form-control" placeholder="Chose file"/>
+					    	<span className="input-group-btn">
+							<button className="btn btn-default" type="button">Browse</button>
+					    	</span>
+						</div>
+						<div className={ styles['download-file'] }>
+							<a href="Download Sample File">Download Sample File</a>
+						</div>
+						<button className={ classNames(styles['btn-blue'], 'btn', 'btn-default') }> Check Data & Upload Now</button>
+					</div>
+	    		</div>
+			</Modal.Body>
+			<Modal.Footer></Modal.Footer>
+		</Modal>
+	);
+}
+
   render() {
-    const styles = require('./product.scss');
+    const styles = require('./productExclusive.scss');
 
     return (
     	<div className="container-fluid">
+    		{ this.handleOpenModal(styles) }
     		<div className="row">
-		    	<div className={ classNames(styles['product-view']) }>
+		    	<div className={ classNames(styles['product-exclusive-view']) }>
 			    	<header className={ styles['page-header']}>
 			    		<div className={ styles['page-title']}>
-			        		<h1 className={ styles.header }><strong>Product</strong></h1>
-			        		<div className={ styles['page-breadcrumb']}>
-                				<span>Products</span>
-                			</div>
-                  		</div>
+			        		<h1 className={ styles.header }><strong>Exclusive Launch at King Power</strong></h1>
+			    		</div>
 			    		<div className={ styles['page-filter']}>
 							<ul className={ styles['list-filter']}>
-								<ProductFilters/>
-								<ProductColumes/>
-								<ProductManageDynamicAttribute/>
 								<li className={ classNames( styles.filter, styles['add-product'])}>
 									<div className="dropdown">
-										<button className={ classNames(styles['btn-blue'], 'btn', 'btn-default', 'dropdown-toggle')} type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-									    	Add Products
-											<span className="caret"></span>
-										</button>
-										<ul className="dropdown-menu" aria-labelledby="dropdownMenu1">
-											<li><a href="#">Action</a></li>
-											<li><a href="#">Another action</a></li>
-											<li><a href="#">Something else here</a></li>
-											<li role="separator" className="divider"></li>
-											<li><a href="#">Separated link</a></li>
-										</ul>
+										<DropdownButton title="Add Exclusive Products" className={ classNames(styles['btn-blue'], 'btn', 'btn-default', 'dropdown-toggle')}>
+									    	<MenuItem eventKey="1">Add by Line Product</MenuItem>
+									    	<MenuItem eventKey="2" onClick={ this.handleOpenAddProductExcModal }>Add by Excel</MenuItem>
+									    	<MenuItem eventKey="3">Add by Line Parent Product</MenuItem>
+									    	<MenuItem eventKey="4">Add GWP by Line Product</MenuItem>
+									    	<MenuItem eventKey="4">Add GWP by Excel</MenuItem>
+										</DropdownButton>
 									</div>
 								</li>
 							</ul>
 			    		</div>
+			    		<Breadcrumb breadcrumb={ "Product > Exclusive Launch at King Power" }/>
 			    	</header>
 			    	<section className={ styles['wrapper-content']}>
 			    		<div className={ styles.content}>
-			    			<div className={ styles['wrapper-product-tab']}>
-								<ul className="nav nav-tabs">
-								 	<li role="presentation" className={ classNames(styles['product-tab'], styles['tab-active'], 'active' )}><a href="#">Add Product</a></li>
-								 	<li role="presentation" className={ classNames(styles['product-tab'])}><a href="#">Add Parent Produt</a></li>
-								 	<li role="presentation" className={ classNames(styles['product-tab'])}><a href="#">GWP</a></li>
-								</ul>
-			    			</div>
 			    			<div className={ classNames(styles['filter-product'])}>
 			    				<div className={ classNames(styles['wrapper-filter'])}>
 			    					<div className={ styles['filter-left']}>
@@ -93,15 +131,15 @@ export default class Product extends Component {
 									    		<th className={ styles['product-checkbox'] }><input type="checkbox"/></th>
 									    		<th className={ styles['product-id'] }>ID</th>
 									    		<th className={ styles['product-thumbnail'] }>Thumbnail</th>
-									    		<th className={ styles['product-sku'] }>SKU</th>
 									    		<th className={ styles['product-name'] }>Name</th>
 									    		<th className={ styles['product-type'] }>Type</th>
+									    		<th className={ styles['product-attribute'] }>Arttribute Set</th>
+									    		<th className={ styles['product-sku'] }>SKU</th>
 									    		<th className={ styles['product-price'] }>Price</th>
 									    		<th className={ styles['product-qty'] }>Qty</th>
-									    		<th className={ styles['produt-brand'] }>Brand</th>
-									    		<th className={ styles['product-merchiandise'] }>Merchiandise No.</th>
-									    		<th className={ styles['product-visibility'] }>Visibility</th>
 									    		<th className={ styles['product-status'] }>Status</th>
+									    		<th className={ styles['product-batch'] }>Batch</th>
+									    		<th className={ styles['product-action'] }>Action</th>
 									    	</tr>
 										</thead>
 										<tbody>
@@ -109,43 +147,64 @@ export default class Product extends Component {
 									    		<td><input type="checkbox"/></td>
 									    		<td>503576</td>
 									    		<td><img src="http://via.placeholder.com/50x50"/></td>
-									    		<td>8169513</td>
 									    		<td>EMPORIO ARMANI CLASSIC WATCH</td>
 									    		<td>-</td>
+									    		<td>default</td>
+									    		<td>8169513</td>
 									    		<td>11,800.00 THB</td>
 									    		<td>172</td>
-									    		<td>EMPORIO ARMANI</td>
-									    		<td>xxxxxx</td>
-									    		<td>Yes</td>
 									    		<td>Enable</td>
+									    		<td>batch 110</td>
+									    		<td>
+									    			<div className="btn-group">
+													 	<button type="button" className={ classNames(styles['btn-action'], 'btn', 'btn-default')}>Action</button>
+													 	<button type="button" className={ classNames(styles['btn-action-select'], 'btn', 'btn-default', 'dropdown-toggle')} aria-expanded="false">
+															<span className="caret"></span>
+												 		</button>
+													</div>
+												</td>
 									    	</tr>
 									    	<tr>
 									    		<td><input type="checkbox"/></td>
 									    		<td>503576</td>
 									    		<td><img src="http://via.placeholder.com/50x50"/></td>
-									    		<td>8169513</td>
 									    		<td>EMPORIO ARMANI CLASSIC WATCH</td>
 									    		<td>Child Product </td>
+									    		<td>default</td>
+									    		<td>8169513</td>
 									    		<td>11,800.00 THB</td>
 									    		<td>172</td>
-									    		<td>EMPORIO ARMANI</td>
-									    		<td>xxxxxx</td>
-									    		<td>Yes</td>
 									    		<td>Enable</td>
+									    		<td>batch 110</td>
+									    		<td>
+									    			<div className="btn-group">
+													 	<button type="button" className={ classNames(styles['btn-action'], 'btn', 'btn-default')}>Action</button>
+													 	<button type="button" className={ classNames(styles['btn-action-select'], 'btn', 'btn-default', 'dropdown-toggle')} aria-expanded="false">
+															<span className="caret"></span>
+												 		</button>
+													</div>
+												</td>
 									    	</tr>
 									    	<tr>
 									    		<td><input type="checkbox"/></td>
 									    		<td>503576</td>
 									    		<td><img src="http://via.placeholder.com/50x50"/></td>
-									    		<td>8169513</td>
 									    		<td>EMPORIO ARMANI CLASSIC WATCH</td>
 									    		<td>-</td>
+									    		<td>default</td>
+									    		<td>8169513</td>
 									    		<td>11,800.00 THB</td>
 									    		<td>172</td>
-									    		<td>EMPORIO ARMANI</td>
-									    		<td>xxxxxx</td>
-									    		<td>Yes</td>
 									    		<td>Enable</td>
+									    		<td>batch 110</td>
+									    		<td>
+									    			<div className="btn-group">
+													 	<button type="button" className={ classNames(styles['btn-action'], 'btn', 'btn-default')}>Action</button>
+													 	<button type="button" className={ classNames(styles['btn-action-select'], 'btn', 'btn-default', 'dropdown-toggle')} aria-expanded="false">
+															<span className="caret"></span>
+												 		</button>
+													</div>
+												</td>
 									    	</tr>
 										</tbody>
 									</table>
