@@ -7,7 +7,7 @@ export default class CustomerDetail extends Component {
       CustomerName: PropTypes.string
     }
     render() {
-      const styles = require('./CustomerDetail.scss');
+      const styles = require('./customerDetail.scss');
       return (
           <div className={ styles['customer-detail'] }>
               <div className={ classNames(styles['customer-id'], styles.detail) }>

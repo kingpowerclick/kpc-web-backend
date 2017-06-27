@@ -15,15 +15,15 @@ export default class LeftMenu extends Component {
       }
     }
     render() {
-      const styles = require('./LeftMenu.scss');
+      const styles = require('./leftMenu.scss');
       const logoImg = require('./KP-white.png');
       return (
             <div id="mySidenav" className={ styles.sidenav }>
                 <div className={ styles.logo }><img src={ logoImg }/></div>
-                <OverlayTrigger placement="right" overlay={<Tooltip>Cart</Tooltip>}>
+                <OverlayTrigger placement="right" overlay={<Tooltip id="menu-cart">Cart</Tooltip>}>
                     <a className={ styles.menu } href="#"> <i className="fa fa-shopping-cart"></i> </a>
                 </OverlayTrigger>
-                <OverlayTrigger placement="right" overlay={<Tooltip>Products</Tooltip>}>
+                <OverlayTrigger placement="right" overlay={<Tooltip id="menu-product">Products</Tooltip>}>
                     <a className={ styles.menu } href="#" onClick={ this.showSubmenu } data-toggle="tooltip" title="Product">
                         <i className="fa fa-archive"></i>
                         <div className={ classNames(styles['sub-menu'], 'hidden') } id="Products">
@@ -50,13 +50,13 @@ export default class LeftMenu extends Component {
                         </div>
                     </a>
                 </OverlayTrigger>
-                <OverlayTrigger placement="right" overlay={<Tooltip>User</Tooltip>}>
+                <OverlayTrigger placement="right" overlay={<Tooltip id="menu-user">User</Tooltip>}>
                     <a className={ styles.menu } href="#"> <i className="fa fa-user"></i> </a>
                 </OverlayTrigger>
-                <OverlayTrigger placement="right" overlay={<Tooltip>Marketing</Tooltip>}>
+                <OverlayTrigger placement="right" overlay={<Tooltip id="menu-marketing">Marketing</Tooltip>}>
                     <a className={ styles.menu } href="#"> <i className="fa fa-bookmark"></i> </a>
                 </OverlayTrigger>
-                <OverlayTrigger placement="right" overlay={<Tooltip>Setting</Tooltip>}>
+                <OverlayTrigger placement="right" overlay={<Tooltip id="menu-setting">Setting</Tooltip>}>
                     <a className={ styles.menu } href="#"> <i className="fa fa-cog"></i> </a>
                 </OverlayTrigger>
             </div>
