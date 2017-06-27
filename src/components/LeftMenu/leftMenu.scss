@@ -1,0 +1,79 @@
+.sidenav {
+    .menu{
+        padding: 25px;
+        width: 70px;
+        height: 75px;
+        text-align: center;;
+        text-decoration: none;
+        font-size: 18px;
+        color: #333;
+        display: block;
+        border-top: 1px solid #fff;
+        border-bottom: none;
+        &:hover, :focus, .active , :active{
+          color: #0b56a4;
+          background: #fff;
+        }
+    }
+    .sub-menu{
+        background: #424242;
+        display: inline-block;
+        position: absolute;
+        left: 70px;
+        top: 0px;
+        min-width: 345px;
+        color: #fff;
+        text-align: left;
+        font-size: 16px;
+        font-weight: 300;
+        .sub-menu-label{
+            background: #313131;
+            padding: 15px 20px;
+        }
+        .sub-menu-list{
+            padding: 15px 55px;
+            border-bottom: 1px solid #313131;
+            .sub-menu-list-hover{
+                font-size: 9px;
+                position: relative;
+                top: -3px;
+                // padding-right: 10px;
+                display: none;
+                width: 20.5px;
+            }
+            &:hover{
+                padding: 15px 30px;
+                .sub-menu-list-hover{
+                    display: inline-block;
+                }
+            }
+        }
+
+    }
+    .sub-menu-head{
+        background: #313131;
+        height: 75px;
+        padding: 20px 25px;
+        font-size: 26px;
+        font-weight: bold;
+    }
+    .footer{
+        height: 80px;
+    }
+    .logo{
+        img{
+          display: block;
+          margin: auto;
+        }
+        background: #0b56a4;
+        border-top: none;
+        height: 75px;
+        padding-top: 27px;
+    }
+    min-height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #eee;
+}

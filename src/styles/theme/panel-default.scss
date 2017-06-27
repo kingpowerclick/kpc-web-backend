@@ -1,0 +1,31 @@
+.panel-default{
+    font-size: 16px;
+    border: 1px solid $line;
+    border-radius: 0px;
+    .panel-heading{
+        color: $text-color;
+        margin: 25px 20px 0px;
+        @include font-bold();
+        color: #333;
+        padding-bottom: 10px;
+        border-bottom: 1px solid $line;
+    }
+    .panel-body{
+        margin: 25px 20px;
+        color: #000;
+        .panel-label{
+            float: left;
+            font-weight: 300;
+        }
+        .panel-form-group{
+            margin-bottom: 30px;
+        }
+    }
+    .panel-footer{
+        border-top: 1px solid $line;
+        margin: 20px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        @include font-bold();
+    }
+}

@@ -10,6 +10,7 @@
 $cyan: #33e0ff;
 $humility: #777;
 $breadcrumb: #909090;
+$line: #d7d7d7;
 // Bootstrap Variables
 $brand-primary: darken(#428bca, 6.5%);
 $brand-secondary: #e25139;
@@ -23,37 +24,11 @@ $text-color: #333;
 $font-size-base: 14px;
 $font-family-sans-serif: "Helvetica Neue", Helvetica, sans-serif;
 
-
-// ShopSpot variables
-
-// $base-image-url: "../images";
-// $ss-base-image-url: "../../images";
-
-
-/* $navbar-control-height: 54px;
-$navbar-control-submenu-height: 36px;
-$navbar-category-height: 36px;
- */
-/* $white: #FFFFFF;
-
 $line-gray: #EAEAEA;
 $line-gray-soft: #DEDEDE;
-$line-gray-dark: #CCCCCC;
+$line-gray-dark: #d7d7d7;
 
-$font-black: #4d4d4d;
-$font-red: #A22430;
-$font-gray: #808080;
-$font-gray-light: #B3B3B3; */
-
-$navbar-control-height: 48px;
-$navbar-category-height: 24px;
-// $header-height: $navbar-control-height + $navbar-category-height;
-
-$download-mobile-height: 60px;
-
-$line-gray: #EAEAEA;
-$line-gray-soft: #DEDEDE;
-$line-gray-dark: #CCCCCC;
+$border-gray: #b2b2b2;
 
 $bg-red-light: #B55059;
 $bg-red: #A22430;
@@ -73,6 +48,11 @@ $kpc-blue: #0b56a4;
 $kpc-black: #000000;
 $kpc-white: #ffffff;
 $kpc-dark-gray: #333333;
+$kpc-white-gray: #9b9b9b;
+$kpc-red: #ff2d55;
+$kpc-dark-blue: #084483;
+
+
 
 $ss-header-fixed: 72px;
 $ss-header-fixed-xs: 0px;
@@ -85,24 +65,13 @@ $kpc-font36: 36px;   // 28/16
 $kpc-font28: 28px;   // 28/16
 $kpc-font26: 26px;  // 26/16
 $kpc-font24: 24px;    // 24/16
+$kpc-font21: 21px;    // 24/16
 $kpc-font18: 18px;  // 18/16
 $kpc-font16: 16px;      // 16/16
 $kpc-font14: 14px;  // 14/16
 $kpc-font12: 12px;   // 12/16
 $kpc-font11: 11px; // 11/16
 $kpc-font10: 10px;  // 10/16
-
-
-
-// $ss-font28: 1.75em;   // 28/16
-// $ss-font26: 1.625em;  // 26/16
-// $ss-font24: 1.5em;    // 24/16
-// $ss-font18: 1.125em;  // 18/16
-// $ss-font16: 1em;      // 16/16
-// $ss-font14: 0.875em;  // 14/16
-// $ss-font12: 0.75em;   // 12/16
-// $ss-font11: 0.6875em; // 11/16
-// $ss-font10: 0.625em;  // 10/16
 
 // for theme
 $border-color: #e7eaec;     // IBox border

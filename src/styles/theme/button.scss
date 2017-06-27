@@ -56,9 +56,34 @@
   transition: border-color 0.15s ease-in-out;
 
   &:hover {
-    border-color: $ss-blue;
+    border-color: $kpc-blue;
   }
 }
+
+.btn-blue {
+  background-color: $kpc-blue;
+  font-size: $kpc-font16;
+  padding: 11px 55px;
+  color: $kpc-white;
+
+  &:hover {
+    background-color: $kpc-dark-blue;
+    color: $kpc-white; 
+  }
+  >span {
+    margin-right: 5px;
+  }
+}
+
+.btn-ghost { 
+  background-color: #ffffff;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
 
 button {
   border-radius: 3px;

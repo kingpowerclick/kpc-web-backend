@@ -19,9 +19,9 @@ export Breadcrumb from './Breadcrumb/Breadcrumb';
 
 export CustomerDetail from './CustomerDetail/CustomerDetail';
 
-export CustomerFiltes from './Product/CustomerFiltes';
-export CustomerColumes from './Product/CustomerColumes';
-export CustomerManageDynamicAttribute from './Product/CustomerManageDynamicAttribute';
-export CustomerButtonAdd from './Product/CustomerButtonAdd';
+export ProductFilters from './Product/ProductFilters';
+export ProductColumes from './Product/ProductColumes';
+export ProductManageDynamicAttribute from './Product/ProductManageDynamicAttribute';
+export ProductButtonAdd from './Product/ProductButtonAdd';
 
 export OrderCustomerDetail from './OrderCustomerDetail/OrderCustomerDetail';
