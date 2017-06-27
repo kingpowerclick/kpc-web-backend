@@ -40,12 +40,12 @@
             font-size: 16px;
             padding: 10px;
         }
+        .account-content-detail{
+            @include kpc-layout-equal(6);;
+        }
         .select-style{
-            // background-image: url('./select.png');
-            // background-repeat: no-repeat;
-            // background-attachment: fixed;
             background: url('./select.png') no-repeat right center;
-                background-size: contain;
+            background-size: contain;
             width: 100%;
             overflow: hidden;
             border-radius: 4px;

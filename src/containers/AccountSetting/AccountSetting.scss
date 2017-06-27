@@ -35,5 +35,8 @@
             font-weight: 300;
             padding-top: 15px;
         }
+        .account-content-detail{
+            @include kpc-layout-equal(6);;
+        }
     }
 }

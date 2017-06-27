@@ -24,7 +24,7 @@ export default class AccountSetting extends Component {
 			    	</header>
 			    	<section className={ styles['wrapper-content'] }>
 			    		<div className="row">
-			    			<div className="col-sm-6">
+			    			<div className={ styles['account-content-detail'] }>
                                 <div className={ classNames('panel', styles['panel-default']) }>
                                     <div className={ styles['panel-heading'] }>My Personal Details</div>
                                     <div className={ styles['panel-body'] }>
@@ -54,7 +54,7 @@ export default class AccountSetting extends Component {
                                     <div className={ styles['panel-footer'] }>Change Password</div>
                                 </div>
                             </div>
-                            <div className="col-sm-6">
+                            <div className={ styles['account-content-detail'] }>
                                 <div className={ classNames('panel', styles['panel-default']) }>
                                     <div className={ styles['panel-body'] }>
                                         <div className={ styles.title }>My Personal Details</div>
