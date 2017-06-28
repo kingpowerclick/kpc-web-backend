@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import { FilterPage,
 		Breadcrumb } from 'components';
 
+
 export default class ProductManageCustomAttribute extends Component {
 
   render() {
@@ -10,7 +11,6 @@ export default class ProductManageCustomAttribute extends Component {
 
     return (
     	<div className="container-fluid">
-    		{ this.handleOpenModal(styles) }
     		<div className="row">
 		    	<div className={ classNames(styles['product-manage-custom-attribute-view']) }>
 			    	<header className={ styles['page-header']}>
