@@ -5,7 +5,7 @@
     text-align: left;
 }
 .customer-view{
-    @include kpc-width();
+    @include kpc-width(1280px);
     .page-header{
         display: block;
         margin-bottom: 30px;
@@ -119,12 +119,16 @@
             }
             table {
                 table-layout: fixed;
+                min-width: auto;
+                max-width: none;
+                width: auto;
                 thead {
                     .title-table {
                         color: $kpc-blue;
                         font-size: $kpc-font14;
                         th {
                             padding: 15px 8px;
+                            vertical-align: top;
                         }
                     }
                     .cusotmer-box{
@@ -136,13 +140,13 @@
                     .cusotmer-name, .customer-email{
                         min-width: 150px;
                     }
-                    .customer-phone, .customer-id-passport{
+                    .customer-phone, .customer-id-passport, .customer-since{
                         width: 120px;
                     }
                     .customer-country, .customer-birth{
                         width: 150px;
                     }
-                    .customer-state, .customer-nationality, .customer-since{
+                    .customer-state, .customer-nationality{
                         width: 100px;
                     }
                 }

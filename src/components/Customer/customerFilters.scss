@@ -28,5 +28,8 @@
 
     &.filter-mda {
         border-right: none;
+        a{
+            color: $text-color;
+        }
     }
 }
