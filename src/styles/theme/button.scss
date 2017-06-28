@@ -63,7 +63,6 @@
 .btn-blue {
   background-color: $kpc-blue;
   font-size: $kpc-font16;
-  padding: 11px 55px;
   color: $kpc-white;
 
   &:hover {
@@ -75,8 +74,14 @@
   }
 }
 
+.btn-white {
+  border-color: $kpc-blue;
+  font-size: $kpc-font16;
+  color: $kpc-blue;
+}
+
 .btn-ghost { 
-  background-color: #ffffff;
+  background-color: transparent;
   border: none;
 
   &:focus {
