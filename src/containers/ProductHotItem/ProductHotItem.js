@@ -5,7 +5,7 @@ import { FilterPage,
 
 import { DropdownButton, MenuItem, Modal } from 'react-bootstrap';
 
-export default class ProductExclusive extends Component {
+export default class ProductHotItem extends Component {
 
 state = {
   displayCompleteModal: false,
@@ -36,10 +36,10 @@ handleCloseLineProductModal = () => {
   });
 }
 
-handleOpenModalExcel = (styles) => {
+handleOpenModal = (styles) => {
   const { displayCompleteModal } = this.state;
   	return (
-		<Modal show={ displayCompleteModal } dialogClassName={ styles['addproduct-exclusive-modal'] } >
+		<Modal show={ displayCompleteModal } dialogClassName={ styles['addproduct-modal'] } >
 			<Modal.Header>
 	    		<Modal.Title className={ styles['modal-title'] }><strong>Add product for Exclusive launch at King Power</strong>
 	    			<button
@@ -50,7 +50,7 @@ handleOpenModalExcel = (styles) => {
 	    		</Modal.Title>
 	    	</Modal.Header>
 			<Modal.Body>
-	    		<div className={ styles['addproduct-exclusive-box'] }>
+	    		<div className={ styles['addproduct-box'] }>
 					<div className={ styles['modal-body'] }>
 						<div className={ styles['select-file']}>
 							<span>Select file to Import</span>
@@ -72,7 +72,6 @@ handleOpenModalExcel = (styles) => {
 		</Modal>
 	);
 }
-
 
 handleOpenModalLineProduct = (styles) => {
   const { displayLineProductModal } = this.state;
@@ -177,17 +176,17 @@ handleOpenModalLineProduct = (styles) => {
 }
 
   render() {
-    const styles = require('./productExclusive.scss');
+    const styles = require('./productHotItem.scss');
 
     return (
     	<div className="container-fluid">
-    		{ this.handleOpenModalExcel(styles) }
+    		{ this.handleOpenModal(styles) }
     		{ this.handleOpenModalLineProduct(styles) }
     		<div className="row">
-		    	<div className={ classNames(styles['product-exclusive-view']) }>
+		    	<div className={ classNames(styles['product-hotitem-view']) }>
 			    	<header className={ styles['page-header']}>
 			    		<div className={ styles['page-title']}>
-			        		<h1 className={ styles.header }><strong>Exclusive Launch at King Power</strong></h1>
+			        		<h1 className={ styles.header }><strong>Hot Item</strong></h1>
 			    		</div>
 			    		<div className={ styles['page-filter']}>
 							<ul className={ styles['list-filter']}>
@@ -196,14 +195,14 @@ handleOpenModalLineProduct = (styles) => {
 										<DropdownButton title="Add Exclusive Products" className={ classNames(styles['btn-blue'], 'btn', 'btn-default', 'dropdown-toggle')}>
 									    	<MenuItem eventKey="1" onClick={ this.handleOpenLineProductModal }>Add by Line Product</MenuItem>
 									    	<MenuItem eventKey="2" onClick={ this.handleOpenAddProductExcModal }>Add by Excel</MenuItem>
-									    	<MenuItem eventKey="3">Add GWP by Line Product</MenuItem>
+									    	<MenuItem eventKey="3">Add by Line Parent Product</MenuItem>
 									    	<MenuItem eventKey="4">Add GWP by Excel</MenuItem>
 										</DropdownButton>
 									</div>
 								</li>
 							</ul>
 			    		</div>
-			    		<Breadcrumb breadcrumb={ "Product > Exclusive Launch at King Power" }/>
+			    		<Breadcrumb breadcrumb={ "Product > Hot Item" }/>
 			    	</header>
 			    	<section className={ styles['wrapper-content']}>
 			    		<div className={ styles.content}>

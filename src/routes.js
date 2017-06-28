@@ -18,10 +18,13 @@ import {
     Customer,
     AddNewCustomAttribute,
     AddGwpByExcel,
+    OrderDetailCancelDetail,
     AccountEdit,
     AccountSetting,
     ProductBestSeller,
     ProductExclusive,
+    ProductManageCustomAttribute,
+    ProductHotItem,
   } from 'containers';
 
 export default (store) => {
@@ -66,12 +69,15 @@ export default (store) => {
       <Route path="product" component={Product}/>
       <Route path="product/exclusive" component={ProductExclusive}/>
       <Route path="product/bestseller" component={ProductBestSeller}/>
+      <Route path="product/hotitem" component={ProductHotItem}/>
       <Route path="customerorder" component={CustomerOrder}/>
       <Route path="customer" component={Customer}/>
       <Route path="customattribute" component={AddNewCustomAttribute}/>
       <Route path="addgwpbyexcel" component={AddGwpByExcel}/>
+      <Route path="orderdetailcanceldetail" component={OrderDetailCancelDetail}/>
       <Route path="accountsetting" component={AccountSetting}/>
       <Route path="accountedit" component={AccountEdit}/>
+      <Route path="productmanagecustomattribute" component={ProductManageCustomAttribute}/>
       { /* Catch all route */ }
       <Route path="*" component={NotFound} status={404} />
     </Route>

@@ -1,6 +1,6 @@
 @import "../../styles/addons.scss";
 
-.product-bestseller-view {
+.product-manage-custom-attribute-view {
 	@include kpc-width();
 
 	.page-header{
@@ -15,7 +15,7 @@
 			color: #909090;
 		}
 
-		.page-title {	
+		.page-title {
 			@include kpc-layout(4, 4, 6);
 		}
 
@@ -64,7 +64,7 @@
 	}
 	.wrapper-content {
 		@include kpc-layout-equal(12);
-		
+
 		.content {
 
 			.wrapper-product-tab {
@@ -88,7 +88,7 @@
 				.wrapper-filter {
 
 					.filter-left {
-		
+
 						float: left;
 						margin-right: 20px;
 						@media (max-width: $screen-md-max) {
@@ -110,8 +110,8 @@
 								.btn-action-select {
 									width: 45px!important;
 								}
-							}	
-				
+							}
+
 							.btn-action {
 								width: 210px;
 							}
@@ -135,7 +135,7 @@
 								height: 33px;
 							}
 						}
-						
+
 					}
 
 					.filter-right {
@@ -145,7 +145,7 @@
 
 						.filter-records {
 							width: 145px;
-	
+
 							.btn-record {
 								width: 120px;
 							}
@@ -257,17 +257,17 @@
 				}
 			}
 		}
-		
+
 	}
 }
 
-.addproduct-modal {
+.addproduct-exclusive-modal {
 	.close-modal {
 		float: right;
 		color: $kpc-white-gray
 	}
 
-	.addproduct-box {
+	.addproduct-exclusive-box {
 		width: 60%;
 		margin: 0 auto;
 		padding: 20px 0;
@@ -284,101 +284,6 @@
 
 			.btn-blue {
 				width: 100%;
-			}
-		}
-	}
-}
-
-.addproduct-line-modal {
-	width: 936px;
-	.close-modal {
-		float: right;
-		color: $kpc-white-gray
-	}
-
-	.addproduct-line-box {
-
-
-		.modal-body {
-			
-			.modal-body-left {
-				@include kpc-layout-equal(7);
-
-				.search-product {
-					margin-top: 15px;
-				}
-
-				.product-table {
-					margin-top: 15px;
-
-					table {
-						border: 1px solid #b2b2b2;
-
-						thead {
-							.title-table {
-								background-color: $kpc-blue;
-								color: $kpc-white;
-								th {
-									text-align: center;
-								}	
-							}
-
-						}
-
-						tbody {
-							tr {
-								td {
-									border-right: 1px dashed #d7d7d7;
-								}
-							}
-						}
-					}
-				}
-			}
-
-			.modal-body-center {
-				@include kpc-layout-equal(1);
-				.title-box {
-					color: $kpc-blue;
-					margin-top: 179px;
-					text-align: center;
-				}
-			}
-
-			.modal-body-right {
-				@include kpc-layout-equal(4);
-				margin-top: 82px;
-
-				.title-box {
-					color: $kpc-blue;
-					font-size: $kpc-font16;
-				}
-
-				.selected-product-box {
-					border: 1px solid #b2b2b2;
-
-					.selected-product-inner {
-						padding: 10px;
-
-						.selected-product {
-							padding: 5px 0 5px 0;;
-							position: relative;
-
-							.label-product {
-								font-size: $kpc-font14;
-								background-color: $kpc-blue;
-								display: flex;
-
-							}
-
-							.delete-selected-product {
-								position: absolute;
-								right: 0;
-							}
-						}
-					}
-
-				}
 			}
 		}
 	}
