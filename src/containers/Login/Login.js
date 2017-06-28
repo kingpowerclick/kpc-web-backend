@@ -1,54 +1,42 @@
-import React, {Component, PropTypes} from 'react';
-import {connect} from 'react-redux';
-import Helmet from 'react-helmet';
-import * as authActions from 'redux/modules/auth';
+import React, { Component } from 'react';
+import classNames from 'classnames';
 
-@connect(
-  state => ({user: state.auth.user}),
-  authActions)
 export default class Login extends Component {
-  static propTypes = {
-    user: PropTypes.object,
-    login: PropTypes.func,
-    logout: PropTypes.func
-  }
-
-  handleSubmit = (event) => {
-    event.preventDefault();
-    const input = this.refs.username;
-    this.props.login(input.value);
-    input.value = '';
-  }
-
   render() {
-    const {user, logout} = this.props;
-    const styles = require('./Login.scss');
-    return (
-      <div className={styles.loginPage + ' container'}>
-        <Helmet title="Login"/>
-        <h1>Login</h1>
-        {!user &&
-        <div>
-          <form className="login-form form-inline" onSubmit={this.handleSubmit}>
-            <div className="form-group">
-              <input type="text" ref="username" placeholder="Enter a username" className="form-control"/>
-            </div>
-            <button className="btn btn-success" onClick={this.handleSubmit}><i className="fa fa-sign-in"/>{' '}Log In
-            </button>
-          </form>
-          <p>This will "log you in" as this user, storing the username in the session of the API server.</p>
-        </div>
-        }
-        {user &&
-        <div>
-          <p>You are currently logged in as {user.name}.</p>
+    const styles = require('./login.scss');
+    const kingpowerLogo = require('./kingpower-white-logo.png');
+    const kingpowerFooter = require('./footer-img.png');
 
-          <div>
-            <button className="btn btn-danger" onClick={logout}><i className="fa fa-sign-out"/>{' '}Log Out</button>
+    return (
+      <div className="container-fulid">
+        <div className="row">
+        	<div className={ classNames(styles['login-view']) }>
+                <div className={ styles['login-section']}>
+                <div className={ styles['header-logo']}>
+                    <img src={kingpowerLogo} alt="Kingpower Logo"></img>
+                </div>
+                    <div className="alert alert-danger" role="alert">
+                      <span className="glyphicon glyphicon-exclamation-sign"></span>
+                      <span className="sr-only"> Error </span>
+                       Error : Invalid Username
+                    </div>
+                    <div className={ styles['input-group']}>
+                      <input type="text" className="form-control" placeholder="Username"></input>
+                    </div>
+                    <div className={ styles['input-group']}>
+                      <input type="password" className="form-control" placeholder="Password"></input>
+                    </div>
+                    <div className="help-box">
+                        <a href="#" className={ styles['forgot-password']}>Forget Password?</a>
+                        <div className={ styles['remember-me']}>
+                          <input type="radio" name=""></input><label>Remember me</label>
+                        </div>
+                    </div>
+                </div>
+                <img src={kingpowerFooter} alt="" className={ styles['footer-image']}></img>
+            </div>
           </div>
-        </div>
-        }
-      </div>
-    );
+      	</div>
+		);
   }
 }
