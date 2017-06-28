@@ -24,6 +24,8 @@ import {
     ProductExclusive,
     ProductManageCustomAttribute,
     ProductHotItem,
+
+
   } from 'containers';
 
 export default (store) => {
