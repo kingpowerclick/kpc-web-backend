@@ -11,6 +11,7 @@ export Pagination from './Pagination/Pagination';
 export Hello from './Hello/Hello';
 export Product from './Product/Product';
 export CustomerOrder from './CustomerOrder/CustomerOrder';
+export Customer from './Customer/Customer';
 export AddNewCustomAttribute from './AddNewCustomAttribute/AddNewCustomAttribute';
 export AddGwpByExcel from './AddGwpByExcel/AddGwpByExcel';
 export AccountEdit from './AccountEdit/AccountEdit';

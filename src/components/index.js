@@ -18,6 +18,9 @@ export FilterPage from './FilterPage/FilterPage';
 export Breadcrumb from './Breadcrumb/Breadcrumb';
 
 export CustomerDetail from './CustomerDetail/CustomerDetail';
+export CustomerFilters from './Customer/CustomerFilters';
+export CustomerColumes from './Customer/CustomerColumes';
+export CustomerExport from './Customer/CustomerExport';
 
 export ProductFilters from './Product/ProductFilters';
 export ProductColumes from './Product/ProductColumes';
