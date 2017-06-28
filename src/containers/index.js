@@ -18,4 +18,5 @@ export AccountEdit from './AccountEdit/AccountEdit';
 export AccountSetting from './AccountSetting/AccountSetting';
 export ProductBestSeller from './ProductBestSeller/ProductBestSeller';
 export ProductExclusive from './ProductExclusive/ProductExclusive';
+export ProductManageCustomAttribute from './ProductManageCustomAttribute/ProductManageCustomAttribute';
 export ProductHotItem from './ProductHotItem/ProductHotItem';
