@@ -22,6 +22,7 @@ import {
     AccountSetting,
     ProductBestSeller,
     ProductExclusive,
+    ProductManageCustomAttribute,
   } from 'containers';
 
 export default (store) => {
@@ -72,6 +73,7 @@ export default (store) => {
       <Route path="orderdetailcanceldetail" component={OrderDetailCancelDetail}/>
       <Route path="accountsetting" component={AccountSetting}/>
       <Route path="accountedit" component={AccountEdit}/>
+      <Route path="productmanagecustomattribute" component={ProductManageCustomAttribute}/>
       { /* Catch all route */ }
       <Route path="*" component={NotFound} status={404} />
     </Route>
