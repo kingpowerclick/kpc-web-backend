@@ -78,3 +78,11 @@ $border-color: #e7eaec;     // IBox border
 $ibox-title-bg: #ffffff;     // IBox Background header
 $ibox-content-bg: #ffffff;
 $nav-tabs-inactive-color: #a7b1c2;
+
+
+.modal-title {
+	strong {
+		color: $kpc-blue;
+		font-size: $kpc-font21;
+	}
+}

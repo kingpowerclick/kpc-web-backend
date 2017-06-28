@@ -8,7 +8,8 @@ import { DropdownButton, MenuItem, Modal } from 'react-bootstrap';
 export default class ProductHotItem extends Component {
 
 state = {
-  displayCompleteModal: false
+  displayCompleteModal: false,
+  displayLineProductModal: false
 }
 
 handleOpenAddProductExcModal = () => {
@@ -23,12 +24,24 @@ handleCloseModal = () => {
   });
 }
 
+handleOpenLineProductModal = () => {
+  this.setState({
+    displayLineProductModal: true
+  });
+}
+
+handleCloseLineProductModal = () => {
+  this.setState({
+    displayLineProductModal: false
+  });
+}
+
 handleOpenModal = (styles) => {
   const { displayCompleteModal } = this.state;
   	return (
 		<Modal show={ displayCompleteModal } dialogClassName={ styles['addproduct-modal'] } >
 			<Modal.Header>
-	    		<Modal.Title>Add product for Exclusive launch at King Power
+	    		<Modal.Title className={ styles['modal-title'] }><strong>Add product for Exclusive launch at King Power</strong>
 	    			<button
 	    				className={ classNames(styles['btn-ghost'], styles['close-modal'])}
 	    				onClick={ this.handleCloseModal }>
@@ -60,12 +73,115 @@ handleOpenModal = (styles) => {
 	);
 }
 
+handleOpenModalLineProduct = (styles) => {
+  const { displayLineProductModal } = this.state;
+  	return (
+		<Modal show={ displayLineProductModal } dialogClassName={ styles['addproduct-line-modal'] } >
+			<Modal.Header>
+	    		<Modal.Title className={ styles['modal-title'] }><strong>Add product for Exclusive launch at King Power</strong>
+	    			<button
+	    				className={ classNames(styles['btn-ghost'], styles['close-modal'])}
+	    				onClick={ this.handleCloseLineProductModal }>
+	    				<i className="fa fa-times"></i>
+	    			</button>
+	    		</Modal.Title>
+	    	</Modal.Header>
+			<Modal.Body>
+	    		<div className={ styles['addproduct-line-box'] }>
+					<div className={ styles['modal-body'] }>
+						<div className="row">
+							<div className={ styles['modal-body-left'] }>
+								<div className={ styles['title-box']}>
+									<span>Product name or SKU</span>
+								</div>
+								<div className={ styles['search-product'] }>
+							    	<input type="text" className="form-control" placeholder="Search orders"/>
+								</div>
+								<div className={ styles['product-table']}>
+									<table className="table table-striped">
+										<thead>
+									    	<tr className={ styles['title-table']}>
+									    		<th className={ styles['product-checkbox'] }><input type="checkbox"/></th>
+									    		<th className={ styles['product-id'] }>Product</th>
+									    		<th className={ styles['product-thumbnail'] }>SKU</th>
+									    	</tr>
+										</thead>
+										<tbody>
+									    	<tr>
+									    		<td><input type="checkbox"/></td>
+									    		<td>MONTBLANC Legend Special Edition EDT 100 มล.</td>
+									    		<td>74396</td>
+									    	</tr>
+									    	<tr>
+									    		<td><input type="checkbox"/></td>
+									    		<td>COACH New York EDP 50 มล.</td>
+									    		<td>74396</td>
+									    	</tr>
+									    	<tr>
+									    		<td><input type="checkbox"/></td>
+									    		<td>Barracuda กระเป๋าเดินทางอัจฉริยะ สี Pure Gold</td>
+									    		<td>74396</td>
+									    	</tr>
+									    	<tr>
+									    		<td><input type="checkbox"/></td>
+									    		<td>KIEHL'S 75ML Powerful-Strength Line-Reducing Concentrate</td>
+									    		<td>74396</td>
+									    	</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div className={ styles['modal-body-center'] }>
+								<div className={ styles['title-box']}>
+									<i className="fa fa-chevron-right "></i>
+								</div>
+							</div>
+							<div className={ styles['modal-body-right'] }>
+								<div className={ styles['title-box']}>
+									<span>Selected product</span>
+								</div>
+								<div className={ styles['selected-product-box']}>
+									<div className={ styles['selected-product-inner']}>
+										<div className={ styles['selected-product']}>
+											<span className={ classNames(styles['label-product'], 'label')}>MONTBLANC Legend Special
+												<button
+													className={ classNames(styles['btn-ghost'], styles['delete-selected-product'])}>
+													<i className="fa fa-times"></i>
+		    									</button>
+	    									</span>
+										</div>
+										<div className={ styles['selected-product']}>
+											<span className={ classNames(styles['label-product'], 'label')}>KIEHL'S 75ML Powerful-Stresssss…
+												<button
+													className={ classNames(styles['btn-ghost'], styles['delete-selected-product'])}>
+													<i className="fa fa-times"></i>
+		    									</button>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+	    		</div>
+			</Modal.Body>
+			<Modal.Footer>
+				<div className={ styles['btn-group']}>
+					<button type="button" className={classNames( styles['btn-white'], 'btn', 'btn-default') }>Cancel</button>
+					<button type="button" className={classNames( styles['btn-blue'], 'btn', 'btn-default') }>Add to order now</button>
+				</div>
+			</Modal.Footer>
+		</Modal>
+	);
+}
+
   render() {
     const styles = require('./productHotItem.scss');
 
     return (
     	<div className="container-fluid">
     		{ this.handleOpenModal(styles) }
+    		{ this.handleOpenModalLineProduct(styles) }
     		<div className="row">
 		    	<div className={ classNames(styles['product-hotitem-view']) }>
 			    	<header className={ styles['page-header']}>
@@ -77,7 +193,7 @@ handleOpenModal = (styles) => {
 								<li className={ classNames( styles.filter, styles['add-product'])}>
 									<div className="dropdown">
 										<DropdownButton title="Add Exclusive Products" className={ classNames(styles['btn-blue'], 'btn', 'btn-default', 'dropdown-toggle')}>
-									    	<MenuItem eventKey="1">Add by Line Product</MenuItem>
+									    	<MenuItem eventKey="1" onClick={ this.handleOpenLineProductModal }>Add by Line Product</MenuItem>
 									    	<MenuItem eventKey="2" onClick={ this.handleOpenAddProductExcModal }>Add by Excel</MenuItem>
 									    	<MenuItem eventKey="3">Add by Line Parent Product</MenuItem>
 									    	<MenuItem eventKey="4">Add GWP by Excel</MenuItem>
