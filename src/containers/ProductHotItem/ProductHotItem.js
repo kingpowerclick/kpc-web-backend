@@ -5,7 +5,7 @@ import { FilterPage,
 
 import { DropdownButton, MenuItem, Modal } from 'react-bootstrap';
 
-export default class ProductBestSeller extends Component {
+export default class ProductHotItem extends Component {
 
 state = {
   displayCompleteModal: false
@@ -61,30 +61,32 @@ handleOpenModal = (styles) => {
 }
 
   render() {
-    const styles = require('./productBestSeller.scss');
+    const styles = require('./productHotItem.scss');
 
     return (
     	<div className="container-fluid">
     		{ this.handleOpenModal(styles) }
     		<div className="row">
-		    	<div className={ classNames(styles['product-bestseller-view']) }>
+		    	<div className={ classNames(styles['product-hotitem-view']) }>
 			    	<header className={ styles['page-header']}>
 			    		<div className={ styles['page-title']}>
-			        		<h1 className={ styles.header }><strong>Best Seller</strong></h1>
+			        		<h1 className={ styles.header }><strong>Hot Item</strong></h1>
 			    		</div>
 			    		<div className={ styles['page-filter']}>
 							<ul className={ styles['list-filter']}>
 								<li className={ classNames( styles.filter, styles['add-product'])}>
-									<div className={ classNames( styles['add-product-dropdown'], 'dropdown' )}>
+									<div className="dropdown">
 										<DropdownButton title="Add Exclusive Products" className={ classNames(styles['btn-blue'], 'btn', 'btn-default', 'dropdown-toggle')}>
 									    	<MenuItem eventKey="1">Add by Line Product</MenuItem>
 									    	<MenuItem eventKey="2" onClick={ this.handleOpenAddProductExcModal }>Add by Excel</MenuItem>
+									    	<MenuItem eventKey="3">Add by Line Parent Product</MenuItem>
+									    	<MenuItem eventKey="4">Add GWP by Excel</MenuItem>
 										</DropdownButton>
 									</div>
 								</li>
 							</ul>
 			    		</div>
-			    		<Breadcrumb breadcrumb={ "Product > Best Seller" }/>
+			    		<Breadcrumb breadcrumb={ "Product > Hot Item" }/>
 			    	</header>
 			    	<section className={ styles['wrapper-content']}>
 			    		<div className={ styles.content}>
