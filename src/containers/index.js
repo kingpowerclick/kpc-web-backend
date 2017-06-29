@@ -14,6 +14,7 @@ export CustomerOrder from './CustomerOrder/CustomerOrder';
 export Customer from './Customer/Customer';
 export AddNewCustomAttribute from './AddNewCustomAttribute/AddNewCustomAttribute';
 export AddGwpByExcel from './AddGwpByExcel/AddGwpByExcel';
+export Order from './Order/Order';
 export OrderDetailCancelDetail from './OrderDetailCancelDetail/OrderDetailCancelDetail';
 export AccountEdit from './AccountEdit/AccountEdit';
 export AccountSetting from './AccountSetting/AccountSetting';

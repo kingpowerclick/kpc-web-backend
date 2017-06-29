@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
+import { Link } from 'react-router';
 import { FilterPage, Breadcrumb, CustomerDetail } from 'components';
 
 export default class CustomerOrder extends Component {
@@ -12,11 +13,11 @@ export default class CustomerOrder extends Component {
 			    	<header className={ styles['page-header'] }>
 			    		<div className={ styles['page-title'] }>
 			        		<h1 className={ styles.header }>Mr Sarannuth Chanluang</h1>
+                            <Breadcrumb breadcrumb={ "Customer > Mr Sarannuth Chanluang" }/>
 			    		</div>
-                        <Breadcrumb breadcrumb={ "Customer > Mr Sarannuth Chanluang" }/>
                         <CustomerDetail/>
                         <div className={ styles.back }>
-                            <a href="#"> <i className="fa fa-chevron-left"></i> Back </a>
+                            <Link to={`/orders`}> <i className="fa fa-chevron-left"></i> Back </Link>
                         </div>
 			    	</header>
 			    	<section className={ styles['wrapper-content']}>
