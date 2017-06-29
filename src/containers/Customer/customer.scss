@@ -1,0 +1,165 @@
+@import "../../styles/addons.scss";
+
+%btn-filter-search{
+    color: $placeholder;
+    text-align: left;
+}
+.customer-view{
+    @include kpc-width(1280px);
+    .page-header{
+        display: block;
+        margin-bottom: 30px;
+        .page-title {
+            @include kpc-layout(4, 4, 6);
+        }
+        .header {
+            @include kpc-header();
+        }
+        .back{
+            @include kpc-layout-equal(12);
+        }
+        .page-filter {
+            @include kpc-layout(8, 8, 6);
+            text-align: right;
+            margin-top: 30px;
+            .list-filter {
+                list-style: none;
+                display: inline-flex;
+            }
+        }
+    }
+    .wrapper-content{
+        @include kpc-layout-equal(12);
+        .wrapper-customer-order-tab {
+            font-size: $kpc-font16;
+            .customer-order-tab a{
+                padding: 10px 60px;
+                border-radius: 5px 5px 0 0;
+            }
+            .tab-active a{
+                background-color: $kpc-blue;
+                color: $kpc-white;
+            }
+        }
+        .filter-customer-list {
+            @include clearfix();
+            .customer-order-title{
+                font-size: 21px;
+                @include font-bold();
+            }
+            .filter-left{
+                display: inline-table;
+            }
+            .filter-right {
+                float: right;
+            }
+            .filter-action {
+                width: 245px;
+                float: left;
+                margin-right: 30px;
+                @media (max-width: $screen-md-max) {
+                    width: 145px;
+                    .btn-action {
+                        width: 100px!important;
+                    }
+                    .btn-action-select {
+                        width: 45px!important;
+                    }
+                }
+                .btn-action {
+                    width: 210px;
+                    text-align: left;
+                    color: $placeholder;
+                }
+                .btn-action-select {
+                    width: 35px;
+                }
+            }
+            .filter-id {
+                display: inline-block;
+                .filter-customer-id{
+                    width: 500px;
+                }
+                .btn-customer-id{
+                    width: 140px;
+                    @extend %btn-filter-search;
+                }
+                .btn-customer-search{
+                    &:focus{
+                        border-color: #ccc;
+                    }
+                    width: 325px;
+                    height: 33px;
+                    box-shadow: none;
+                    border-left: none;
+                    border-right: none;
+                    border-radius: 0px;
+                    @extend %btn-filter-search;
+                    position: absolute;
+                    left: 140px;
+                }
+                .btn-customer-search-icon{
+                    @extend %btn-filter-search;
+                    color: $placeholder;
+                    width: 35px;
+                    border-left: none;
+                    float: right;
+                }
+                .input-productid {
+                    color: $placeholder;
+                    width: 175px;
+                    height: 33px;
+                }
+            }
+        }
+        .table-detail{
+            .tab-content {
+                overflow-x: scroll;
+                margin-bottom: 40px;
+            }
+            table {
+                table-layout: fixed;
+                min-width: auto;
+                max-width: none;
+                width: auto;
+                thead {
+                    .title-table {
+                        color: $kpc-blue;
+                        font-size: $kpc-font14;
+                        th {
+                            padding: 15px 8px;
+                            vertical-align: top;
+                        }
+                    }
+                    .cusotmer-box{
+                        width: 35px;
+                    }
+                    .customer-id, .customer-zip{
+                        width: 80px;
+                    }
+                    .cusotmer-name, .customer-email{
+                        min-width: 150px;
+                    }
+                    .customer-phone, .customer-id-passport, .customer-since{
+                        width: 120px;
+                    }
+                    .customer-country, .customer-birth{
+                        width: 150px;
+                    }
+                    .customer-state, .customer-nationality{
+                        width: 100px;
+                    }
+                }
+                tbody {
+                    font-size: 14px;
+                    td{
+                        padding: 15px 8px;
+                    }
+                }
+                tbody > tr:nth-of-type(odd) {
+                    background-color: #f9fcff;
+                }
+            }
+        }
+    }
+}
