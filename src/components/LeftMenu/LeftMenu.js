@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import classNames from 'classnames';
+import { Link } from 'react-router';
 import {OverlayTrigger, Tooltip} from 'react-bootstrap';
 
 
@@ -20,8 +21,8 @@ export default class LeftMenu extends Component {
       return (
             <div id="mySidenav" className={ styles.sidenav }>
                 <div className={ styles.logo }><img src={ logoImg }/></div>
-                <OverlayTrigger placement="right" overlay={<Tooltip id="menu-cart">Cart</Tooltip>}>
-                    <a className={ styles.menu } href="#"> <i className="fa fa-shopping-cart"></i> </a>
+                <OverlayTrigger placement="right" overlay={<Tooltip id="menu-cart">Order</Tooltip>}>
+                    <Link to={ `/orders` } className={ styles.menu }> <i className="fa fa-shopping-cart"></i></Link>
                 </OverlayTrigger>
                 <OverlayTrigger placement="right" overlay={<Tooltip id="menu-product">Products</Tooltip>}>
                     <a className={ styles.menu } href="#" onClick={ this.showSubmenu } data-toggle="tooltip" title="Product">
@@ -50,14 +51,14 @@ export default class LeftMenu extends Component {
                         </div>
                     </a>
                 </OverlayTrigger>
-                <OverlayTrigger placement="right" overlay={<Tooltip id="menu-user">User</Tooltip>}>
-                    <a className={ styles.menu } href="#"> <i className="fa fa-user"></i> </a>
+                <OverlayTrigger placement="right" overlay={<Tooltip id="menu-user">Customer</Tooltip>}>
+                    <Link to={ `/customer` } className={ styles.menu }> <i className="fa fa-user"></i></Link>
                 </OverlayTrigger>
                 <OverlayTrigger placement="right" overlay={<Tooltip id="menu-marketing">Marketing</Tooltip>}>
                     <a className={ styles.menu } href="#"> <i className="fa fa-bookmark"></i> </a>
                 </OverlayTrigger>
                 <OverlayTrigger placement="right" overlay={<Tooltip id="menu-setting">Setting</Tooltip>}>
-                    <a className={ styles.menu } href="#"> <i className="fa fa-cog"></i> </a>
+                    <a className={ classNames(styles.menu, 'hidden') } href="#"> <i className="fa fa-cog"></i> </a>
                 </OverlayTrigger>
             </div>
         );

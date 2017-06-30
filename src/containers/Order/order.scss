@@ -53,8 +53,6 @@
             .filter-right {
                 float: right;
             }
-
-
         }
         .table-detail{
             .tab-content {
@@ -74,23 +72,20 @@
                             vertical-align: top;
                         }
                     }
-                    .cusotmer-box{
+                    .order-box{
                         width: 35px;
                     }
-                    .customer-id, .customer-zip{
+                    .order-id, .order-status{
                         width: 80px;
                     }
-                    .cusotmer-name, .customer-email{
-                        min-width: 150px;
+                    .order-name, .order-email, .order-bill-name, .order-ship-name{
+                        width: 200px;
                     }
-                    .customer-phone, .customer-id-passport, .customer-since{
-                        width: 120px;
-                    }
-                    .customer-country, .customer-birth{
+                    .order-payment{
                         width: 150px;
                     }
-                    .customer-state, .customer-nationality{
-                        width: 100px;
+                    .order-point, .order-purchase-date, .order-grand-total {
+                        width: 120px;
                     }
                 }
                 tbody {
