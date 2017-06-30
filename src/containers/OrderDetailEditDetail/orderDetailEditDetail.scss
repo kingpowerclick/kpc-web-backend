@@ -40,6 +40,7 @@
       }
     }
   }
+
   .order-left-detail {
     float: left;
     @include kpc-layout-equal(8);
@@ -57,7 +58,6 @@
           padding: 15px;
 
           .tab-content {
-
             table {
               table-layout: fixed;
 
@@ -190,12 +190,13 @@
               padding: 0 15px;
               text-align: right;
 
-              strong{
-                  padding-left: 15px;
+              strong {
+                padding-left: 15px;
               }
             }
           }
         }
+
         .delivery-by {
           margin-left: 54%;
           float: right;
@@ -247,33 +248,37 @@
         min-height: 100px;
         position: relative;
 
-        .form-group{
-            margin-bottom: 20px;
-            color: #333333;
+        .form-group {
+          margin-bottom: 20px;
+          color: #333333;
 
-            .btn-group{
-                width: 100%;
-                .btn-dropdown{
-                    width: 90%;
-                    border-bottom-right-radius: 0px;
-                    border-top-right-radius: 0px;
-                    text-align:left;
-                }
-                .btn-caret{
-                    width: 10%;
-                    margin-left: -1px;
-                    border-bottom-left-radius: 0px;
-                    border-top-left-radius: 0px;
-                }
+          .btn-group {
+            width: 100%;
 
+            .btn-dropdown {
+              width: 90%;
+              border-bottom-right-radius: 0;
+              border-top-right-radius: 0;
+              text-align: left;
             }
-            textarea{
-                width: 100%;
+
+            .btn-caret {
+              width: 10%;
+              margin-left: -1px;
+              border-bottom-left-radius: 0;
+              border-top-left-radius: 0;
             }
-            .required-field{
-                color: #FF2D55;
-            }
+          }
+
+          textarea {
+            width: 100%;
+          }
+
+          .required-field {
+            color: #FF2D55;
+          }
         }
+
         .line-divide {
           width: 100%;
           display: inline-block;
@@ -292,8 +297,6 @@
             float: right;
             text-align: right;
           }
-
-
         }
 
         .customer-detail {
