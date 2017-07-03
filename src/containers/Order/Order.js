@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import { FilterPage, Breadcrumb, CustomerFilters, CustomerColumes, ExportToCSV, FilterActionSelect, FilterId } from 'components';
+import { FilterPage, Breadcrumb, OrderFilters, CustomerColumes, ExportToCSV, FilterActionSelect, FilterId } from 'components';
 
 export default class Order extends Component {
   render() {
@@ -16,7 +16,7 @@ export default class Order extends Component {
                         </div>
                         <div className={ styles['page-filter']}>
                             <ul className={ styles['list-filter']}>
-                                <CustomerFilters/>
+                                <OrderFilters/>
                                 <CustomerColumes/>
                                 <ExportToCSV/>
                             </ul>
