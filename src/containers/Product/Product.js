@@ -4,6 +4,8 @@ import { FilterPage,
 		ProductFilters,
 		ProductColumes,
 		ProductManageDynamicAttribute,
+		FilterActionSelect,
+		FilterId
 		} from 'components';
 
 export default class Product extends Component {
@@ -48,37 +50,16 @@ export default class Product extends Component {
 			    		<div className={ styles.content}>
 			    			<div className={ styles['wrapper-product-tab']}>
 								<ul className="nav nav-tabs">
-								 	<li role="presentation" className={ classNames(styles['product-tab'], styles['tab-active'], 'active' )}><a href="#">Add Product</a></li>
-								 	<li role="presentation" className={ classNames(styles['product-tab'])}><a href="#">Add Parent Produt</a></li>
+								 	<li role="presentation" className={ classNames(styles['product-tab'], styles['tab-active'], 'active' )}><a href="#">Product</a></li>
+								 	<li role="presentation" className={ classNames(styles['product-tab'])}><a href="#">Parent Produt</a></li>
 								 	<li role="presentation" className={ classNames(styles['product-tab'])}><a href="#">GWP</a></li>
 								</ul>
 			    			</div>
 			    			<div className={ classNames(styles['filter-product'])}>
 			    				<div className={ classNames(styles['wrapper-filter'])}>
 			    					<div className={ styles['filter-left']}>
-				    					<div className={ styles['filter-action']}>
-											<div className="btn-group">
-											 	<button type="button" className={ classNames(styles['btn-action'], 'btn', 'btn-default')}>Action</button>
-											 	<button type="button" className={ classNames(styles['btn-action-select'], 'btn', 'btn-default', 'dropdown-toggle')} aria-expanded="false">
-													<span className="caret"></span>
-											 	</button>
-											</div>
-				    					</div>
-				    					<div className={ styles['filter-id']}>
-									   		<div className="input-group">
-									    		<div className="input-group-btn">
-									        	<button type="button" className="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span className="caret"></span></button>
-											    	<ul className="dropdown-menu">
-												    	<li><a href="#">Action</a></li>
-												    	<li><a href="#">Another action</a></li>
-												    	<li><a href="#">Something else here</a></li>
-												    	<li role="separator" className="divider"></li>
-												    	<li><a href="#">Separated link</a></li>
-											    	</ul>
-									    		</div>
-									    		<input type="text" className={ classNames(styles['input-productid'], 'form-control') } aria-label="..."/>
-									    	</div>
-				    					</div>
+										<FilterActionSelect title={ "Action" } selectOption={ ['Delete Product'] }/>
+                                        <FilterId title={ "Product ID" } selectOption={ ['Product ID', 'Batch No.'] }/>
 			    					</div>
 			    					<div className={ classNames(styles['filter-right']) }>
 				    					<FilterPage/>
@@ -99,7 +80,7 @@ export default class Product extends Component {
 									    		<th className={ styles['product-price'] }>Price</th>
 									    		<th className={ styles['product-qty'] }>Qty</th>
 									    		<th className={ styles['produt-brand'] }>Brand</th>
-									    		<th className={ styles['product-merchiandise'] }>Merchiandise No.</th>
+									    		<th className={ styles['product-merchiandise'] }>Batch No.</th>
 									    		<th className={ styles['product-visibility'] }>Visibility</th>
 									    		<th className={ styles['product-status'] }>Status</th>
 									    	</tr>
