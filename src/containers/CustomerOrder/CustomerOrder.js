@@ -18,6 +18,10 @@ export default class CustomerOrder extends Component {
                         <CustomerDetail/>
                         <div className={ styles.back }>
                             <Link to={`/orders`}> <i className="fa fa-chevron-left"></i> Back </Link>
+                            <div className={ styles['sub-breadcrumb'] }>|</div>
+                            <a href="#"> <i className="fa fa-refresh"></i> Reset Password </a>
+                            <div className={ styles['sub-breadcrumb'] }>|</div>
+                            <a href="#"> <i className="fa fa-unlock"></i> Unlock User </a>
                         </div>
 			    	</header>
 			    	<section className={ styles['wrapper-content']}>
