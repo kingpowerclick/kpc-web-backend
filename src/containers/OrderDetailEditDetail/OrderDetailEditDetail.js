@@ -14,7 +14,7 @@ export default class OrderDetailEditDetail extends Component {
     	    		<div className={ styles['page-title']}>
     	        		<h1 className={ styles.header }><strong>Order #88810002386</strong></h1>
     	    		</div>
-              <Breadcrumb breadcrumb={ "Orders >  No.#88810002386" }/>
+              <Breadcrumb breadcrumb={ "Orders > No.#88810002386" }/>
               <OrderCustomerDetail/>
               <div className={ styles['sub-menu']}>
                   <ul>
