@@ -1,14 +1,25 @@
 import React, {Component} from 'react';
 import classNames from 'classNames';
 
-import { ButtonToolbar, Dropdown, Button, MenuItem, InputCalendar} from 'react-bootstrap';
+import { ButtonToolbar, Dropdown, Button, MenuItem } from 'react-bootstrap';
+import { InputCalendar } from 'components';
 
-export default class CustomerFilters extends Component {
-  render() {
-    const styles = require('./orderFilters.scss');
-    return (
-    	<li className={ styles.filter }><i className="fa fa-filter"></i>Filters
-            <div className={ styles['box-filters'] }>
+export default class OrderFilters extends Component {
+    showFilters = () => {
+      const boxFilter = document.getElementsByClassName('box-filters-active').length;
+      if (boxFilter > 0) {
+        document.getElementById('box-filters').classList.add('hidden');
+        document.getElementById('box-filters').classList.remove('box-filters-active');
+      } else {
+        document.getElementById('box-filters').classList.remove('hidden');
+        document.getElementById('box-filters').classList.add('box-filters-active');
+      }
+    }
+    render() {
+      const styles = require('./orderFilters.scss');
+      return (
+    	<li className={ styles.filter }><a href="#" onClick={ this.showFilters }><i className="fa fa-filter"></i>Filters</a>
+            <div className={ classNames(styles['box-filters'], 'hidden') } id="box-filters">
                 <div className={ styles['box-filters-detail'] }>
                     <form>
                         <div className="row">
@@ -64,14 +75,22 @@ export default class CustomerFilters extends Component {
                         </div>
                         <div className="row">
                             <div className={ classNames('form-group', styles['box-filters-detail-item']) }>
-                                <label className={ styles['box-label'] }>Email</label>
+                                <label className={ styles['box-label'] }>Purchase Date</label>
                                 <InputCalendar/>
+                            </div>
+                            <div className={ classNames('form-group', styles['box-filters-detail-item']) }>
+                                <label className={ styles['box-label'] }>Grand total (Base)</label>
+                                <input className="form-control" id="filter-id" name="filter-id"/>
+                            </div>
+                            <div className={ classNames('form-group', styles['box-filters-detail-item']) }>
+                                <label className={ styles['box-label'] }>Grand total (Purchased)</label>
+                                <input className="form-control" id="filter-id" name="filter-id"/>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
         </li>
-    );
-  }
+      );
+    }
 }
