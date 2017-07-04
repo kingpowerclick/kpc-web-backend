@@ -326,7 +326,17 @@ Free 1 SULWHASOO First Care Activating Serum EX 90ml SKU: 631405</td>
                         </div>
                         <div className={ styles['form-group']}>
                             <label className={ styles['control-label']}>Airline Flight <span className={ styles['required-field']}>*</span></label>
-                            <input type="text" className={ classNames(styles['input-form'], 'form-control') }></input>
+                            <div className={ styles['btn-group']}>
+                                <button type="button" className={ classNames(styles['btn-dropdown'], 'btn', 'btn-default') }>Airline Flight</button>
+                                <button type="button" className={ classNames(styles['btn-caret'], 'btn', 'btn-default', 'dropdown-toggle' ) } data-toggle="dropdown">
+                                <span className="caret"></span>
+                                <span className="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <ul className="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                </ul>
+                            </div>
                         </div>
                         <div className={ styles['form-group']}>
                             <label className={ styles['control-label']}>Flight No. <span className={ styles['required-field']}>*</span></label>
@@ -334,7 +344,10 @@ Free 1 SULWHASOO First Care Activating Serum EX 90ml SKU: 631405</td>
                         </div>
                         <div className={ styles['form-group']}>
                             <label className={ styles['control-label']}>Flight date and time</label>
-                            <input type="text" className={ classNames(styles['input-form'], 'form-control') }></input>
+                            <div className="row">
+                                <input type="text" className={ classNames(styles['input-form-50'], 'form-control') }></input>
+                                <input type="text" className={ classNames(styles['input-form-50'], 'form-control') }></input>
+                            </div>
                         </div>
                         <div className={ styles['form-group']}>
                             <div className={ classNames(styles['btn-blue'], 'btn') }>
