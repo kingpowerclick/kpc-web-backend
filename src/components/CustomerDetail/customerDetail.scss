@@ -4,7 +4,7 @@
     .customer-id{
         min-width: 120px
     }
-    .customer-name, .customer-email, .register-date, .lastest-login{
+    .customer-name, .customer-register-date, .customer-lastest-login{
         min-width: 250px;
     }
     .customer-level{
@@ -17,9 +17,14 @@
         .headline{
             font-size: 13px;
             color: $breadcrumb;
+            padding-bottom: 10px;
         }
     }
-    .lastest-login{
+    .level-image{
+        width: 30px;
+        vertical-align: text-top;
+    }
+    .customer-email, .customer-level-image{
         border-right: none;
     }
     padding: 20px 0px;
