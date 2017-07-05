@@ -65,6 +65,8 @@
 				.section-title {
 					h2 {
 						@include kpc-header2();
+						margin-bottom: 30px;
+  						margin-top: 0;
 					}
 				}
 
@@ -166,7 +168,7 @@
 							@include kpc-layout-equal(10);
 
 							.star {
-								color: $kpc-red;
+								color: $kpc-mark-red;
 							}
 
 						}
