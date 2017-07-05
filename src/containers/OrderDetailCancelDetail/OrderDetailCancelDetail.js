@@ -278,7 +278,7 @@ Free 1 SULWHASOO First Care Activating Serum EX 90ml SKU: 631405</td>
                       </div>
                       <div className={ styles['line-divide']}>
                         <div className={ styles['order-topic']}>Discount (BEAUTY10) </div>
-                        <div className={ classNames(styles['order-detail'], 'discount-price') }>-9645.50 THB</div>
+                        <div className={ classNames(styles['order-detail']) }><span className={styles['discount-price']}>-9645.50 </span>THB</div>
                       </div>
                      <div className="clearfix"></div>
                      <div className={ styles['customer-detail']}>
@@ -339,6 +339,12 @@ Free 1 SULWHASOO First Care Activating Serum EX 90ml SKU: 631405</td>
                      <div className={ styles['customer-detail']}>
                        <div className={ styles['order-topic']}>Flight Time</div>
                        <div className={ styles['order-detail']}>02:05</div>
+                     </div>
+                     <div className={ styles['customer-detail']}>
+                       <div className={ styles['order-topic']}>Pickup point</div>
+                     </div>
+                     <div className={ styles['customer-detail']}>
+                       <div className={ styles['order-map']}><img src="http://via.placeholder.com/250x100"/></div>
                      </div>
                      </div>
                    </div>

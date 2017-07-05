@@ -80,7 +80,7 @@
                 }
 
                 .product-thumbnail {
-                  width: 90px;
+                  width: 110px;
                 }
 
                 .product-sku {
@@ -88,7 +88,7 @@
                 }
 
                 .product-name {
-                  width: 130px;
+                  width: 80px;
                 }
 
                 .product-type {
@@ -264,9 +264,10 @@
             display: block;
             float: right;
             text-align: right;
-          }
-          .discount-price{
-              color: #ff2d55;
+
+            .discount-price{
+                color: #ff2d55;
+            }
           }
         }
 
@@ -286,6 +287,13 @@
             float: right;
             text-align: right;
             color: #333333;
+          }
+
+          .order-map{
+              img{
+                  width: 100%;
+                  margin-bottom: 30px;
+              }
           }
         }
       }
