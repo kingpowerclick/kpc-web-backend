@@ -1,4 +1,10 @@
 @import "../../styles/addons.scss";
+%personal-detail-left-right{
+	@include kpc-layout(12, 6, 6);
+	padding-left: 40px !important;
+	padding-right: 50px !important;
+	font-size: $kpc-font16;
+}
 
 .customer-order-view{
 	@include kpc-width(1280px);
@@ -16,7 +22,7 @@
         }
 		.sub-breadcrumb{
             padding: 0 10px;
-            color: #e7e7e7;
+            color: $platinum;
             display: inline-block;
         }
     }
@@ -99,4 +105,84 @@
             }
         }
     }
+}
+.customer-order-tab-infomation{
+	.customer-title{
+		font-size: 21px;
+		@include font-bold();
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.personal-avatar{
+		@include kpc-layout(6, 3, 3);
+		border: 1px solid $platinum;
+		border-right: none;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		.avatar-image{
+			width: 100px;
+			height: 100px;
+		}
+		.avatar{
+			@include kpc-layout-equal(3);
+		}
+		.avatar-name{
+			@include kpc-layout-equal(9);
+			padding-left: 40px !important;
+		}
+	}
+	.personal-detail{
+		@include kpc-layout(6, 9, 9);
+		border: 1px solid #ccc;
+		.personal-detail-left, .personal-detail-right{
+			margin-top: 55px;
+			margin-bottom: 55px;
+			@extend %personal-detail-left-right;
+		}
+		.personal-detail-left{
+			border-right: 1px solid $platinum;
+		}
+	}
+	.my-personal-detail{
+		@include kpc-layout-equal(12);
+	}
+	.personal-address{
+		margin-top: 80px;
+		@include kpc-layout-equal(12);
+		.customer-title-address{
+			@include kpc-border-top();
+		}
+		.select-address{
+			@include kpc-layout(6, 4, 4);
+			padding-left: 0px !important;
+		}
+		.address-info{
+			@include kpc-layout(6, 8, 8);
+			padding-right: 0px !important;
+		}
+		.personal-detail-left, .personal-detail-right{
+			@extend %personal-detail-left-right;
+		}
+		.personal-detail-right{
+			border-left: 1px solid $platinum;
+		}
+		.personal-address-title{
+			font-size: 21px;
+			@include font-bold();
+		}
+		.personal-address-detail{
+			.personal-address-detail-name{
+				padding-bottom: 10px;
+			}
+			color: $pastel-gray;
+		}
+	}
+
+	.detail-group{
+		line-height: 50px;
+		.infomation-detail{
+			@include font-bold();
+			float: right;
+		}
+	}
 }
