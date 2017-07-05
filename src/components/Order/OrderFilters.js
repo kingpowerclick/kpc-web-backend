@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import classNames from 'classNames';
+import classNames from 'classnames';
 
 import { ButtonToolbar, Dropdown, Button, MenuItem } from 'react-bootstrap';
 import { InputCalendar } from 'components';
