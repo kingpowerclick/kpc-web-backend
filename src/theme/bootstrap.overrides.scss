@@ -3,6 +3,8 @@
  *
  */
 
+ $kpc-blue: #0b56a4;
+
 .navbar-brand {
   position: relative;
   padding-left: 50px;
@@ -13,4 +15,10 @@
 .navbar-default .navbar-nav > .active > a:focus {
   color: #33e0ff;
   background-color: transparent;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus{
+    color: #fff;
+    background: $kpc-blue;
 }
