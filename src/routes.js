@@ -28,6 +28,7 @@ import {
     ProductHotItem,
     AddParentProduct,
     OrderDetailEditDetail,
+    AddProduct,
   } from 'containers';
 
 export default (store) => {
@@ -82,8 +83,10 @@ export default (store) => {
       <Route path="accountsetting" component={AccountSetting}/>
       <Route path="accountedit" component={AccountEdit}/>
       <Route path="product/managecustomattribute" component={ProductManageCustomAttribute}/>
-      <Route path="addparentproduct" component={AddParentProduct}/>
+      <Route path="parentproduct/add" component={AddParentProduct}/>
       <Route path="orderdetailcanceldetai/edit" component={OrderDetailEditDetail}/>
+      <Route path="product/add" component={AddProduct}/>
+
       { /* Catch all route */ }
       <Route path="*" component={NotFound} status={404} />
     </Route>
