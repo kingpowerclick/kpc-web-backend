@@ -80,7 +80,7 @@
                 }
 
                 .product-thumbnail {
-                  width: 90px;
+                  width: 110px;
                 }
 
                 .product-sku {
@@ -88,7 +88,7 @@
                 }
 
                 .product-name {
-                  width: 130px;
+                  width: 80px;
                 }
 
                 .product-type {
@@ -251,6 +251,12 @@
         .form-group {
           margin-bottom: 20px;
           color: #333333;
+
+          .input-form-50{
+              @include kpc-layout-equal(5);
+              margin-left: 15px;
+          }
+
 
           .btn-group {
             width: 100%;

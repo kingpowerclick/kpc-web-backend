@@ -1,0 +1,770 @@
+@import "../../styles/addons.scss";
+
+.textarea {
+	label {
+		display: block;
+  	}
+
+  input {
+    display: block;
+  }
+
+  textarea {
+    width: 100%;
+  }
+}
+
+.star-mark {
+	color: $kpc-mark-red;
+}
+
+.add-parent-product-view {
+	@include kpc-width();
+
+	.wrapper-content {
+		@include kpc-layout-equal(12);
+	}
+
+	.page-header{
+		display: block;
+		margin-bottom: 30px;
+		
+		padding-right: 15px;
+
+		@include clearfix();
+
+		.header {
+			@include kpc-header();
+		}
+
+		.page-breadcrumb {
+			color: #909090;
+		}
+
+		.page-title {
+			@include kpc-layout-equal(12);
+		}
+
+		.sub-menu {
+			@include kpc-layout-equal(12);
+			margin-bottom: 10px;
+
+			ul { 
+				list-style: none;
+				padding: 0;
+
+				li {
+					display: inline-flex;
+					padding-right: 15px;
+					padding-left: 15px;
+					border-right: 1px solid #d7d7d7;
+
+					&:first-child {
+						padding-left: 7px;
+					}
+
+					&:last-child {
+					  border: none;
+					}
+				}
+			}
+		}
+
+		.kpc-line{
+			@include kpc-border-bottom();
+		}
+
+	}
+	.search-product {
+		@include clearfix();
+
+		@include kpc-layout-equal(12);
+
+		.title-content {
+			@include kpc-underline();
+
+			h2 {
+				@include kpc-header2();
+			}
+		}
+
+		.content {
+
+			.find-product {
+				display: inline-block;
+				margin-top: 20px;
+				margin-bottom: 50px;
+				.inner-find-product {
+					@include kpc-layout-equal(3);
+
+					.input-sku {
+						margin-bottom: 10px;
+					}
+
+					.title {
+						margin-bottom: 10px;
+					}
+
+					.input-description {
+						color: $kpc-gray;
+					}
+				}
+			}
+		}
+	}
+
+	.parent-info{
+		@include kpc-layout-equal(12);
+
+		.info-left {
+			@include kpc-layout-equal(7);
+			font-size:  $kpc-font14;
+			font-color: $kpc-dark-gray;
+
+			.title {
+				@include kpc-underline();
+
+				h2 {
+					@include kpc-header2();
+				}
+			}
+
+			.form-input {
+				font-size:  $kpc-font14;
+				color: $kpc-dark-gray;
+				margin-top: 20px;
+
+				.product-name {
+					font-size: $kpc-font16;
+					font-weight: bold;
+					margin-bottom: 20px;
+				}
+
+				.input-description {
+					font-size: $kpc-font12;
+
+				}
+
+				label {
+					font-weight: normal;
+				}
+
+
+				.star-mark {
+					color: $kpc-mark-red;
+				}
+
+				.form-quntity, .form-price {
+					@include kpc-layout-equal(6);
+				}
+			}
+		}
+
+		.info-right {
+			@include kpc-layout-equal(5);
+
+			.title {
+				@include kpc-underline();
+
+				h2 {
+					@include kpc-header2();
+				}
+			}
+			
+			.hotkey {
+				margin-top: 20px;
+
+				.hotkey-left, .hotkey-right {
+					@include kpc-layout-equal(6);
+
+					.wrapper-hotkey {
+					padding: 20px;
+					border: 1px solid #d0d0d0;
+
+						.form-radio {
+							display: inline-flex;
+							margin-right: 50px;
+
+							label {
+							}
+						}
+					}
+
+				}
+
+				.hotkey-right {
+
+				}
+			}
+
+		}
+	}
+
+	.add-image, .add-vdo, .add-related-product , .child-product-variation {
+		@include kpc-layout-equal(12);
+		padding-top: 30px;
+
+			.section-title {
+				@include kpc-underline();
+				margin-bottom: 30px;
+			}
+
+			h2 {
+				@include kpc-header2();
+			}
+
+			.option-box {
+				@include kpc-layout-equal(4);
+				margin-bottom: 30px;
+
+				.inner-box{
+					@include kpc-layout-equal(12);
+					border: 1px solid $border-gray;
+					padding-top: 20px;
+					padding-bottom: 20px;
+
+					.option-hedder {
+						@include make-row();
+
+						.option-title {
+							font-size: $kpc-font16;
+							color: $kpc-blue;
+							@include kpc-layout-equal(10);
+
+							.star {
+								color: $kpc-mark-red;
+							}
+
+						}
+
+						.option-close {
+							@include kpc-layout-equal(2);
+							text-align: right;
+						}
+					}
+
+					.upload-img, .vdo-thumbnail {
+						padding-top: 20px;
+
+						.img-detail {
+							font-size: $kpc-font14;
+							color: $kpc-dark-gray;
+
+							.img-support {
+								font-weight: bold;
+							}
+
+						}
+
+						.choose-file {
+							margin-top: 15px;
+						}
+						
+						.img {
+							text-align: center;
+							margin-bottom: 15px;
+						}
+
+						.form-select {
+							font-size: $kpc-font16;
+							margin-top: 20px;
+							margin-bottom: 50px;
+						}
+
+						.btn-blue {
+							padding: 11px 55px;
+						}
+					}
+
+					.input-url {
+						margin-top: 20px;
+					}
+				}
+			}
+
+			.add-new {
+				text-align:  center;
+
+				.inner-box {
+					padding: 222px 0;
+				}
+			}
+
+		.btn-blue {
+			padding: 11px 55px;
+		}
+	}
+
+	.add-seo{
+		@include kpc-layout-equal(12);
+		padding-top: 30px;
+
+		.section-title {
+				@include kpc-underline();
+				margin-bottom: 30px;
+			}
+
+		h2 {
+			@include kpc-header2();
+		}
+
+		.form-left {
+			@include kpc-layout-equal(6);
+
+			.meta-keyword {
+
+	          label {
+	            display: block;
+	          }
+
+	          input {
+	            display: block;
+	          }
+
+	          textarea {
+	            width: 100%;
+	          }
+			}
+		}
+
+		.form-right {
+			@include kpc-layout-equal(6);
+
+			.meta-description {
+	          @extend .textarea
+			}
+		}
+	}
+
+	 .other-detail {
+		@include kpc-layout-equal(12);
+		padding-top: 30px;
+
+		.section-title {
+				@include kpc-underline();
+				margin-bottom: 30px;
+			}
+
+		h2 {
+			@include kpc-header2();
+		}
+
+		.form-left {
+			@include kpc-layout-equal(7);
+
+			.wrapper-form-select {
+
+				.form-left-left, .form-left-right {
+					@include kpc-layout-equal(6);
+					
+					.form-select {
+						.form-radio {
+							display: inline-flex;
+							margin-right: 50px;
+
+							label {
+							}
+						}
+
+						.title {
+							font-size: $kpc-font16;
+							font-weight: bold;
+						}
+
+						.title-visible, .form-visible {
+							display: inline-flex;
+							margin-right: 20px;
+						}
+
+
+						.title-form-select {
+							font-size: $kpc-font14;
+
+							label {
+								font-weight: normal;
+								
+							}
+						}
+					}
+
+					.brand-name {
+						margin-top: 20px;
+					}
+				}
+			}
+
+			.select-brand {
+				@include kpc-layout-equal(12);
+				margin-top: 20px;
+
+				.select-brand-left, .select-brand-right {
+					@include kpc-layout-equal(6);
+				}
+			}
+
+			.form-textarea {
+				@include kpc-layout-equal(12);
+				margin-top: 40px;
+
+				.title {
+					font-size: $kpc-font16;
+					font-weight: bold;
+					margin-bottom: 10px;
+				}
+
+				.title-visible, .form-visible {
+					display: inline-flex;
+					margin-right: 20px;
+				}
+
+
+				.title-form-select {
+					font-size: $kpc-font14;
+
+					label {
+						font-weight: normal;
+						
+					}
+				}
+			}
+
+			.form-input {
+				@extend .textarea;
+				margin-bottom: 15px;
+
+		        label {
+		        	font-weight: normal;
+		        }
+			}
+
+
+		}
+
+		.form-right {
+			@include kpc-layout-equal(5);
+
+			.add-other-detail{
+				.title {
+					@include kpc-underline();
+					padding-bottom: 10px;
+					margin-bottom: 10px;
+					font-size: $kpc-font16;
+			
+				}
+
+				label {
+					font-size: $kpc-font14;
+					font-weight: normal;
+
+					.star-mark {
+						color: $kpc-mark-red;
+					}
+				}
+
+				.add-dimension, .add-weight {
+					display: inline-block;
+					.form-group-left {
+						width: 65%;
+						float: left;
+						margin-right: 5%;
+					}
+
+					.form-group-right {
+						width: 30%;
+						float: left;
+					}
+				}
+
+				.select-gender {
+					.gender-list {
+						display: flex;
+
+						.form-radio {
+							width: 100%;
+							
+							.list {
+								width: 30%;
+								float: left;
+							}
+						}
+
+					}
+				}
+
+				.custom-attribute {
+
+					.title-attribute {
+						font-size: $kpc-font16;
+						color: $kpc-black2;
+						margin-bottom: 10px;
+					}
+					.custom-box {
+						border: 1px solid $border-gray;
+						@include kpc-layout-equal(12);
+						margin-bottom: 30px;
+
+						.custom-hedder {
+							display: flex;
+							padding-top: 15px;
+							padding-bottom: 15px;
+
+							.custom-title {
+								font-size: $kpc-font16;
+								color: $kpc-blue;
+								@include kpc-layout-equal(10);
+
+
+								.star {
+									color: $kpc-mark-red;
+								}
+
+							}
+
+							.custom-close {
+								@include kpc-layout-equal(2);
+								text-align: right;
+							}
+						}
+
+						.custom-attribute-inner {
+							@include clearfix();
+							@include kpc-topline();
+							@include kpc-layout-equal(12);
+							padding-top: 15px;
+							padding-bottom: 15px;
+
+							.btn-blue {
+								margin-top: 20px;
+								width: 100%;
+							}
+
+							.form-input {
+								@extend .textarea;
+								margin-bottom: 15px;
+
+						        label {
+						        	font-weight: normal;
+						        }
+							}
+						}
+					}
+				}
+			}
+
+			.meta-description {
+	         	@extend .textarea;
+	          
+			}
+		}
+	}
+
+	.save-button {
+		@include kpc-layout-equal(12);
+		margin-top: 30px;
+		text-align: right;
+	}
+
+	.child-product-variation {
+
+		.child-left {
+			@include kpc-layout-equal(7);
+
+			.add-new-child {
+				border: 1px solid $border-gray;
+				padding: 15px;
+
+				.box-title {
+					$font-size: $kpc-font16;
+					margin-bottom: 15px;
+				}
+
+				.detail {
+					@include kpc-topline();
+					padding-top: 15px;
+
+					p {
+						line-height: 1.7;
+					}
+
+					.add-product-search {
+						display: flex;
+
+						.input-search {
+							width: 60%;
+						}
+
+						.button-add {
+							width: 40%;
+							text-align: right;
+						}
+					}
+				}
+			}
+		}
+
+		.child-right {
+			@include kpc-layout-equal(5);
+
+			.edit-variation {
+				border: 1px solid $border-gray;
+				padding: 15px;
+
+				.edit-variation-left {
+					@include kpc-layout-equal(6);
+
+					.box-title {
+						font-size: $kpc-font16;
+						margin-bottom: 15px;
+					}
+
+					.defaul-variation{
+						font-size: $kpc-font21;
+					}
+				}
+
+				.edit-variation-right {
+					@include kpc-layout-equal(6);
+
+					.button-edit {
+						text-align: right;
+					}
+				}
+			}
+		}
+		.child-product {
+			@include kpc-layout-equal(12);
+			margin-top: 30px;
+
+			.child-product-header {
+				margin-bottom: 15px;
+			}
+
+			.child-product-box {
+				border: 1px solid $border-gray;
+				padding: 15px;
+				
+				.box-header {
+
+					.custom-header {
+						float: left;
+						span {
+							color: $kpc-blue;
+						}
+
+						.product-name {
+							font-size: $kpc-font16;
+							color: $kpc-black;
+						}
+					}
+
+					.custom-edit {
+						color: $kpc-blue;
+						display: flex;
+
+						.delete {
+							padding-right: 20px;
+							margin-right: 20px;
+							border-right: 1px solid #cccccc;
+						}
+					}
+				}
+
+				.box-body {
+					@include kpc-layout-equal(12);
+					border-top: 1px solid $border-gray;
+					margin-top: 20px;
+					padding-top : 20px;
+					
+					.img-product {
+						@include kpc-layout-equal(1);
+					}
+
+					.product-detail {
+						@include kpc-layout-equal(11);
+
+						.product-sku {
+							@include kpc-layout-equal(12);
+							font-size: $kpc-font16;
+							margin-bottom: 5px;
+
+							.sku {
+								color: $kpc-gray2;
+							}
+
+							.sku-number {
+								color: $kpc-dark-gray;
+							}
+						}
+
+						.product-detail-left, .product-detail-right {
+							@include kpc-layout-equal(4);
+
+							.product-detail-inner {
+								padding-bottom: 15px;
+								padding-top: 15px;
+								border-bottom: 2px solid #979797;
+								display: flex;
+
+								.product-detail-label {
+									color: $kpc-gray2;
+									width: 70%;
+								}
+
+								.product-detail-value {
+									color: $kpc-dark-gray;
+									text-align: right;
+									float: right;
+									width: 30%;
+								}
+							}
+						}
+
+						.product-enable {
+							@include kpc-layout-equal(2);
+							padding-top: 15px;
+
+							.radio-select {
+								display: flex;
+
+								.form-eneble {
+									width: 50%;
+									font-weight: normal;
+									span {
+										font-weight: normal;
+									}
+								}
+							}
+
+						}
+
+						.product-variation {
+							@include kpc-layout-equal(2);
+							padding-top: 15px;
+
+							label {
+								font-weight: normal;
+							}
+						}
+					}
+				}
+			}
+
+		}
+	}
+
+	.preview-save {
+		@include kpc-layout-equal(12);
+		margin-top: 30px;
+		text-align: right;
+		padding-top: 20px;
+		border-top: 2px solid #eeeeee;
+
+		.btn-white {
+			margin-right: 20px;
+		}
+	}
+}
+
+.test-acodian {
+	@include kpc-layout-equal(12);
+}

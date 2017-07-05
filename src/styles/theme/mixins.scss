@@ -6,99 +6,99 @@
   font-weight: 600;
 }
 
-@mixin ss-text1() {
-  font-size: $ss-font16;
-  color: $ss-black;
+@mixin skp-text1() {
+  font-size: $skp-font16;
+  color: $skp-black;
 }
 
-@mixin ss-text2() {
-  font-size: $ss-font16;
-  color: $ss-dark-gray;
+@mixin skp-text2() {
+  font-size: $skp-font16;
+  color: $skp-dark-gray;
 }
 
-@mixin ss-text3() {
-  font-size: $ss-font16;
-  color: $ss-red;
+@mixin skp-text3() {
+  font-size: $skp-font16;
+  color: $skp-red;
 }
 
-@mixin ss-text4() {
-  font-size: $ss-font16;
-  color: $ss-blue;
+@mixin skp-text4() {
+  font-size: $skp-font16;
+  color: $skp-blue;
 }
 
-@mixin ss-text5() {
-  font-size: $ss-font16;
-  color: $ss-white;
+@mixin skp-text5() {
+  font-size: $skp-font16;
+  color: $skp-white;
 }
 
-@mixin ss-text6() {
-  font-size: $ss-font14;
-  color: $ss-black;
+@mixin skp-text6() {
+  font-size: $skp-font14;
+  color: $skp-black;
 }
 
-@mixin ss-text7() {
-  font-size: $ss-font14;
-  color: $ss-dark-gray;
+@mixin skp-text7() {
+  font-size: $skp-font14;
+  color: $skp-dark-gray;
 }
 
-@mixin ss-text8() {
-  font-size: $ss-font14;
-  color: $ss-red;
+@mixin skp-text8() {
+  font-size: $skp-font14;
+  color: $skp-red;
 }
 
-@mixin ss-text9() {
-  font-size: $ss-font14;
-  color: $ss-blue;
+@mixin skp-text9() {
+  font-size: $skp-font14;
+  color: $skp-blue;
 }
 
-@mixin ss-text10() {
-  font-size: $ss-font14;
-  color: $ss-green;
+@mixin skp-text10() {
+  font-size: $skp-font14;
+  color: $skp-green;
 }
 
-@mixin ss-text11() {
-  font-size: $ss-font14;
-  color: $ss-white;
+@mixin skp-text11() {
+  font-size: $skp-font14;
+  color: $skp-white;
 }
 
-@mixin ss-text12() {
-  font-size: $ss-font12;
-  color: $ss-black;
+@mixin skp-text12() {
+  font-size: $skp-font12;
+  color: $skp-black;
 }
 
-@mixin ss-text13() {
-  font-size: $ss-font12;
-  color: $ss-dark-gray;
+@mixin skp-text13() {
+  font-size: $skp-font12;
+  color: $skp-dark-gray;
 }
 
-@mixin ss-text14() {
-  font-size: $ss-font12;
-  color: $ss-gray;
+@mixin skp-text14() {
+  font-size: $skp-font12;
+  color: $skp-gray;
 }
 
-@mixin ss-text15() {
-  font-size: $ss-font12;
-  color: $ss-blue;
+@mixin skp-text15() {
+  font-size: $skp-font12;
+  color: $skp-blue;
 }
 
-@mixin ss-text16() {
-  font-size: $ss-font12;
-  color: $ss-white;
+@mixin skp-text16() {
+  font-size: $skp-font12;
+  color: $skp-white;
 }
 
-@mixin ss-text17() {
-  font-size: $ss-font11;
-  color: $ss-dark-gray;
+@mixin skp-text17() {
+  font-size: $skp-font11;
+  color: $skp-dark-gray;
 }
 
-@mixin ss-text18() {
-  font-size: $ss-font11;
-  color: $ss-gray;
+@mixin skp-text18() {
+  font-size: $skp-font11;
+  color: $skp-gray;
 }
 
-@mixin ss-text19() {
-  font-size: $ss-font10;
-  color: $ss-gray;
+@mixin skp-text19() {
+  font-size: $skp-font10;
+  color: $skp-gray;
 }
 
 @mixin kpc-border($x: 1px) {
@@ -178,7 +178,7 @@
   @include kpc-crop-image($height);
 }
 
-@mixin kpc-line-dashed($width: 1px, $color: $ss-gray) {
+@mixin kpc-line-dashed($width: 1px, $color: $skp-gray) {
   border-top: $width dashed $color;
 }
 
@@ -200,11 +200,12 @@
   // white-space: nowrap;
 }
 
-@mixin kpc-underline($max-width: 95%) {
-  position: relative;
-  max-width: $max-width;
-  left: (100% - $max-width)/2;
-  border-top: 1px solid #EDEDED;
+@mixin kpc-underline() {
+  border-bottom: 2px solid #eeeeee;
+}
+
+@mixin kpc-topline() {
+  border-top: 2px solid #eeeeee;
 }
 
 @mixin kpc-header() {
@@ -220,9 +221,9 @@
 @mixin kpc-header2() {
   font-size: $kpc-font21;
   color: $kpc-black;
-  margin-bottom: 30px;
-  margin-top: 0;
+  font-weight: bold;
 }
+
 
 
 
