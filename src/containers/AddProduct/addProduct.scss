@@ -18,7 +18,7 @@
 	color: $kpc-mark-red;
 }
 
-.add-parent-product-view {
+.add-product-view {
 	@include kpc-width();
 
 	.wrapper-content {
@@ -27,6 +27,7 @@
 
 	.page-header{
 		display: block;
+		
 		padding-right: 15px;
 
 		@include clearfix();
@@ -91,10 +92,8 @@
 			.find-product {
 				display: inline-block;
 				margin-top: 20px;
-				margin-bottom: 50px;
-				
+
 				.inner-find-product {
-					@include kpc-layout-equal(6);
 
 					.input-sku {
 						margin-bottom: 10px;
@@ -104,20 +103,15 @@
 						margin-bottom: 10px;
 					}
 
-					.find-product-left {
-						@include kpc-layout-equal(6);
-					}
-
 					.input-description {
 						color: $kpc-gray;
-						@include kpc-layout-equal(6);
 					}
 				}
 			}
 		}
 	}
 
-	.parent-info{
+	.product-info{
 		@include kpc-layout-equal(12);
 
 		.info-left {
@@ -196,11 +190,67 @@
 
 				}
 
-				.hotkey-right {
+			}
 
+		}
+	}
+
+
+	.product-description{
+		@include kpc-layout-equal(12);
+
+		.description-left, .description-right {
+			@include kpc-layout-equal(7);
+			font-size:  $kpc-font14;
+			font-color: $kpc-dark-gray;
+
+			.title {
+				@include kpc-underline();
+
+				h2 {
+					@include kpc-header2();
 				}
 			}
 
+			.form-input {
+				font-size:  $kpc-font14;
+				color: $kpc-dark-gray;
+				margin-top: 20px;
+
+				.long-description,  {
+					font-size: $kpc-font16;
+					font-weight: bold;
+					margin-bottom: 20px;
+
+					textarea {
+						display: block;
+						width: 100%;
+					}
+				}
+
+				.input-description {
+					font-size: $kpc-font12;
+
+				}
+
+				label {
+					font-weight: normal;
+				}
+
+
+				.star-mark {
+					color: $kpc-mark-red;
+				}
+			}
+		}
+
+		.description-right {
+			@include kpc-layout-equal(5);
+
+			.title {
+				@include kpc-underline();
+			}
+			
 		}
 	}
 
