@@ -111,14 +111,14 @@
 
 @mixin kpc-border-bottom($x: 2px) {
   clear: both;
-  height: 2px;
-  border-bottom: 2px solid #d7d7d7;
+  height: $x;
+  border-bottom: $x solid #d7d7d7;
   margin-left: 15px;
 }
 
-@mixin kpc-border-top($x: 2px) {
-  border-top: 2px solid #d7d7d7;
-}
+// @mixin kpc-border-top($x: 2px) {
+//   border-top: 2px solid #d7d7d7;
+// }
 
 @mixin kpc-border-bottom2($x: 2px) {
   border-bottom: 2px solid #d7d7d7;
