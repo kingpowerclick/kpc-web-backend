@@ -4,7 +4,7 @@ import { Breadcrumb} from 'components';
 
 // import { Accordion, Panel } from 'react-bootstrap';
 
-export default class AddParentProduct extends Component {
+export default class AddProduct extends Component {
   render() {
     const styles = require('./addParentProduct.scss');
 
