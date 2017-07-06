@@ -59,7 +59,7 @@ export default class Product extends Component {
 			    				<div className={ classNames(styles['wrapper-filter'])}>
 			    					<div className={ styles['filter-left']}>
 										<FilterActionSelect title={ "Action" } selectOption={ ['Delete Product'] }/>
-                                        <FilterId title={ "Product ID" } selectOption={ ['Product ID', 'Batch No.'] }/>
+                                        <FilterId title={ "Product ID" } selectOption={ ['Product ID', 'SKU No.', 'Product Name', 'Brandname', 'Batch No.'] }/>
 			    					</div>
 			    					<div className={ classNames(styles['filter-right']) }>
 				    					<FilterPage/>
