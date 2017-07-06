@@ -29,6 +29,7 @@ import {
     AddParentProduct,
     OrderDetailEditDetail,
     AddProduct,
+    Marketing,
   } from 'containers';
 
 export default (store) => {
@@ -86,6 +87,7 @@ export default (store) => {
       <Route path="parentproduct/add" component={AddParentProduct}/>
       <Route path="orderdetailcanceldetai/edit" component={OrderDetailEditDetail}/>
       <Route path="product/add" component={AddProduct}/>
+      <Route path="marketing" component={Marketing}/>
 
       { /* Catch all route */ }
       <Route path="*" component={NotFound} status={404} />

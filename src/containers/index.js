@@ -25,3 +25,4 @@ export ProductHotItem from './ProductHotItem/ProductHotItem';
 export AddParentProduct from './AddParentProduct/AddParentProduct';
 export OrderDetailEditDetail from './OrderDetailEditDetail/OrderDetailEditDetail';
 export AddProduct from './AddProduct/AddProduct';
+export Marketing from './Marketing/Marketing';
