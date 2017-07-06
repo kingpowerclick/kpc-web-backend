@@ -6,16 +6,36 @@
  *
  */
 
+/**************************
+	Style Guide
+**************************/
+
+$platinum: #E7E7E7;
+$pastel-gray: #ccc;
+$taupe-gray: #909090;
+/**************************
+	Style Guide
+**************************/
+
+// Gray Palette //
+$scrollbar: $platinum;
+$select-dropdown-bg: $platinum;
+
+$border: $pastel-gray;
+$line: $pastel-gray;
+$disabled:  $pastel-gray;
+$placeholder: $pastel-gray;
+$input-icon: $pastel-gray;
+$current-breadcrumb: $pastel-gray;
+
+$text-detail-gray: $taupe-gray;
+$breadcrumb: $taupe-gray;
+
+
 // Custom Colors
 $cyan: #33e0ff;
 $humility: #777;
-$breadcrumb: #909090;
-$line: #d7d7d7;
-$placeholder: #909090;
 $modal-export: #4a4a4a;
-$pastel-gray: #ccc;
-$platinum: #E7E7E7;
-
 // Bootstrap Variables
 $brand-primary: darken(#428bca, 6.5%);
 $brand-secondary: #e25139;
