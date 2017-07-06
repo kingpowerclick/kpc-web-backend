@@ -4,6 +4,9 @@
     height: 20px;
     border-right: 1px solid #d7d7d7;
     margin-top: 14px;
+    a{
+        color: $text-color;
+    }
     i {
         margin-right: 10px;
     }
@@ -44,7 +47,7 @@
         display: block;
     }
     .box-filters-detail{
-        padding: 30px;
+        padding: 20px;
     }
     .detail-button-dropdown{
         width: 184px;
@@ -61,5 +64,17 @@
     }
     .box-filters-detail-item{
         @include kpc-layout(1, 4, 4);
+    }
+    .box-filters-footer{
+        border-top: 1px solid $line;
+        padding: 20px;
+        margin-bottom: 50px;
+        margin-top: 15px;
+        .button-group{
+            float: right;
+        }
+        .button{
+            margin: 15px;
+        }
     }
 }
