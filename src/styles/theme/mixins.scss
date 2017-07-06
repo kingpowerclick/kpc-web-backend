@@ -106,7 +106,8 @@
 }
 
 @mixin kpc-border-top($x: 1px) {
-  border-top: $x solid $line-gray-dark;
+    border-top: $x solid $pastel-gray;
+  // border-top: $x solid $line-gray-dark;
 }
 
 @mixin kpc-border-bottom($x: 2px) {

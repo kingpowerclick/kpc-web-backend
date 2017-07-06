@@ -1,17 +1,17 @@
 .panel-default{
     font-size: 16px;
-    border: 1px solid $platinum;
+    border: 1px solid $border;
     border-radius: 0px;
     .panel-heading{
         color: $text-color;
         margin: 25px 20px 0px;
         @include font-bold();
         padding-bottom: 10px;
-        border-bottom: 1px solid $platinum;
+        border-bottom: 1px solid $border;
     }
     .panel-body{
         margin: 25px 20px;
-        color: #000;
+        color: $text-color;
         .panel-label{
             float: left;
             font-weight: 300;
@@ -21,7 +21,7 @@
         }
     }
     .panel-footer{
-        border-top: 1px solid $platinum;
+        border-top: 1px solid $border;
         margin: 20px;
         padding-top: 30px;
         padding-bottom: 20px;
@@ -29,10 +29,10 @@
     }
     .panel-body-border-bottom{
         padding: 25px 20px;
-        border-bottom: 1px solid $platinum;
+        border-bottom: 1px solid $border;
     }
     .panel-collapse{
         padding: 25px 20px;
-        border-top: 1px solid $platinum;
+        border-top: 1px solid $border;
     }
 }
