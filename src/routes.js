@@ -28,6 +28,7 @@ import {
     ProductHotItem,
     AddParentProduct,
     OrderDetailEditDetail,
+    MarketingAddNewGwp,
   } from 'containers';
 
 export default (store) => {
@@ -84,6 +85,7 @@ export default (store) => {
       <Route path="product/managecustomattribute" component={ProductManageCustomAttribute}/>
       <Route path="addparentproduct" component={AddParentProduct}/>
       <Route path="orderdetailcanceldetai/edit" component={OrderDetailEditDetail}/>
+      <Route path="marketing/addnewgwp" component={MarketingAddNewGwp}/>
       { /* Catch all route */ }
       <Route path="*" component={NotFound} status={404} />
     </Route>
