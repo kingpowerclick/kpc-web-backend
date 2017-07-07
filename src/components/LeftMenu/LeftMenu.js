@@ -34,7 +34,7 @@ export default class LeftMenu extends Component {
                                 <i className={ classNames('fa', 'fa-play', styles['sub-menu-list-hover']) }></i> Product
                             </li>
                             <li className={ classNames('dropdown', styles['sub-menu-list']) }>
-                                <i className={ classNames('fa', 'fa-play', styles['sub-menu-list-hover']) }></i> Manage Attribute
+                                <i className={ classNames('fa', 'fa-play', styles['sub-menu-list-hover']) }></i> Manage Custom Attribute
                             </li>
                             <li className={ classNames('dropdown', styles['sub-menu-label']) }> Special Label and Other </li>
                             <li className={ classNames('dropdown', styles['sub-menu-list']) }>

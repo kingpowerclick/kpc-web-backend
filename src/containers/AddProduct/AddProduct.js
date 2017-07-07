@@ -6,17 +6,17 @@ import { Breadcrumb} from 'components';
 
 export default class AddParentProduct extends Component {
   render() {
-    const styles = require('./addParentProduct.scss');
+    const styles = require('./addProduct.scss');
 
     return (
     	<div className="container-fluid">
     		<div className="row">
-    			<div className={ classNames(styles['add-parent-product-view']) }>
+    			<div className={ classNames(styles['add-product-view']) }>
 			    	<header className={ styles['page-header']}>
 			    		<div className={ styles['page-title']}>
-			        		<h1 className={ styles.header }><strong>Add Parent Product</strong></h1>
+			        		<h1 className={ styles.header }><strong>Add Product</strong></h1>
 			    		</div>
-			        	<Breadcrumb breadcrumb={ "Products > Add Parent Product" }/>
+			        	<Breadcrumb breadcrumb={ "Products > Add Product" }/>
 			    	</header>
 			    	<div className={ styles['wrapper-content']}>
 				    	<section className={ styles['search-product']}>
@@ -25,27 +25,16 @@ export default class AddParentProduct extends Component {
 				    		</div>
 							<div className={ styles.content}>
 								<div className={ styles['find-product'] }>
-									<div className="row">
-										<div className={ classNames( styles['inner-find-product']) }>
-											<div className="row">
-												<div className={ styles['find-product-left']}>
-													<div className={ styles.title }><span>Please enter Product SKU (KP Article code) *</span></div>
-													<div className={ classNames( styles['input-sku'], 'input-group') }>
-														<span className="input-group-addon" id="basic-addon1">P</span>
-														<input type="text" className="form-control" placeholder="112432" aria-describedby="basic-addon1"/>
-													</div>
-												</div>
-												<div className={ styles['input-description']}>
-													<p>If your enter SKU number as same as added before, System will autocomplete information for old SKU.</p>
-													<p>Ps. Not support add parent by SKU with prefix Pxxxxxx.</p>
-												</div>
-											</div>
+									<div className={ classNames( styles['inner-find-product'] ) }>
+										<div className={ styles.title }><span>Please enter Product SKU (KP Article code) *</span></div>
+										<div className="form-group">
+											<input type="text" className="form-control" placeholder="112432"/>
 										</div>
 									</div>
 								</div>
 							</div>
 				    	</section>
-				    	<section className={ styles['parent-info'] }>
+				    	<section className={ styles['product-info'] }>
 				    		<div className="row">
 					    		<div className={ styles['info-left'] }>
 									<div className={ styles.title }>
@@ -158,6 +147,57 @@ export default class AddParentProduct extends Component {
 													</div>
 												</div>
 											</div>
+										</div>
+									</div>
+					    		</div>
+				    		</div>
+				    	</section>
+				    	<section className={ styles['product-description'] }>
+				    		<div className="row">
+					    		<div className={ styles['description-left'] }>
+									<div className={ styles.title }>
+										<strong><h2>Long Description</h2></strong>
+									</div>
+									<div className={ styles['form-input'] }>
+										<div className={ styles['long-description']}>
+											<label>ENGLISH <span className={ styles['star-mark'] }>*</span> (It will be default if you didn’t set name for other language)</label>
+											<textarea name="" id="" cols="30" rows="10"></textarea>
+										</div>
+									</div>
+									<div className={ styles['form-input'] }>
+										<div className={ styles['long-description']}>
+											<label>THAI</label>
+											<textarea name="" id="" cols="30" rows="10"></textarea>
+										</div>
+									</div>
+									<div className={ styles['form-input'] }>
+										<div className={ styles['long-description']}>
+											<label>CHINESE</label>
+											<textarea name="" id="" cols="30" rows="10"></textarea>
+										</div>
+									</div>
+					    		</div>
+					    		<div className={ styles['description-right'] }>
+									<div className={ styles.title }>
+										<strong><h2>Short Description</h2></strong>
+									</div>
+									<div className={ styles['form-input'] }>
+										<div className={ styles['long-description']}>
+											<label>ENGLISH <span className={ styles['star-mark'] }>*</span> (It will be default if you didn’t set name for other language)</label>
+											<textarea name="" id="" cols="30" rows="10">
+											</textarea>
+										</div>
+									</div>
+									<div className={ styles['form-input'] }>
+										<div className={ styles['long-description']}>
+											<label>THAI</label>
+											<textarea name="" id="" cols="30" rows="10"></textarea>
+										</div>
+									</div>
+									<div className={ styles['form-input'] }>
+										<div className={ styles['long-description']}>
+											<label>CHINESE</label>
+											<textarea name="" id="" cols="30" rows="10"></textarea>
 										</div>
 									</div>
 					    		</div>
@@ -747,151 +787,6 @@ export default class AddParentProduct extends Component {
 											<i className="fa fa-plus fa-5x"></i>
 										</div>
 										<button className={ classNames(styles['btn-blue'], 'btn')} type="button">Add New</button>
-									</div>
-								</div>
-							</div>
-				    	</section>
-				    	<section className={ styles['child-product-variation']}>
-				    		<div className={ styles['section-title']}>
-								<strong><h2>Child Product & Variation</h2></strong>
-							</div>
-							<div className="row">
-								<div className={ styles['child-left']}>
-									<div className={ styles['add-new-child']}>
-										<div className={ styles['box-title']}>
-											<strong>Add new child product</strong>
-										</div>
-										<div className={ styles.detail }>
-											<p>Please enter Product SKU (KP Article code)* Use seperate SKU by comma (, ) for add more than 1 product.</p>
-											<div className={ styles['add-product-search']}>
-												<div className={ styles['input-search'] }>
-													<input type="text" className="form-control" placeholder=""/>
-												</div>
-												<div className={ classNames(styles['button-add']) }>
-													<button className={ classNames(styles['btn-blue'], 'btn')} type="button">Add</button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div className={ styles['child-right']}>
-									<div className={ styles['edit-variation']}>
-										<div className="row">
-											<div className={ styles['edit-variation-left']}>
-												<div className={ styles['box-title']}>
-													<strong>Variation</strong>
-												</div>
-												<div className={ styles['defaul-variation']}>
-													<span>Men Underware size</span>
-												</div>
-											</div>
-											<div className={ styles['edit-variation-right']}>
-												<div className={ classNames(styles['button-edit']) }>
-													<button className={ classNames(styles['btn-blue'], 'btn')} type="button">Edit</button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div className={ styles['child-product'] }>
-									<div className={ styles['child-product-header']}>
-										<strong>Child product</strong><br/>
-										<span>order by display order (Top - Bottom).</span>
-									</div>
-									<div className={ styles['child-product-box']}>
-										<div className={ styles['box-header']}>
-											<div className={ styles['custom-header']}>
-												<span className={ styles['hold-to-swap']}><i className="fa fa-th-large"></i><strong> Hold to swap order&nbsp;&nbsp;</strong></span>
-												<span className={ styles['product-name']}>CALVIN KLEIN UNDERWEAR ID MICRO LOW RISE TRUNK (Black/Blue) Size S</span>
-											</div>
-											<div className={ classNames(styles['custom-edit'], 'pull-right') }>
-												<div className={ styles.delete }><span><i className="fa fa-times-circle"></i>&nbsp;Delete this child product</span></div>
-												<div className={ styles.edit }><span><i className="fa fa-pencil"></i>&nbsp;Edit</span></div>
-											</div>
-										</div>
-										<div className="row">
-											<div className={ styles['box-body']}>
-											<div className="row">
-													<div className={ styles['img-product'] }>
-														<img src="http://via.placeholder.com/120x120"/>
-													</div>
-													<div className={ styles['product-detail'] }>
-														<div className="row">
-															<div className={ styles['product-sku']}>
-																<strong><span className={ styles.sku}>SKU&nbsp;</span><span className={ styles['sku-number']}>726590</span></strong>
-															</div>
-															<div className={ styles['product-detail-left']}>
-																<div className={ styles['product-detail-inner']}>
-																	<div className={ styles['product-detail-label']}>
-																		<strong>Merchaindise code</strong>
-																	</div>
-																	<div className={ styles['product-detail-value']}>
-																		<strong>123325</strong>
-																	</div>
-																</div>
-																<div className={ styles['product-detail-inner']}>
-																	<div className={ styles['product-detail-label']}>
-																		<strong>Supplier code</strong>
-																	</div>
-																	<div className={ styles['product-detail-value']}>
-																		<strong>12435468</strong>
-																	</div>
-																</div>
-																<div className={ styles['product-detail-inner']}>
-																	<div className={ styles['product-detail-label']}>
-																		<strong>Batch no.</strong>
-																	</div>
-																	<div className={ styles['product-detail-value']}>
-																		<strong>726590</strong>
-																	</div>
-																</div>
-															</div>
-															<div className={ styles['product-detail-right']}>
-																<div className={ styles['product-detail-inner']}>
-																	<div className={ styles['product-detail-label']}>
-																		<strong>Quantity</strong>
-																	</div>
-																	<div className={ styles['product-detail-value']}>
-																		<strong>20</strong>
-																	</div>
-																</div>
-																<div className={ styles['product-detail-inner']}>
-																	<div className={ styles['product-detail-label']}>
-																		<strong>Price</strong>
-																	</div>
-																	<div className={ styles['product-detail-value']}>
-																		<strong>THB 1,290.00</strong>
-																	</div>
-																</div>
-															</div>
-															<div className={ styles['product-enable'] }>
-																<div className={ styles['enable-product'] }>
-														    		<div className={ styles['enable-title'] }>
-														    			<label>Enable Product</label>
-														    		</div>
-														    		<div className={ styles['radio-select']}>
-															    		<div className={ classNames( styles['form-eneble']) }>
-															    			<label><input type="radio"/>&nbsp;Yes</label>
-															    		</div>
-															    		<div className={ classNames( styles['form-eneble']) }>
-															    			<label><input type="radio"/>&nbsp;No</label>
-															    		</div>
-														    		</div>
-														    	</div>
-															</div>
-															<div className={ styles['product-variation']}>
-																<strong>Variation</strong><br/>
-																<label htmlFor="">Men Underware size</label>
-																<div className={ classNames( styles['form-group-variation'], 'input-group')}>
-																	<input type="text" className="form-control" placeholder="S"/>
-																	<span className="input-group-addon" id="basic-addon3"><i className="fa fa-caret-down"></i></span>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
 									</div>
 								</div>
 							</div>
