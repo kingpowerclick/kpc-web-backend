@@ -51,7 +51,7 @@ export default class MarketingAddNewGwp extends Component {
                         </div>
                         <div className={styles['control-group']}>
                             <div className={styles['control-label']}>
-                                 <label className={styles['control-label']}>Set Condition</label>
+                                 <label className={styles['label-title']}>Set Condition</label>
                             </div>
                             <div className={ classNames(styles['control-optional'], styles['top-border'])}>
                                 <div className={styles['content-option']}>
@@ -69,7 +69,7 @@ export default class MarketingAddNewGwp extends Component {
                             </div>
                         <div className={styles['control-group']}>
                             <div className={styles['control-label']}>
-                                 <label className={styles['control-label']}>Select products to include</label>
+                                 <label className={styles['label-title']}>Select products to include</label>
                             </div>
                             <div className={styles['control-optional']}>
                                 <div className={styles['content-option']}>
@@ -92,7 +92,7 @@ export default class MarketingAddNewGwp extends Component {
                             </div>
                         <div className={styles['control-group']}>
                             <div className={styles['control-label']}>
-                                 <label className={styles['control-label']}>Result of included </label>
+                                 <label className={styles['label-title']}>Result of included </label>
                             </div>
                             <div className={styles['control-optional']}>
                                 <div className={styles['content-option']}>
@@ -110,7 +110,7 @@ export default class MarketingAddNewGwp extends Component {
                             </div>
                             <div className={styles['control-group']}>
                                 <div className={styles['control-label']}>
-                                     <label className={styles['control-label']}>Select products to include</label>
+                                     <label className={styles['label-title']}>Select products to include</label>
                                 </div>
                                 <div className={styles['control-optional']}>
                                     <div className={styles['content-option']}>
@@ -124,7 +124,7 @@ export default class MarketingAddNewGwp extends Component {
                                 </div>
                         <div className={styles['control-group']}>
                             <div className={styles['control-label']}>
-                                 <label className={styles['control-label']}>Select products to exclude</label>
+                                 <label className={styles['label-title']}>Select products to exclude</label>
                             </div>
                             <div className={styles['control-optional']}>
                                 <div className={styles['content-option']}>
@@ -147,7 +147,7 @@ export default class MarketingAddNewGwp extends Component {
                             </div>
                         <div className={styles['control-group']}>
                             <div className={styles['control-label']}>
-                                 <label className={styles['control-label']}>Result of exclude </label>
+                                 <label className={styles['label-title']}>Result of exclude </label>
                             </div>
                             <div className={styles['control-optional']}>
                                 <div className={styles['content-option']}>
@@ -165,7 +165,7 @@ export default class MarketingAddNewGwp extends Component {
                             </div>
                             <div className={styles['control-group']}>
                                 <div className={styles['control-label']}>
-                                     <label className={styles['control-label']}>Select products to include</label>
+                                     <label className={styles['label-title']}>Select products to include</label>
                                 </div>
                                 <div className={styles['control-optional']}>
                                     <div className={styles['content-option']}>
@@ -180,7 +180,7 @@ export default class MarketingAddNewGwp extends Component {
 
                         <div className={styles['control-group']}>
                             <div className={styles['control-label']}>
-                                 <label className={styles['control-label']}>Select products to include</label>
+                                 <label className={styles['label-title']}>Select products to include</label>
                             </div>
                             <div className={styles['control-optional']}>
                                 <div className={styles['content-option']}>
@@ -203,7 +203,7 @@ export default class MarketingAddNewGwp extends Component {
                             </div>
                         <div className={styles['control-group']}>
                             <div className={styles['control-label']}>
-                                 <label className={styles['control-label']}>Result of included </label>
+                                 <label className={styles['label-title']}>Result of included </label>
                             </div>
                             <div className={styles['control-optional']}>
                                 <div className={styles['content-option']}>
@@ -221,7 +221,7 @@ export default class MarketingAddNewGwp extends Component {
                             </div>
                             <div className={styles['control-group']}>
                                 <div className={styles['control-label']}>
-                                     <label className={styles['control-label']}>Select products to include</label>
+                                     <label className={styles['label-title']}>Select products to include</label>
                                 </div>
                                 <div className={styles['control-optional']}>
                                     <div className={styles['content-option']}>
@@ -235,7 +235,7 @@ export default class MarketingAddNewGwp extends Component {
                                 </div>
                         <div className={styles['control-group']}>
                             <div className={styles['control-label']}>
-                                 <label className={styles['control-label']}>Select products to exclude</label>
+                                 <label className={styles['label-title']}>Select products to exclude</label>
                             </div>
                             <div className={styles['control-optional']}>
                                 <div className={styles['content-option']}>
@@ -258,7 +258,7 @@ export default class MarketingAddNewGwp extends Component {
                             </div>
                         <div className={styles['control-group']}>
                             <div className={styles['control-label']}>
-                                 <label className={styles['control-label']}>Result of exclude </label>
+                                 <label className={styles['label-title']}>Result of exclude </label>
                             </div>
                             <div className={styles['control-optional']}>
                                 <div className={styles['content-option']}>
@@ -276,7 +276,7 @@ export default class MarketingAddNewGwp extends Component {
                             </div>
                             <div className={styles['control-group']}>
                                 <div className={styles['control-label']}>
-                                     <label className={styles['control-label']}>Quantity</label>
+                                     <label className={styles['label-title']}>Quantity</label>
                                 </div>
                                 <div className={styles['control-optional']}>
                                     <div className={styles['content-option']}>
@@ -290,7 +290,7 @@ export default class MarketingAddNewGwp extends Component {
                                 </div>
                                 <div className={styles['control-group']}>
                                     <div className={styles['control-label']}>
-                                         <label className={styles['control-label']}>Select products to include</label>
+                                         <label className={styles['label-title']}>Select products to include</label>
                                     </div>
                                     <div className={styles['control-optional']}>
                                         <div className={styles['content-option']}>
@@ -313,7 +313,7 @@ export default class MarketingAddNewGwp extends Component {
                                     </div>
                                     <div className={styles['control-group']}>
                                         <div className={styles['control-label']}>
-                                             <label className={styles['control-label']}>GWP is</label>
+                                             <label className={styles['label-title']}>GWP is</label>
                                         </div>
                                         <div className={styles['control-optional']}>
                                             <div className={styles['content-option']}>
@@ -327,7 +327,7 @@ export default class MarketingAddNewGwp extends Component {
                                         </div>
                                         <div className={styles['control-group']}>
                                             <div className={styles['control-label']}>
-                                                 <label className={styles['control-label']}>Quantity</label>
+                                                 <label className={styles['label-title']}>Quantity</label>
                                             </div>
                                             <div className={styles['control-optional']}>
                                                 <div className={styles['content-option']}>
