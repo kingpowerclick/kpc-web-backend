@@ -30,6 +30,7 @@ import {
     OrderDetailEditDetail,
     AddProduct,
     MarketingAddNewGwp,
+    MarketingAddNewCampaign,
     MasterBrandAndMember,
   } from 'containers';
 
@@ -89,8 +90,8 @@ export default (store) => {
       <Route path="orderdetailcanceldetai/edit" component={OrderDetailEditDetail}/>
       <Route path="marketing/addnewgwp" component={MarketingAddNewGwp}/>
       <Route path="product/add" component={AddProduct}/>
+      <Route path="marketing/addnewcampaign" component={MarketingAddNewCampaign}/>
       <Route path="marketing/masterbandandmember" component={MasterBrandAndMember}/>
-
       { /* Catch all route */ }
       <Route path="*" component={NotFound} status={404} />
     </Route>
