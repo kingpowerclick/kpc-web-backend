@@ -26,3 +26,4 @@ export AddParentProduct from './AddParentProduct/AddParentProduct';
 export OrderDetailEditDetail from './OrderDetailEditDetail/OrderDetailEditDetail';
 export MarketingAddNewGwp from './MarketingAddNewGwp/MarketingAddNewGwp';
 export AddProduct from './AddProduct/AddProduct';
+export MarketingAddNewCampaign from './MarketingAddNewCampaign/MarketingAddNewCampaign';
