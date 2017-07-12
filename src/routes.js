@@ -30,7 +30,11 @@ import {
     OrderDetailEditDetail,
     AddProduct,
     MarketingAddNewGwp,
+<<<<<<< HEAD
     MarketingAddNewCampaign,
+=======
+    MasterBrandAndMember,
+>>>>>>> dev
   } from 'containers';
 
 export default (store) => {
@@ -90,7 +94,7 @@ export default (store) => {
       <Route path="marketing/addnewgwp" component={MarketingAddNewGwp}/>
       <Route path="product/add" component={AddProduct}/>
       <Route path="marketing/addnewcampaign" component={MarketingAddNewCampaign}/>
-
+      <Route path="marketing/masterbandandmember" component={MasterBrandAndMember}/>
       { /* Catch all route */ }
       <Route path="*" component={NotFound} status={404} />
     </Route>

@@ -214,7 +214,7 @@
   color: $kpc-dark-gray;
 }
 
-@mixin kpc-width($min-width: 1440px) {
+@mixin kpc-width($min-width: 1280px) {
   padding-top: 50px;
   min-width: $min-width;
 }
