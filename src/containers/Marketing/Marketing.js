@@ -3,7 +3,8 @@ import classNames from 'classnames';
 import { FilterPage,
 		ProductColumes,
 		FilterActionSelect,
-		FilterId
+		FilterId,
+		MarketingCampaign,
 } from 'components';
 
 import { Tabs, Tab } from 'react-bootstrap';
@@ -60,70 +61,7 @@ export default class Marketing extends Component {
 					    				</div>
 					    			</div>
 					    			<div className={ styles['table-detail'] }>
-					    				<div className={ styles['tab-content'] }>
-											<table className="table table-striped">
-												<thead>
-											    	<tr className={ styles['title-table']}>
-											    		<th className={ styles['product-checkbox'] }><input type="checkbox"/></th>
-											    		<th className={ styles['product-id'] }>ID</th>
-											    		<th className={ styles['product-thumbnail'] }>Thumbnail</th>
-											    		<th className={ styles['product-sku'] }>SKU</th>
-											    		<th className={ styles['product-name'] }>Name</th>
-											    		<th className={ styles['product-type'] }>Type</th>
-											    		<th className={ styles['product-price'] }>Price</th>
-											    		<th className={ styles['product-qty'] }>Qty</th>
-											    		<th className={ styles['produt-brand'] }>Brand</th>
-											    		<th className={ styles['product-merchiandise'] }>Batch No.</th>
-											    		<th className={ styles['product-visibility'] }>Visibility</th>
-											    		<th className={ styles['product-status'] }>Status</th>
-											    	</tr>
-												</thead>
-												<tbody>
-											    	<tr>
-											    		<td><input type="checkbox"/></td>
-											    		<td>503576</td>
-											    		<td><img src="http://via.placeholder.com/50x50"/></td>
-											    		<td>8169513</td>
-											    		<td>EMPORIO ARMANI CLASSIC WATCH</td>
-											    		<td>-</td>
-											    		<td>11,800.00 THB</td>
-											    		<td>172</td>
-											    		<td>EMPORIO ARMANI</td>
-											    		<td>xxxxxx</td>
-											    		<td>Yes</td>
-											    		<td>Enable</td>
-											    	</tr>
-											    	<tr>
-											    		<td><input type="checkbox"/></td>
-											    		<td>503576</td>
-											    		<td><img src="http://via.placeholder.com/50x50"/></td>
-											    		<td>8169513</td>
-											    		<td>EMPORIO ARMANI CLASSIC WATCH</td>
-											    		<td>Child Product </td>
-											    		<td>11,800.00 THB</td>
-											    		<td>172</td>
-											    		<td>EMPORIO ARMANI</td>
-											    		<td>xxxxxx</td>
-											    		<td>Yes</td>
-											    		<td>Enable</td>
-											    	</tr>
-											    	<tr>
-											    		<td><input type="checkbox"/></td>
-											    		<td>503576</td>
-											    		<td><img src="http://via.placeholder.com/50x50"/></td>
-											    		<td>8169513</td>
-											    		<td>EMPORIO ARMANI CLASSIC WATCH</td>
-											    		<td>-</td>
-											    		<td>11,800.00 THB</td>
-											    		<td>172</td>
-											    		<td>EMPORIO ARMANI</td>
-											    		<td>xxxxxx</td>
-											    		<td>Yes</td>
-											    		<td>Enable</td>
-											    	</tr>
-												</tbody>
-											</table>
-										</div>
+					    				<MarketingCampaign/>
 										<div className="row">
 											<div className={ classNames(styles['filter-bottom'])}>
 												<FilterPage/>
@@ -132,9 +70,75 @@ export default class Marketing extends Component {
 					    			</div>
 				    			</div>
                             </Tab>
-                            <Tab eventKey={2} title="Cart Rule">2</Tab>
-                            <Tab eventKey={3} title="GWP Global">3</Tab>
-                            <Tab eventKey={4} title="Shipping Global">4</Tab>
+                            <Tab eventKey={2} title="Cart Rule">
+								<div className={ styles.content}>
+		                        	<div className={ classNames(styles['filter-product'])}>
+					    				<div className={ classNames(styles['wrapper-filter'])}>
+					    					<div className={ styles['filter-left']}>
+												<FilterActionSelect title={ "Action" } selectOption={ ['Delete Product'] }/>
+		                                    	<FilterId title={ "Product ID" } selectOption={ ['Product ID', 'SKU No.', 'Product Name', 'Brandname', 'Batch No.'] }/>
+					    					</div>
+					    					<div className={ classNames(styles['filter-right']) }>
+						    					<FilterPage/>
+					    					</div>
+					    				</div>
+					    			</div>
+					    			<div className={ styles['table-detail'] }>
+					    				<MarketingCampaign/>
+										<div className="row">
+											<div className={ classNames(styles['filter-bottom'])}>
+												<FilterPage/>
+											</div>
+										</div>
+					    			</div>
+				    			</div>
+							</Tab>
+                            <Tab eventKey={3} title="GWP Global">
+								<div className={ styles.content}>
+		                        	<div className={ classNames(styles['filter-product'])}>
+					    				<div className={ classNames(styles['wrapper-filter'])}>
+					    					<div className={ styles['filter-left']}>
+												<FilterActionSelect title={ "Action" } selectOption={ ['Delete Product'] }/>
+		                                    	<FilterId title={ "Product ID" } selectOption={ ['Product ID', 'SKU No.', 'Product Name', 'Brandname', 'Batch No.'] }/>
+					    					</div>
+					    					<div className={ classNames(styles['filter-right']) }>
+						    					<FilterPage/>
+					    					</div>
+					    				</div>
+					    			</div>
+					    			<div className={ styles['table-detail'] }>
+					    				<MarketingCampaign/>
+										<div className="row">
+											<div className={ classNames(styles['filter-bottom'])}>
+												<FilterPage/>
+											</div>
+										</div>
+					    			</div>
+				    			</div>
+							</Tab>
+                            <Tab eventKey={4} title="Shipping Global">
+								<div className={ styles.content}>
+		                        	<div className={ classNames(styles['filter-product'])}>
+					    				<div className={ classNames(styles['wrapper-filter'])}>
+					    					<div className={ styles['filter-left']}>
+												<FilterActionSelect title={ "Action" } selectOption={ ['Delete Product'] }/>
+		                                    	<FilterId title={ "Product ID" } selectOption={ ['Product ID', 'SKU No.', 'Product Name', 'Brandname', 'Batch No.'] }/>
+					    					</div>
+					    					<div className={ classNames(styles['filter-right']) }>
+						    					<FilterPage/>
+					    					</div>
+					    				</div>
+					    			</div>
+					    			<div className={ styles['table-detail'] }>
+					    				<MarketingCampaign/>
+										<div className="row">
+											<div className={ classNames(styles['filter-bottom'])}>
+												<FilterPage/>
+											</div>
+										</div>
+					    			</div>
+				    			</div>
+							</Tab>
                         </Tabs>
 			    	</section>
 		    	</div>
