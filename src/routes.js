@@ -30,6 +30,9 @@ import {
     OrderDetailEditDetail,
     AddProduct,
     Marketing,
+    MarketingAddNewGwp,
+    MarketingAddNewCampaign,
+    MasterBrandAndMember,
   } from 'containers';
 
 export default (store) => {
@@ -86,8 +89,11 @@ export default (store) => {
       <Route path="product/managecustomattribute" component={ProductManageCustomAttribute}/>
       <Route path="parentproduct/add" component={AddParentProduct}/>
       <Route path="orderdetailcanceldetai/edit" component={OrderDetailEditDetail}/>
+      <Route path="marketing/addnewgwp" component={MarketingAddNewGwp}/>
       <Route path="product/add" component={AddProduct}/>
       <Route path="marketing" component={Marketing}/>
+      <Route path="marketing/addnewcampaign" component={MarketingAddNewCampaign}/>
+      <Route path="marketing/masterbandandmember" component={MasterBrandAndMember}/>
 
       { /* Catch all route */ }
       <Route path="*" component={NotFound} status={404} />
