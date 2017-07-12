@@ -30,11 +30,8 @@ import {
     OrderDetailEditDetail,
     AddProduct,
     MarketingAddNewGwp,
-<<<<<<< HEAD
     MarketingAddNewCampaign,
-=======
     MasterBrandAndMember,
->>>>>>> dev
   } from 'containers';
 
 export default (store) => {
