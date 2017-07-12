@@ -1,0 +1,111 @@
+@import "../../styles/addons.scss";
+.tab-content {
+    overflow-x: scroll;
+    margin-bottom: 40px;
+
+    table {
+        table-layout: fixed;
+
+        thead {
+
+            .title-table {
+                color: $kpc-blue;
+                font-size: $kpc-font14;
+
+                th {
+                    padding: 25px 8px;
+                }
+            }
+
+            .product-checkbox {
+                width: 20px;
+            }
+
+            .product-id {
+                width: 20px;
+            }
+
+            .product-time {
+                width: 90px;
+            }
+
+            .product-during-time {
+                width: 90px;
+            }
+
+            .product-name {
+                width: 85px;
+            }
+
+            .product-description {
+                width: 200px;
+            }
+
+            .product-code {
+                width: 80px;
+            }
+
+            .product-usage {
+                width: 80px;
+            }
+
+            .product-date {
+                width: 130px;
+            }
+
+            .product-day {
+                width: 80px;
+            }
+
+            .product-status {
+                width: 150px;
+            }
+
+            .product-priority {
+                width: 60px;
+            }
+        }
+
+        tbody {
+            font-size: 14px;
+
+            td {
+                // vertical-align: inherit;
+
+                .start-date, .end-date, .start-time, .end-time  {
+
+                    .text {
+                        font-size: $kpc-font12;
+                        margin-bottom: 10px;
+                    }
+                    .input {
+                        margin-bottom: 10px;
+                        input {
+                            width: 112px;
+                            border-radius: 3px;
+                        }
+                    }
+                }
+
+                .start-time, .end-time {
+                    .input {
+                        margin-bottom: 10px;
+                        input {
+                            width: 75px;
+                            border-radius: 3px;
+                        }
+                    }
+                }
+
+                .code-list {
+                    list-style: none;
+                    padding: 0;
+                }
+            }
+        }
+
+        tbody > tr:nth-of-type(odd) {
+            background-color: #f9fcff;
+        }
+    }
+}

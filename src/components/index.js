@@ -34,3 +34,4 @@ export ProductColumes from './Product/ProductColumes';
 export ProductManageDynamicAttribute from './Product/ProductManageDynamicAttribute';
 export ProductButtonAdd from './Product/ProductButtonAdd';
 export OrderCustomerDetail from './OrderCustomerDetail/OrderCustomerDetail';
+export MarketingCampaign from './MarketingCampaign/MarketingCampaign';
