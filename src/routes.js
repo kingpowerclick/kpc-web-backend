@@ -34,6 +34,8 @@ import {
     MarketingAddNewCampaign,
     MasterBrandAndMember,
     SpecificGroup,
+    AddNewCartRule,
+
 
   } from 'containers';
 
@@ -97,6 +99,7 @@ export default (store) => {
       <Route path="marketing/addnewcampaign" component={MarketingAddNewCampaign}/>
       <Route path="marketing/masterbandandmember" component={MasterBrandAndMember}/>
       <Route path="marketing/specificgroup" component={SpecificGroup}/>
+      <Route path="marketing/addnewcartrule" component={AddNewCartRule}/>
 
       { /* Catch all route */ }
       <Route path="*" component={NotFound} status={404} />
