@@ -29,3 +29,8 @@ export AddProduct from './AddProduct/AddProduct';
 export Marketing from './Marketing/Marketing';
 export MarketingAddNewCampaign from './MarketingAddNewCampaign/MarketingAddNewCampaign';
 export MasterBrandAndMember from './MasterBrandAndMember/MasterBrandAndMember';
+
+export GetDiscountAmountOff from './NewCampaign/Amount/GetDiscountAmountOff';
+export BuyItem from './NewCampaign/Amount/BuyItem';
+export DiscountPercentOff from './NewCampaign/Amount/DiscountPercentOff';
+export BuyFirststTime from './NewCampaign/Amount/BuyFirststTime';

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
+import { Link } from 'react-router';
 import { Breadcrumb} from 'components';
 import { SplitButton, MenuItem } from 'react-bootstrap';
 
@@ -26,14 +27,14 @@ export default class MarketingAddNewCampaign extends Component {
                     <div className={styles['panel-left']}>
                         <div className={styles['panel-content']}>
                             <p className={styles['list-menu']}>Set Campaign Info</p>
-                            <p className={styles['list-menu']}>- Amount Discount (0)</p>
                             <p className={styles['list-menu']}>- Percent Discount (0)</p>
+                            <p className={styles['list-menu']}>- Amount Discount (0)</p>
                             <ul className={styles['gwp-globle-menu']}>
-                                <li className={styles['gwp-globle-menu-list']}><label><input type="radio" >Get Discount Amount (1)</input></label></li>
-                                <li className={styles['gwp-globle-menu-list']}><label><input type="radio">Buy Amount XXX baht Get Discount Amount off (0)</input></label></li>
-                                <li className={styles['gwp-globle-menu-list']}><label><input type="radio">Buy items X  Get Discount Amount (0)</input></label></li>
-                                <li className={styles['gwp-globle-menu-list']}><label><input type="radio">Buy item X get item Y at Discount Amount off (0)</input></label></li>
-                                <li className={styles['gwp-globle-menu-list']}><label><input type="radio">Buy 1st time full price, 2nd item X Amount off, 3rd item XX Amount off(0)</input></label></li>
+                                <li className={ classNames( styles['gwp-globle-menu-list'], styles['menu-active'] ) }><label><input type="radio" >Get Discount Amount (1)</input></label></li>
+                                <li className={ styles['gwp-globle-menu-list'] }><Link to={ `/marketing/addnewcampaign/getdiscountamountoff` }><label><input type="radio">Buy Amount XXX baht Get Discount Amount off (0)</input></label></Link></li>
+                                <li className={ styles['gwp-globle-menu-list'] }><Link to={ `/marketing/addnewcampaign/buyitem` }><label><input type="radio">Buy items X  Get Discount Amount (0)</input></label></Link></li>
+                                <li className={ styles['gwp-globle-menu-list'] }><Link to={ `/marketing/addnewcampaign/discountpercentoff` }><label><input type="radio">Buy item X get item Y at Discount Amount off (0)</input></label></Link></li>
+                                <li className={ styles['gwp-globle-menu-list'] }><Link to={ `/marketing/addnewcampaign/buyfirststtime` }><label><input type="radio">Buy 1st time full price, 2nd item X Amount off, 3rd item XX Amount off(0)</input></label></Link></li>
                             </ul>
                             <p className={styles['list-menu']}>- GWP (0)</p>
                             <p className={styles['list-menu']}>- Shipping Fee (0)</p>
