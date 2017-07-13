@@ -39,6 +39,7 @@ import {
     BuyFirststTime,
     SpecificGroup,
     AddNewCampaignByPercent,
+    AddNewCampaignByAmount,
 
   } from 'containers';
 
@@ -107,6 +108,7 @@ export default (store) => {
       <Route path="marketing/addnewcampaign/buyfirststtime" component={BuyFirststTime}/>
       <Route path="marketing/specificgroup" component={SpecificGroup}/>
       <Route path="marketing/addnewcampaignbypercent" component={AddNewCampaignByPercent}/>
+      <Route path="marketing/addnewcampaignbyamount" component={AddNewCampaignByAmount}/>
 
       { /* Catch all route */ }
       <Route path="*" component={NotFound} status={404} />
