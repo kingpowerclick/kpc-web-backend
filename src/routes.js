@@ -38,7 +38,7 @@ import {
     DiscountPercentOff,
     BuyFirststTime,
     SpecificGroup,
-
+    GwpBuyAmount,
   } from 'containers';
 
 export default (store) => {
@@ -105,7 +105,7 @@ export default (store) => {
       <Route path="marketing/addnewcampaign/discountpercentoff" component={DiscountPercentOff}/>
       <Route path="marketing/addnewcampaign/buyfirststtime" component={BuyFirststTime}/>
       <Route path="marketing/specificgroup" component={SpecificGroup}/>
-
+      <Route path="marketing/gwp/buyamount" component={GwpBuyAmount}/>
       { /* Catch all route */ }
       <Route path="*" component={NotFound} status={404} />
     </Route>
