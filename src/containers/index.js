@@ -34,3 +34,4 @@ export GetDiscountAmountOff from './NewCampaign/Amount/GetDiscountAmountOff';
 export BuyItem from './NewCampaign/Amount/BuyItem';
 export DiscountPercentOff from './NewCampaign/Amount/DiscountPercentOff';
 export BuyFirststTime from './NewCampaign/Amount/BuyFirststTime';
+export SpecificGroup from './SpecificGroup/SpecificGroup';
