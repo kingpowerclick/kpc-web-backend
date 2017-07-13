@@ -29,3 +29,4 @@ export AddProduct from './AddProduct/AddProduct';
 export Marketing from './Marketing/Marketing';
 export MarketingAddNewCampaign from './MarketingAddNewCampaign/MarketingAddNewCampaign';
 export MasterBrandAndMember from './MasterBrandAndMember/MasterBrandAndMember';
+export SpecificGroup from './SpecificGroup/SpecificGroup';
