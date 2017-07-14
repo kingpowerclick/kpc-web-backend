@@ -39,8 +39,8 @@ import {
     DiscountPercentOff,
     BuyFirststTime,
     SpecificGroup,
-    AddNewCampaignByPercent,
-    AddNewCampaignByAmount,
+    AddNewCartRuleByPercent,
+    AddNewCartRuleByAmount,
     AddNewCartRule,
 
 
