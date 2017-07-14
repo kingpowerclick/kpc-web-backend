@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
 import { Breadcrumb} from 'components';
+import { SplitButton, MenuItem } from 'react-bootstrap';
 
 export default class GetFreeShippingFee extends Component {
     render() {
@@ -27,7 +28,7 @@ export default class GetFreeShippingFee extends Component {
                             <p className={styles['list-menu']}>Set Shipping fee Global Info</p>
                             <p className={styles['list-menu']}>- Shipping Fee (0)</p>
                             <ul className={styles['gwp-globle-menu']}>
-                                <li className={ styles['gwp-globle-menu-list'] }><label><input type="radio">Buy amount XXX baht GET free Shipping Fee throughout country (0)</input></label></li>
+                                <li className={ styles['gwp-globle-menu-list'] }><label><input type="radio" >Buy amount XXX baht GET free Shipping Fee throughout country  (0)</input></label></li>
                                 <li className={ styles['gwp-globle-menu-list'] }><label><input type="radio">Buy amount XXX baht with shipping fee xxx baht (0)</input></label></li>
                                 <li className={ classNames( styles['gwp-globle-menu-list'], styles['menu-active'] ) }><label><input type="radio">Buy Item X Get free shipping fee (0)</input></label></li>
                             </ul>
@@ -35,7 +36,7 @@ export default class GetFreeShippingFee extends Component {
                     </div>
                     <div className={styles['panel-right']}>
                         <div className={styles['panel-content']}>
-                            <p className={styles['list-menu']}>Buy amount XXX baht GET free Shipping Fee throughout country</p>
+                            <p className={styles['list-menu']}>Buy Item X Get free shipping fee</p>
                             <div className={styles['form-group']}>
                                 <label className={styles['control-label']}>Turn On/Off</label>
                                 <div className={styles['control-on-off']}>
@@ -50,14 +51,109 @@ export default class GetFreeShippingFee extends Component {
                                 </div>
                                 <div className={ classNames(styles['control-optional'], styles['top-border'])}>
                                     <div className={styles['content-option']}>
-                                        <label>Buy amount</label>
+                                        <label>Buy item X WITH  SHIPPING Fee</label>
                                         <label>
-                                            <input type="text" className={styles['small-input']}/>
+                                            <input type="text" className="form-control"/>
                                         </label>
-                                        <label>THB WITH  SHIPPING FEE</label>
+                                        <label>THB</label>
+                                        <div className={styles['divied-blue']}></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={ classNames(styles['control-group'], 'row') }>
+                                <div className={styles['control-label']}>
+                                    <label className={styles['control-label']}>Select products to include</label>
+                                </div>
+                                <div className={styles['control-optional']}>
+                                    <div className={styles['content-option']}>
+                                        <label>Item X is</label>
                                         <label>
-                                            <input type="text" className={styles['small-input']}/>
+                                            <SplitButton title="none" pullRight id="split-button-pull-right">
+                                                <MenuItem eventKey="1">Action</MenuItem>
+                                                <MenuItem eventKey="2">Another action</MenuItem>
+                                                <MenuItem eventKey="3">Something else here</MenuItem>
+                                                <MenuItem eventKey="4">Separated link</MenuItem>
+                                            </SplitButton>
                                         </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={ classNames(styles['control-group'], 'row') }>
+                                <div className={styles['control-label']}>
+                                    <label className={styles['control-label']}>Result of included </label>
+                                </div>
+                                <div className={styles['control-optional']}>
+                                    <div className={styles['content-option']}>
+                                        <ul>
+                                            <li>by Category :  --</li>
+                                            <li>by Brand :  --</li>
+                                            <li>by SKU :  --</li>
+                                            <li>by Specific Group :  --</li>
+                                            <li>by Mass Upload :  --</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={ classNames(styles['control-group'], 'row') }>
+                                <div className={styles['control-label']}>
+                                    <label className={styles['control-label']}>Quantity</label>
+                                </div>
+                                <div className={styles['control-optional']}>
+                                    <div className={styles['content-option']}>
+                                        <label>QTY of item X</label>
+                                        <label>
+                                            <input type="text" className="form-control"/>
+                                        </label>
+                                        <label>THB</label>
+                                        <div className={styles['divied-blue']}></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={ classNames(styles['control-group'], 'row') }>
+                                <div className={styles['control-label']}>
+                                    <label className={styles['control-label']}>Select products to exclude</label>
+                                </div>
+                                <div className={styles['control-optional']}>
+                                    <div className={styles['content-option']}>
+                                        <label>Item X is</label>
+                                        <label>
+                                            <SplitButton title="none" pullRight id="split-button-pull-right">
+                                                <MenuItem eventKey="1">Action</MenuItem>
+                                                <MenuItem eventKey="2">Another action</MenuItem>
+                                                <MenuItem eventKey="3">Something else here</MenuItem>
+                                                <MenuItem eventKey="4">Separated link</MenuItem>
+                                            </SplitButton>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={ classNames(styles['control-group'], 'row') }>
+                                <div className={styles['control-label']}>
+                                    <label className={styles['control-label']}>Result of excluded </label>
+                                </div>
+                                <div className={styles['control-optional']}>
+                                    <div className={styles['content-option']}>
+                                        <ul>
+                                            <li>by Category :  --</li>
+                                            <li>by Brand :  --</li>
+                                            <li>by SKU :  --</li>
+                                            <li>by Specific Group :  --</li>
+                                            <li>by Mass Upload :  --</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={ classNames(styles['control-group'], 'row') }>
+                                <div className={styles['control-label']}>
+                                    <label className={styles['control-label']}>Quantity</label>
+                                </div>
+                                <div className={styles['control-optional']}>
+                                    <div className={styles['content-option']}>
+                                        <label>QTY of item X</label>
+                                        <label>
+                                            <input type="text" className="form-control"/>
+                                        </label>
+                                        <label>THB</label>
                                     </div>
                                 </div>
                             </div>
@@ -69,6 +165,7 @@ export default class GetFreeShippingFee extends Component {
                                     <div className={styles['border-bottom']}></div>
                                 </div>
                             </div>
+                            <div className={styles['divied-blue']}></div>
                             <div className={styles['add-new-box']}>
                                 <a href="#"><i className="fa fa-plus-circle"></i>Add New another Condition</a>
                             </div>
