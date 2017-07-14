@@ -44,3 +44,4 @@ export ShippingGlobalFeeFreeCountry from './ShippingGlobalFeeFreeCountry/Shippin
 export ShippingGlobalFeeWithShippingFee from './ShippingGlobalFeeWithShippingFee/ShippingGlobalFeeWithShippingFee';
 export AddNewShippingFeeGlobal from './AddNewShippingFeeGlobal/AddNewShippingFeeGlobal';
 export AddSpecificGroup from './AddSpecificGroup/AddSpecificGroup';
+export GetFreeShippingFee from './GetFreeShippingFee/GetFreeShippingFee';

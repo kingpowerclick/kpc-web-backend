@@ -48,6 +48,7 @@ import {
     ShippingGlobalFeeWithShippingFee,
     AddNewShippingFeeGlobal,
     AddSpecificGroup,
+    GetFreeShippingFee,
 
   } from 'containers';
 
@@ -126,7 +127,7 @@ export default (store) => {
       <Route path="marketing/shippingglobalfeewithshippingfee" component={ShippingGlobalFeeWithShippingFee}/>
       <Route path="marketing/addnewshippingfeeglobal" component={AddNewShippingFeeGlobal}/>
       <Route path="marketing/addspecificgroup" component={AddSpecificGroup}/>
-
+      <Route path="marketing/getfreeshippingfee" component={GetFreeShippingFee}/>
 
       { /* Catch all route */ }
       <Route path="*" component={NotFound} status={404} />
