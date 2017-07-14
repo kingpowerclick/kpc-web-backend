@@ -1,0 +1,51 @@
+ @import "../../styles/addons.scss";
+ table {
+    table-layout: fixed;
+    min-width: auto;
+    max-width: none;
+    margin: 20px;
+    border: 1px solid $pastel-gray;
+    thead {
+        .title-table {
+            background: $kpc-blue;
+            font-size: $kpc-font14;
+            color: $kpc-white;
+            
+            th {
+                padding: 15px 8px;
+                vertical-align: top;
+                font-weight: normal;
+            }
+        
+            .promo-checkbox{
+                width: 35px;
+            }
+            .promo-code {
+                width: 190px;
+            }
+            .order-creted {
+                width: 220px;
+            }
+            .order-used{
+                width: 45px;
+            }
+            .order-time {
+                width: 80px;
+            }
+        }
+    }
+    tbody {
+        font-size: 14px;
+        td{
+            padding: 15px 8px;
+        }
+        .overflow-td{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+    tbody > tr:nth-of-type(odd) {
+        background-color: #f9fcff;
+    }
+}
