@@ -35,3 +35,5 @@ export ProductManageDynamicAttribute from './Product/ProductManageDynamicAttribu
 export ProductButtonAdd from './Product/ProductButtonAdd';
 export OrderCustomerDetail from './OrderCustomerDetail/OrderCustomerDetail';
 export MarketingCampaign from './MarketingCampaign/MarketingCampaign';
+
+export NewCampaginMenu from './NewCampaignMenu/NewCampaignMenu';
