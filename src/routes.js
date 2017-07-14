@@ -49,7 +49,6 @@ import {
     ShippingGlobalFeeFreeCountry,
     AddNewShippingFeeGlobal,
     ShippingGlobalFeeWithShippingFee,
-    AddNewShippingFeeGlobal,
 
 
   } from 'containers';
@@ -128,8 +127,8 @@ export default (store) => {
       <Route path="marketing/addnewcartrulebyamount" component={AddNewCartRuleByAmount}/>
       <Route path="marketing/shippingglobalfeefreecountry" component={ShippingGlobalFeeFreeCountry}/>
       <Route path="marketing/shippingglobalfeewithshippingfee" component={ShippingGlobalFeeWithShippingFee}/>
-      
-      
+
+
 
 
       { /* Catch all route */ }
