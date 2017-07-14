@@ -33,6 +33,7 @@ import {
     MarketingAddNewGwp,
     MarketingAddNewCampaign,
     MasterBrandAndMember,
+    MarketingCampaignInfo,
     GetDiscountAmountOff,
     BuyItem,
     DiscountPercentOff,
@@ -105,6 +106,8 @@ export default (store) => {
       <Route path="marketing" component={Marketing}/>
       <Route path="marketing/addnewcampaign" component={MarketingAddNewCampaign}/>
       <Route path="marketing/masterbandandmember" component={MasterBrandAndMember}/>
+      <Route path="marketing/setcampaign" component={MarketingAddNewCampaign}/>
+      <Route path="marketing/campaign/info" component={MarketingCampaignInfo}/>
       <Route path="marketing/addnewcampaign/getdiscountamountoff" component={GetDiscountAmountOff}/>
       <Route path="marketing/addnewcampaign/buyitem" component={BuyItem}/>
       <Route path="marketing/addnewcampaign/discountpercentoff" component={DiscountPercentOff}/>
