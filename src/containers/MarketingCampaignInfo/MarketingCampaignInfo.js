@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import { Breadcrumb} from 'components';
+import { Breadcrumb, TablePromoCode } from 'components';
 import { SplitButton, MenuItem } from 'react-bootstrap';
 
 export default class MarketingCampaignInfo extends Component {
@@ -156,6 +156,44 @@ export default class MarketingCampaignInfo extends Component {
                                             <div className={styles['border-add-promo']}></div>
                                             <div><a><i className="fa fa-upload"></i></a></div>
                                         </div>
+                                    </div>
+                                </div>
+                                <div className={styles['export-promo-code']}>
+                                    <div className={styles['export-header']}>
+                                        <div className={styles['export-to']}>
+                                            <span className={styles['export-text']}>Export to</span>
+                                            <SplitButton title="none" pullRight id="split-button-pull-right">
+                                                <MenuItem eventKey="1">Action</MenuItem>
+                                                <MenuItem eventKey="2">Another action</MenuItem>
+                                                <MenuItem eventKey="3">Something else here</MenuItem>
+                                                <MenuItem eventKey="4">Separated link</MenuItem>
+                                            </SplitButton>
+                                        </div>
+                                        <div className={styles['btn-export']}>
+                                            <button className={ classNames(styles['btn-blue'], 'btn', 'btn-default') }>Export</button>
+                                        </div>
+                                       	<div className={ styles['filter-pagination']}>
+                                            <nav aria-label="Page navigation">
+                                                <ul className={ classNames(styles['pagination-ul'], 'pagination')}>
+                                                    <li>
+                                                        <a href="#" aria-label="Previous">
+                                                            <span aria-hidden="true">&laquo;</span>
+                                                        </a>
+                                                    </li>
+                                                    <li><a href="#">1</a></li>
+                                                    <li><a href="#">2</a></li>
+                                                    <li><a href="#">3</a></li>
+                                                    <li>
+                                                        <a href="#" aria-label="Next">
+                                                            <span aria-hidden="true">&raquo;</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                    <div>
+                                    <TablePromoCode/>
                                     </div>
                                 </div>
                             </div>

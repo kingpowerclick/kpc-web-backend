@@ -245,6 +245,33 @@
         }
       }
 
+      .export-promo-code {
+
+        .export-header {
+          display: block;
+
+          .btn-blue {
+            width: 111px;
+            padding: 5px 0;
+            margin: 0;
+          }
+        }
+
+        .btn-export,.export-to {
+          float: left;
+          margin: 20px;
+
+          .export-text {
+            margin-right: 20px;
+          }
+        }
+
+        .filter-pagination {
+          float: right;
+          text-align: right;
+        }
+      }
+
       .schdule-setting {
           display: block;
           text-align: center;
