@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import { Breadcrumb, NewCampaginMenu} from 'components';
+import { Breadcrumb, NewCampaginMenu } from 'components';
 import { SplitButton, MenuItem } from 'react-bootstrap';
 
-export default class MarketingAddNewCampaign extends Component {
+export default class GwpBuyAmount extends Component {
     render() {
-      const styles = require('./marketingAddNewCampaign.scss');
+      const styles = require('./newCampaign.scss');
       return (
         <div className="container-fluid">
     		<div className="row">
@@ -23,12 +23,12 @@ export default class MarketingAddNewCampaign extends Component {
                             </ul>
                         </div>
                     </header>
-                    <div className={styles['panel-left']}>
-                        <NewCampaginMenu subMenu= { `Amounta` } mainMenu={ `Amount` }/>
+                    <div className={ styles['panel-left'] }>
+                        <NewCampaginMenu subMenu= { `Gwpa` } mainMenu={ `Gwp` }/>
                     </div>
                     <div className={styles['panel-right']}>
                         <div className={styles['panel-content']}>
-                            <p className={styles['list-menu']}>Get Discount Amount off</p>
+                            <p className={styles['list-menu']}>Buy amount XXX baht GET GWP</p>
                             <div className={styles['form-group']}>
                                 <label className={styles['control-label']}>Turn On/Off</label>
                                 <div className={styles['control-on-off']}>
@@ -43,11 +43,24 @@ export default class MarketingAddNewCampaign extends Component {
                                 </div>
                                 <div className={ classNames(styles['control-optional'], styles['top-border'])}>
                                     <div className={styles['content-option']}>
-                                        <label>Get Discount</label>
-                                        <label>
-                                            <input type="text" className="form-control"/>
-                                        </label>
-                                        <label>THB</label>
+                                        <span><strong>Buy amount</strong></span>
+                                        <label><input type="text" className="form-control"/></label>
+                                        <span><strong> THB And </strong>Get <strong> GWP</strong></span>
+                                        <div className={styles['border-bottom-blue']}></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={ classNames(styles['control-group'], 'row') }>
+                                <div className={styles['control-label']}>
+                                    <label className={styles['control-label']}>Calculate by</label>
+                                </div>
+                                <div className={ classNames(styles['control-optional']) }>
+                                    <div className={styles['content-option']}>
+                                        <div className={styles['control-on-off']}>
+                                            <label className="radio-inline"><input type="radio">Net Revenues</input></label>
+                                            <label className="radio-inline"><input type="radio">Gross Revenues</input></label>
+                                        </div>
+                                        <div className={styles['border-bottom-blue']}></div>
                                     </div>
                                 </div>
                             </div>
@@ -57,7 +70,7 @@ export default class MarketingAddNewCampaign extends Component {
                                 </div>
                                 <div className={styles['control-optional']}>
                                     <div className={styles['content-option']}>
-                                        <label>Product is a</label>
+                                        <label>GWP is</label>
                                         <label>
                                             <SplitButton title="none" pullRight id="split-button-pull-right">
                                                 <MenuItem eventKey="1">Action</MenuItem>
@@ -71,54 +84,36 @@ export default class MarketingAddNewCampaign extends Component {
                             </div>
                             <div className={ classNames(styles['control-group'], 'row') }>
                                 <div className={styles['control-label']}>
-                                    <label className={styles['control-label']}>Result of included </label>
+                                    <label className={styles['control-label']}>GWP is </label>
                                 </div>
                                 <div className={styles['control-optional']}>
                                     <div className={styles['content-option']}>
                                         <ul>
-                                            <li>by Category :  --</li>
-                                            <li>by Brand :  --</li>
                                             <li>by SKU :  --</li>
-                                            <li>by Specific Group :  --</li>
-                                            <li>by Mass Upload :  --</li>
                                         </ul>
+                                        <div className={styles['border-bottom-blue']}></div>
                                     </div>
                                 </div>
                             </div>
                             <div className={ classNames(styles['control-group'], 'row') }>
                                 <div className={styles['control-label']}>
-                                    <label className={styles['control-label']}>Select products to include</label>
+                                    <label className={styles['control-label']}>Quantity </label>
                                 </div>
-                                <div className={styles['control-optional']}>
+                                <div className={ classNames(styles['control-optional']) }>
                                     <div className={styles['content-option']}>
-                                        <div className={styles.qty}>
-                                            <label>Product is </label>
-                                            <label>
-                                                <SplitButton title="none" pullRight id="split-button-pull-right">
-                                                    <MenuItem eventKey="1">Action</MenuItem>
-                                                    <MenuItem eventKey="2">Another action</MenuItem>
-                                                    <MenuItem eventKey="3">Something else here</MenuItem>
-                                                    <MenuItem eventKey="4">Separated link</MenuItem>
-                                                </SplitButton>
-                                            </label>
-                                        </div>
-                                        <div className={styles['divied-blue']}></div>
+                                        <span><strong>QTY of GWP is</strong></span>
+                                        <label><input type="text" className="form-control"/></label>
+                                        <div className={styles['border-bottom-blue']}></div>
                                     </div>
                                 </div>
                             </div>
                             <div className={ classNames(styles['control-group'], 'row') }>
                                 <div className={styles['control-label']}>
-                                    <label className={styles['control-label']}>Select products to exclude</label>
+                                    <label className={styles['control-label']}>Set Priroty </label>
                                 </div>
-                                <div className={styles['control-optional']}>
+                                <div className={ classNames(styles['control-optional']) }>
                                     <div className={styles['content-option']}>
-                                        <ul>
-                                            <li>by Category :  --</li>
-                                            <li>by Brand :  --</li>
-                                            <li>by SKU :  --</li>
-                                            <li>by Specific Group :  --</li>
-                                            <li>by Mass Upload :  --</li>
-                                        </ul>
+                                        <label><input type="text" className="form-control"/></label>
                                     </div>
                                 </div>
                             </div>
@@ -129,10 +124,6 @@ export default class MarketingAddNewCampaign extends Component {
                                 <div className={styles['control-optional']}>
                                     <div className={styles['border-bottom']}></div>
                                 </div>
-                            </div>
-                            <div className={styles['divied-blue']}></div>
-                            <div className={styles['add-new-box']}>
-                                <a href="#"><i className="fa fa-plus-circle"></i>Add New another Condition</a>
                             </div>
                         </div>
                     </div>
