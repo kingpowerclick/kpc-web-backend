@@ -43,8 +43,6 @@ import {
     AddNewCartRuleByAmount,
     GwpBuyAmount,
     GwpBuyAny,
-    AddNewCampaignByPercent,
-    AddNewCampaignByAmount,
     AddNewCartRule,
     ShippingGlobalFeeFreeCountry,
     ShippingGlobalFeeWithShippingFee,
@@ -122,7 +120,6 @@ export default (store) => {
       <Route path="marketing/addnewcartrulebypercent" component={AddNewCartRuleByPercent}/>
       <Route path="marketing/gwp/buyamount" component={GwpBuyAmount}/>
       <Route path="marketing/gwp/buyany" component={GwpBuyAny}/>
-      <Route path="marketing/addnewcampaignbypercent" component={AddNewCampaignByPercent}/>
       <Route path="marketing/addnewcartrule" component={AddNewCartRule}/>
       <Route path="marketing/addnewcartrulebyamount" component={AddNewCartRuleByAmount}/>
       <Route path="marketing/shippingglobalfeefreecountry" component={ShippingGlobalFeeFreeCountry}/>
@@ -131,7 +128,6 @@ export default (store) => {
       <Route path="marketing/addnewcampaignbyamount" component={AddNewCampaignByAmount}/>
       <Route path="marketing/addnewshippingfeeglobal" component={AddNewShippingFeeGlobal}/>
       <Route path="marketing/getfreeshippingfee" component={GetFreeShippingFee}/>
-
 
       { /* Catch all route */ }
       <Route path="*" component={NotFound} status={404} />
