@@ -72,7 +72,7 @@ export default class GwpBuyAny extends Component {
                             </div>
                             <div className={ classNames(styles['control-group'], 'row') }>
                                 <div className={styles['control-label']}>
-                                    <label className={styles['control-label']}>GWP is </label>
+                                    <label className={styles['control-label']}>Result of included</label>
                                 </div>
                                 <div className={styles['control-optional']}>
                                     <div className={styles['content-option']}>

@@ -39,16 +39,13 @@ import {
     DiscountPercentOff,
     BuyFirststTime,
     SpecificGroup,
-<<<<<<< HEAD
     GwpBuyAmount,
     GwpBuyAny,
-=======
     AddNewCampaignByPercent,
     AddNewCampaignByAmount,
     AddNewCartRule,
 
 
->>>>>>> dev
   } from 'containers';
 
 export default (store) => {
