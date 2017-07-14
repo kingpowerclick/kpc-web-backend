@@ -38,3 +38,4 @@ export SpecificGroup from './SpecificGroup/SpecificGroup';
 export AddNewCartRule from './AddNewCartRule/AddNewCartRule';
 export AddNewCampaignByPercent from './AddNewCampaignByPercent/AddNewCampaignByPercent';
 export AddNewCampaignByAmount from './AddNewCampaignByAmount/AddNewCampaignByAmount';
+export AddNewShippingFeeGlobal from './AddNewShippingFeeGlobal/AddNewShippingFeeGlobal';
