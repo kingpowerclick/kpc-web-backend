@@ -43,3 +43,5 @@ export AddNewCartRuleByPercent from './AddNewCartRuleByPercent/AddNewCartRuleByP
 export AddNewCartRuleByAmount from './AddNewCartRuleByAmount/AddNewCartRuleByAmount';
 export ShippingGlobalFeeFreeCountry from './ShippingGlobalFeeFreeCountry/ShippingGlobalFeeFreeCountry';
 export ShippingGlobalFeeWithShippingFee from './ShippingGlobalFeeWithShippingFee/ShippingGlobalFeeWithShippingFee';
+export AddNewShippingFeeGlobal from './AddNewShippingFeeGlobal/AddNewShippingFeeGlobal';
+export GetFreeShippingFee from './GetFreeShippingFee/GetFreeShippingFee';
