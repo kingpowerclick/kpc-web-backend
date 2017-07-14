@@ -30,7 +30,6 @@ export Marketing from './Marketing/Marketing';
 export MarketingAddNewCampaign from './MarketingAddNewCampaign/MarketingAddNewCampaign';
 export MasterBrandAndMember from './MasterBrandAndMember/MasterBrandAndMember';
 export MarketingCampaignInfo from './MarketingCampaignInfo/MarketingCampaignInfo';
-
 export GetDiscountAmountOff from './NewCampaign/Amount/GetDiscountAmountOff';
 export BuyItem from './NewCampaign/Amount/BuyItem';
 export DiscountPercentOff from './NewCampaign/Amount/DiscountPercentOff';
@@ -42,8 +41,6 @@ export AddNewCartRule from './AddNewCartRule/AddNewCartRule';
 export AddNewCartRuleByPercent from './AddNewCartRuleByPercent/AddNewCartRuleByPercent';
 export AddNewCartRuleByAmount from './AddNewCartRuleByAmount/AddNewCartRuleByAmount';
 export ShippingGlobalFeeFreeCountry from './ShippingGlobalFeeFreeCountry/ShippingGlobalFeeFreeCountry';
-export ShippingGlobalFeeFreeCountry from './ShippingGlobalFeeFreeCountry/ShippingGlobalFeeFreeCountry';
 export ShippingGlobalFeeWithShippingFee from './ShippingGlobalFeeWithShippingFee/ShippingGlobalFeeWithShippingFee';
-export AddNewCampaignByPercent from './AddNewCampaignByPercent/AddNewCampaignByPercent';
-export AddNewCampaignByAmount from './AddNewCampaignByAmount/AddNewCampaignByAmount';
 export AddNewShippingFeeGlobal from './AddNewShippingFeeGlobal/AddNewShippingFeeGlobal';
+export AddSpecificGroup from './AddSpecificGroup/AddSpecificGroup';

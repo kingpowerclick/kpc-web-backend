@@ -1,0 +1,213 @@
+@import "../../styles/addons.scss";
+
+.add-specific-group-view {
+  @include kpc-width(1280px);
+  @include kpc-layout-equal(12);
+  .page-header {
+    display: block;
+    margin-bottom: 30px;
+
+    .page-title {
+      @include kpc-layout-equal(12);
+    }
+
+    .header {
+      @include kpc-header();
+    }
+
+    .sub-menu {
+      @include kpc-layout-equal(12);
+      margin-bottom: 20px;
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          display: inline-flex;
+          padding-right: 15px;
+          padding-left: 15px;
+          border-right: 1px solid #d7d7d7;
+
+          &:first-child {
+            padding-left: 7px;
+          }
+
+          &:last-child {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+  .panel-left {
+    @include kpc-layout-equal(4);
+
+    .panel-content {
+      float: left;
+      border: 1px solid #E7E7E7;
+      padding: 0 15px 15px;
+      width: 100%;
+    }
+
+    .list-menu {
+      font-size: $kpc-font21;
+      border-bottom: 1px solid #e7e7e7;
+      padding: 15px 0;
+    }
+
+    .gwp-globle-menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        padding: 15px 10px;
+        object-fit: contain;
+        background-color: #f9fcff;
+        margin-bottom: 2px;
+        font-size: $kpc-font16;
+
+        label {
+          input {
+            margin: 4px 10px 0 0;
+          }
+        }
+      }
+    }
+  }
+
+  .panel-right {
+    @include kpc-layout-equal(8);
+    float: left;
+    border: 1px solid #E7E7E7;
+    padding: 0 15px 15px;
+
+    .panel-content {
+      .list-menu {
+        font-size: $kpc-font21;
+        border-bottom: 1px solid #e7e7e7;
+        padding: 15px 0;
+      }
+
+      .form-group {
+        margin-top: 20px;
+
+        .control-label {
+          margin-left: 30px;
+          margin-right: 60px;
+        }
+      }
+
+      .divied-blue {
+        border: solid 1px #b7d1e5;
+        margin: 15px 0;
+        clear: both;
+      }
+
+      .add-new-box {
+        margin-left: 140px;
+
+        a {
+          i {
+            padding-right: 10px;
+          }
+        }
+      }
+
+      .form-group {
+        .control-label {
+          float: left;
+          text-align: right;
+          @include kpc-layout-equal(3);
+        }
+      }
+
+      .control-group {
+        margin-bottom: 0;
+        float: left;
+        width: 100%;
+
+        .control-label {
+          float: left;
+          display: inline-grid;
+          text-align: right;
+          padding-top: 10px;
+          @include kpc-layout-equal(3);
+          .control-label {
+            width: 100%;
+          }
+        }
+      }
+
+      .control-optional {
+        float: left;
+        border-bottom: none;
+        border-top: none;
+        @include kpc-layout-equal(9);
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        // margin-left: 30px;
+
+
+        .content-option {
+          margin: 15px;
+
+		  textarea{
+			  width: 100%;
+			  border-radius: 3px;
+			  height: 80px;
+              border: 1px solid $border;
+		  }
+
+		  .small-input{
+			  height: 40px;
+			  width: 10%;
+			  border-radius: 3px;
+		  }
+
+		  .note-example{
+			  padding-left: 15px;
+			  color: #9b9b9b;
+
+		  }
+
+		  .cart-rule-unit{
+			  padding-left: 15px;
+		  }
+
+          .qty {
+            display: inline-flex;
+          }
+
+          .divied-blue {
+            border: solid 1px #b7d1e5;
+            margin: 15px 0;
+          }
+
+          ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+              padding: 0 0 15px;
+
+			  input{
+				  border-radius: 3px;
+			  }
+
+			  label {
+				  padding: 0 15px;
+	          }
+            }
+          }
+        }
+      }
+    }
+  }
+  .btn-blue{
+      padding: 12px 60px;
+      float: right;
+      margin: 30px;
+  }
+}
