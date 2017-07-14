@@ -3,17 +3,17 @@ import classNames from 'classnames';
 import { Breadcrumb} from 'components';
 import { SplitButton, MenuItem } from 'react-bootstrap';
 
-export default class AddNewCampaignByAmount extends Component {
+export default class AddNewCartRuleByPercent extends Component {
     render() {
-      const styles = require('./addNewCampaignByAmount.scss');
+      const styles = require('./addNewCartRuleByPercent.scss');
       return (
         <div className="container-fluid">
     		<div className="row">
-                <div className={ classNames(styles['add-new-campaign-by-amount-view']) }>
+                <div className={ classNames(styles['add-new-cart-rule-by-percent-view']) }>
                     <header className={ styles['page-header']}>
                         <div className={ styles['page-title']}>
-                            <h1 className={ styles.header }><strong>Add New Campaign</strong></h1>
-                            <Breadcrumb breadcrumb={ "Marketing > Add New Campaign" }/>
+                            <h1 className={ styles.header }><strong>Add New Cart Rule</strong></h1>
+                            <Breadcrumb breadcrumb={ "Marketing > Add New Cart Rule" }/>
                         </div>
                         <div className={ styles['sub-menu']}>
                             <ul>
@@ -28,15 +28,14 @@ export default class AddNewCampaignByAmount extends Component {
                             <p className={styles['list-menu']}>Set Campaign Info</p>
                             <p className={styles['list-menu']}>- End of the Bill Discount (0)</p>
                             <ul className={styles['gwp-globle-menu']}>
-                                <li className={ styles['gwp-globle-menu-list'] }><label><input type="radio">By Percent Discount</input></label></li>
-                                <li className={ classNames( styles['gwp-globle-menu-list'], styles['menu-active'] ) }><label><input type="radio" >By Amount Discount</input></label></li>
-
+                                <li className={ classNames( styles['gwp-globle-menu-list'], styles['menu-active'] ) }><label><input type="radio" >By Percent Discount</input></label></li>
+                                <li className={ styles['gwp-globle-menu-list'] }><label><input type="radio">By Amount Discount</input></label></li>
                             </ul>
                         </div>
                     </div>
                     <div className={styles['panel-right']}>
                         <div className={styles['panel-content']}>
-                            <p className={styles['list-menu']}>End of the Bill Discount By Amount Discount</p>
+                            <p className={styles['list-menu']}>End of the Bill Discount By Percent Discount</p>
                             <div className={styles['form-group']}>
                                 <label className={styles['control-label']}>Turn On/Off</label>
                                 <div className={styles['control-on-off']}>
@@ -55,7 +54,7 @@ export default class AddNewCampaignByAmount extends Component {
                                         <label>
                                             <input type="text" className="form-control"/>
                                         </label>
-                                        <label>THB at the end of Bill discount</label>
+                                        <label>% at the end of Bill discount</label>
                                     </div>
                                 </div>
                             </div>
