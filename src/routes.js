@@ -50,6 +50,7 @@ import {
     AddNewShippingFeeGlobal,
     GetFreeShippingFee,
 
+
   } from 'containers';
 
 export default (store) => {
