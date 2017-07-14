@@ -39,3 +39,4 @@ export SpecificGroup from './SpecificGroup/SpecificGroup';
 export AddNewCartRule from './AddNewCartRule/AddNewCartRule';
 export AddNewCartRuleByPercent from './AddNewCartRuleByPercent/AddNewCartRuleByPercent';
 export AddNewCartRuleByAmount from './AddNewCartRuleByAmount/AddNewCartRuleByAmount';
+export ShippingGlobalFeeFreeCountry from './ShippingGlobalFeeFreeCountry/ShippingGlobalFeeFreeCountry';

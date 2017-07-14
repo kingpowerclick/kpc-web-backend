@@ -39,9 +39,10 @@ import {
     DiscountPercentOff,
     BuyFirststTime,
     SpecificGroup,
-    AddNewCampaignByPercent,
-    AddNewCampaignByAmount,
+    AddNewCartRuleByPercent,
+    AddNewCartRuleByAmount,
     AddNewCartRule,
+    ShippingGlobalFeeFreeCountry,
 
 
   } from 'containers';
@@ -115,6 +116,8 @@ export default (store) => {
       <Route path="marketing/addnewcartrulebypercent" component={AddNewCartRuleByPercent}/>
       <Route path="marketing/addnewcartrule" component={AddNewCartRule}/>
       <Route path="marketing/addnewcartrulebyamount" component={AddNewCartRuleByAmount}/>
+      <Route path="marketing/shippingglobalfeefreecountry" component={ShippingGlobalFeeFreeCountry}/>
+
 
       { /* Catch all route */ }
       <Route path="*" component={NotFound} status={404} />
