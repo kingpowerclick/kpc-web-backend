@@ -46,8 +46,8 @@ import {
     AddNewCartRule,
     ShippingGlobalFeeFreeCountry,
     ShippingGlobalFeeWithShippingFee,
-    AddNewShippingFeeGlobal,
     AddSpecificGroup,
+    AddNewShippingFeeGlobal,
     GetFreeShippingFee,
 
   } from 'containers';
