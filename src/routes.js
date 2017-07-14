@@ -33,13 +33,22 @@ import {
     MarketingAddNewGwp,
     MarketingAddNewCampaign,
     MasterBrandAndMember,
+    MarketingCampaignInfo,
     GetDiscountAmountOff,
     BuyItem,
     DiscountPercentOff,
     BuyFirststTime,
     SpecificGroup,
+<<<<<<< HEAD
     GwpBuyAmount,
     GwpBuyAny,
+=======
+    AddNewCampaignByPercent,
+    AddNewCampaignByAmount,
+    AddNewCartRule,
+
+
+>>>>>>> dev
   } from 'containers';
 
 export default (store) => {
@@ -101,6 +110,8 @@ export default (store) => {
       <Route path="marketing" component={Marketing}/>
       <Route path="marketing/addnewcampaign" component={MarketingAddNewCampaign}/>
       <Route path="marketing/masterbandandmember" component={MasterBrandAndMember}/>
+      <Route path="marketing/setcampaign" component={MarketingAddNewCampaign}/>
+      <Route path="marketing/campaign/info" component={MarketingCampaignInfo}/>
       <Route path="marketing/addnewcampaign/getdiscountamountoff" component={GetDiscountAmountOff}/>
       <Route path="marketing/addnewcampaign/buyitem" component={BuyItem}/>
       <Route path="marketing/addnewcampaign/discountpercentoff" component={DiscountPercentOff}/>
@@ -108,6 +119,10 @@ export default (store) => {
       <Route path="marketing/specificgroup" component={SpecificGroup}/>
       <Route path="marketing/gwp/buyamount" component={GwpBuyAmount}/>
       <Route path="marketing/gwp/buyany" component={GwpBuyAny}/>
+      <Route path="marketing/addnewcampaignbypercent" component={AddNewCampaignByPercent}/>
+      <Route path="marketing/addnewcartrule" component={AddNewCartRule}/>
+      <Route path="marketing/addnewcampaignbyamount" component={AddNewCampaignByAmount}/>
+
       { /* Catch all route */ }
       <Route path="*" component={NotFound} status={404} />
     </Route>
