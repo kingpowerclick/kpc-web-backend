@@ -42,8 +42,5 @@ export AddNewCartRule from './AddNewCartRule/AddNewCartRule';
 export AddNewCartRuleByPercent from './AddNewCartRuleByPercent/AddNewCartRuleByPercent';
 export AddNewCartRuleByAmount from './AddNewCartRuleByAmount/AddNewCartRuleByAmount';
 export ShippingGlobalFeeFreeCountry from './ShippingGlobalFeeFreeCountry/ShippingGlobalFeeFreeCountry';
-export ShippingGlobalFeeFreeCountry from './ShippingGlobalFeeFreeCountry/ShippingGlobalFeeFreeCountry';
 export ShippingGlobalFeeWithShippingFee from './ShippingGlobalFeeWithShippingFee/ShippingGlobalFeeWithShippingFee';
-export AddNewCampaignByPercent from './AddNewCampaignByPercent/AddNewCampaignByPercent';
-export AddNewCampaignByAmount from './AddNewCampaignByAmount/AddNewCampaignByAmount';
 export AddNewShippingFeeGlobal from './AddNewShippingFeeGlobal/AddNewShippingFeeGlobal';
