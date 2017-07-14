@@ -40,8 +40,8 @@ export default class NewCampaignMenu extends Component {
                 <Collapse className={ styles['panel-collapse'] } in={ this.state.gwp }>
                     <ul className={styles['gwp-globle-menu']}>
                         <li className={ classNames( styles['gwp-globle-menu-list'], subMenu === `Gwpa` ? styles['menu-active'] : '' ) }><Link to={ `/marketing/gwp/buyamount` }><label><input type="radio" >Buy amount XXX baht GET GWP (0)</input></label></Link></li>
-                        <li className={ classNames( styles['gwp-globle-menu-list'], subMenu === `Gwpb` ? styles['menu-active'] : '' ) }><Link to={ `/marketing/addnewcampaign/gwp/getdiscountamountoff` }><label><input type="radio">Buy A + any item GET GWP (0)</input></label></Link></li>
-                        <li className={ classNames( styles['gwp-globle-menu-list'], subMenu === `Gwpc` ? styles['menu-active'] : '' ) }><Link to={ `/marketing/addnewcampaign/gwp/buyitem` }><label><input type="radio">Buy item X  GET GWP (0)</input></label></Link></li>
+                        <li className={ classNames( styles['gwp-globle-menu-list'], subMenu === `Gwpb` ? styles['menu-active'] : '' ) }><Link to={ `/marketing/gwp/buyany` }><label><input type="radio">Buy A + any item GET GWP (0)</input></label></Link></li>
+                        <li className={ classNames( styles['gwp-globle-menu-list'], subMenu === `Gwpc` ? styles['menu-active'] : '' ) }><Link to={ `/marketing/gwp/buyany` }><label><input type="radio">Buy item X  GET GWP (0)</input></label></Link></li>
                     </ul>
                 </Collapse>
                 <p className={styles['list-menu']}>- Shipping Fee (0)</p>

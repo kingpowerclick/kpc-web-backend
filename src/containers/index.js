@@ -36,3 +36,4 @@ export DiscountPercentOff from './NewCampaign/Amount/DiscountPercentOff';
 export BuyFirststTime from './NewCampaign/Amount/BuyFirststTime';
 export SpecificGroup from './SpecificGroup/SpecificGroup';
 export GwpBuyAmount from './NewCampaign/Gwp/GwpBuyAmount';
+export GwpBuyAny from './NewCampaign/Gwp/GwpBuyAny';
