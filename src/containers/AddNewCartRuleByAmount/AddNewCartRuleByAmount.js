@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import { Breadcrumb, NewCampaginMenu} from 'components';
+import { Breadcrumb} from 'components';
 import { SplitButton, MenuItem } from 'react-bootstrap';
 
-export default class MarketingAddNewCampaign extends Component {
+export default class AddNewCartRuleByAmount extends Component {
     render() {
-      const styles = require('./marketingAddNewCampaign.scss');
+      const styles = require('./addNewCartRuleByAmount.scss');
       return (
         <div className="container-fluid">
     		<div className="row">
-                <div className={ classNames(styles['marketing-add-new-gwp-view']) }>
+                <div className={ classNames(styles['add-new-cart-rule-by-amount-view']) }>
                     <header className={ styles['page-header']}>
                         <div className={ styles['page-title']}>
-                            <h1 className={ styles.header }><strong>Add New Campaign</strong></h1>
-                            <Breadcrumb breadcrumb={ "Marketing > Add New Campaign" }/>
+                            <h1 className={ styles.header }><strong>Add New Cart Rule</strong></h1>
+                            <Breadcrumb breadcrumb={ "Marketing > Add New Cart Rule" }/>
                         </div>
                         <div className={ styles['sub-menu']}>
                             <ul>
@@ -24,11 +24,19 @@ export default class MarketingAddNewCampaign extends Component {
                         </div>
                     </header>
                     <div className={styles['panel-left']}>
-                        <NewCampaginMenu subMenu= { `Amounta` } mainMenu={ `Amount` }/>
+                        <div className={styles['panel-content']}>
+                            <p className={styles['list-menu']}>Set Campaign Info</p>
+                            <p className={styles['list-menu']}>- End of the Bill Discount (0)</p>
+                            <ul className={styles['gwp-globle-menu']}>
+                                <li className={ styles['gwp-globle-menu-list'] }><label><input type="radio">By Percent Discount</input></label></li>
+                                <li className={ classNames( styles['gwp-globle-menu-list'], styles['menu-active'] ) }><label><input type="radio" >By Amount Discount</input></label></li>
+
+                            </ul>
+                        </div>
                     </div>
                     <div className={styles['panel-right']}>
                         <div className={styles['panel-content']}>
-                            <p className={styles['list-menu']}>Get Discount Amount off</p>
+                            <p className={styles['list-menu']}>End of the Bill Discount By Amount Discount</p>
                             <div className={styles['form-group']}>
                                 <label className={styles['control-label']}>Turn On/Off</label>
                                 <div className={styles['control-on-off']}>
@@ -47,41 +55,20 @@ export default class MarketingAddNewCampaign extends Component {
                                         <label>
                                             <input type="text" className="form-control"/>
                                         </label>
-                                        <label>THB</label>
+                                        <label>THB at the end of Bill discount</label>
                                     </div>
                                 </div>
                             </div>
                             <div className={ classNames(styles['control-group'], 'row') }>
                                 <div className={styles['control-label']}>
-                                    <label className={styles['control-label']}>Select products to include</label>
+                                    <label className={styles['control-label']}>Calculate by</label>
                                 </div>
                                 <div className={styles['control-optional']}>
                                     <div className={styles['content-option']}>
-                                        <label>Product is a</label>
-                                        <label>
-                                            <SplitButton title="none" pullRight id="split-button-pull-right">
-                                                <MenuItem eventKey="1">Action</MenuItem>
-                                                <MenuItem eventKey="2">Another action</MenuItem>
-                                                <MenuItem eventKey="3">Something else here</MenuItem>
-                                                <MenuItem eventKey="4">Separated link</MenuItem>
-                                            </SplitButton>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className={ classNames(styles['control-group'], 'row') }>
-                                <div className={styles['control-label']}>
-                                    <label className={styles['control-label']}>Result of included </label>
-                                </div>
-                                <div className={styles['control-optional']}>
-                                    <div className={styles['content-option']}>
-                                        <ul>
-                                            <li>by Category :  --</li>
-                                            <li>by Brand :  --</li>
-                                            <li>by SKU :  --</li>
-                                            <li>by Specific Group :  --</li>
-                                            <li>by Mass Upload :  --</li>
-                                        </ul>
+                                        <div className={styles['control-on-off']}>
+                                            <label className="radio-inline"><input type="radio">Net Revenues</input></label>
+                                            <label className="radio-inline"><input type="radio">Gross Revenues</input></label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -102,6 +89,22 @@ export default class MarketingAddNewCampaign extends Component {
                                                 </SplitButton>
                                             </label>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={ classNames(styles['control-group'], 'row') }>
+                                <div className={styles['control-label']}>
+                                    <label className={styles['control-label']}>Result of included </label>
+                                </div>
+                                <div className={styles['control-optional']}>
+                                    <div className={styles['content-option']}>
+                                        <ul>
+                                            <li>by Category :  --</li>
+                                            <li>by Brand :  --</li>
+                                            <li>by SKU :  --</li>
+                                            <li>by Specific Group :  --</li>
+                                            <li>by Mass Upload :  --</li>
+                                        </ul>
                                         <div className={styles['divied-blue']}></div>
                                     </div>
                                 </div>
@@ -109,6 +112,26 @@ export default class MarketingAddNewCampaign extends Component {
                             <div className={ classNames(styles['control-group'], 'row') }>
                                 <div className={styles['control-label']}>
                                     <label className={styles['control-label']}>Select products to exclude</label>
+                                </div>
+                                <div className={styles['control-optional']}>
+                                    <div className={styles['content-option']}>
+                                        <div className={styles.qty}>
+                                            <label>Product is </label>
+                                            <label>
+                                                <SplitButton title="none" pullRight id="split-button-pull-right">
+                                                    <MenuItem eventKey="1">Action</MenuItem>
+                                                    <MenuItem eventKey="2">Another action</MenuItem>
+                                                    <MenuItem eventKey="3">Something else here</MenuItem>
+                                                    <MenuItem eventKey="4">Separated link</MenuItem>
+                                                </SplitButton>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={ classNames(styles['control-group'], 'row') }>
+                                <div className={styles['control-label']}>
+                                    <label className={styles['control-label']}>Result of excluded </label>
                                 </div>
                                 <div className={styles['control-optional']}>
                                     <div className={styles['content-option']}>

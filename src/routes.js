@@ -39,6 +39,8 @@ import {
     DiscountPercentOff,
     BuyFirststTime,
     SpecificGroup,
+    GwpBuyAmount,
+    GwpBuyAny,
     AddNewCampaignByPercent,
     AddNewCampaignByAmount,
     AddNewCartRule,
@@ -113,8 +115,12 @@ export default (store) => {
       <Route path="marketing/addnewcampaign/discountpercentoff" component={DiscountPercentOff}/>
       <Route path="marketing/addnewcampaign/buyfirststtime" component={BuyFirststTime}/>
       <Route path="marketing/specificgroup" component={SpecificGroup}/>
+      <Route path="marketing/addnewcartrulebypercent" component={AddNewCartRuleByPercent}/>
+      <Route path="marketing/gwp/buyamount" component={GwpBuyAmount}/>
+      <Route path="marketing/gwp/buyany" component={GwpBuyAny}/>
       <Route path="marketing/addnewcampaignbypercent" component={AddNewCampaignByPercent}/>
       <Route path="marketing/addnewcartrule" component={AddNewCartRule}/>
+      <Route path="marketing/addnewcartrulebyamount" component={AddNewCartRuleByAmount}/>
       <Route path="marketing/addnewcampaignbyamount" component={AddNewCampaignByAmount}/>
       <Route path="marketing/addnewshippingfeeglobal" component={AddNewShippingFeeGlobal}/>
 

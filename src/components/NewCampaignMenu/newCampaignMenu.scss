@@ -1,0 +1,36 @@
+@import "../../styles/addons.scss";
+.panel-content {
+    float: left;
+    border: 1px solid #E7E7E7;
+    padding: 0 15px 15px;
+    width: 100%;
+}
+.list-menu {
+  font-size: $kpc-font21;
+  border-bottom: 1px solid #e7e7e7;
+  padding: 15px 0;
+}
+.gwp-globle-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    padding: 15px 10px;
+    object-fit: contain;
+    background-color: #f9fcff;
+    margin-bottom: 2px;
+    font-size: $kpc-font16;
+    label {
+      input {
+        margin: 4px 10px 0 0;
+      }
+    }
+  }
+  .menu-active{
+    background-color: #0b56a4;
+    a{
+      color: #fff !important;
+    }        
+  }
+}

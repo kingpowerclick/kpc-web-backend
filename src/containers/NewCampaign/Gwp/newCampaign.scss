@@ -1,6 +1,6 @@
-@import "../../styles/addons.scss";
+@import "../../../styles/addons.scss";
 
-.add-new-campaign-by-percent-view {
+.marketing-add-new-gwp-view {
   @include kpc-width(1280px);
   @include kpc-layout-equal(12);
   .page-header {
@@ -67,7 +67,6 @@
         background-color: #f9fcff;
         margin-bottom: 2px;
         font-size: $kpc-font16;
-
         label {
           input {
             margin: 4px 10px 0 0;
@@ -75,7 +74,7 @@
         }
       }
       .menu-active{
-        background-color: #0b56a4;
+        background-color: #0b56a4;        
         color: #fff;
       }
     }
@@ -191,6 +190,10 @@
         border-top: solid 1px #c1d9e9;
       }
     }
+  }
+  .border-bottom-blue {
+    border-bottom: solid 1px #b7d1e5;
+    margin: 15px 0;
   }
   .btn-blue{
       padding: 12px 60px;
