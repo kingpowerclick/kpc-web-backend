@@ -49,3 +49,4 @@ export GetFreeShippingFee from './GetFreeShippingFee/GetFreeShippingFee';
 export AddNewCampaignPercentDiscount from './AddNewCampaignPercentDiscount/AddNewCampaignPercentDiscount';
 export AddNewCampaignGetDiscountPercent from './AddNewCampaignGetDiscountPercent/AddNewCampaignGetDiscountPercent';
 export AddNewCampaignGetDiscountPercentOff from './AddNewCampaignGetDiscountPercentOff/AddNewCampaignGetDiscountPercentOff';
+export AddNewCampaignBuyItemXGetDiscount from './AddNewCampaignBuyItemXGetDiscount/AddNewCampaignBuyItemXGetDiscount';
