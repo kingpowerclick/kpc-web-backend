@@ -29,7 +29,7 @@ export default class DiscountPercentOff extends Component {
                     <div className={styles['panel-right']}>
                         <div className={styles['panel-content']}>
                             <p className={styles['list-menu']}>Buy item X get item Y at Discount Percent off</p>
-                            <div className={styles['form-group']}>
+                            <div className={ classNames(styles['control-group'], 'row') }>
                                 <label className={styles['control-label']}>Turn On/Off</label>
                                 <div className={styles['control-on-off']}>
                                     <label className="radio-inline"><input type="radio">Off</input></label>
