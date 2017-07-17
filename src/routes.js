@@ -51,6 +51,7 @@ import {
     AddSpecificGroup,
     GetFreeShippingFee,
     AddNewCampaignPercentDiscount,
+    AddNewCampaignGetDiscountPercent,
 
   } from 'containers';
 
@@ -132,6 +133,7 @@ export default (store) => {
       <Route path="marketing/addspecificgroup" component={AddSpecificGroup}/>
       <Route path="marketing/getfreeshippingfee" component={GetFreeShippingFee}/>
       <Route path="marketing/percentdiscount" component={AddNewCampaignPercentDiscount}/>
+      <Route path="marketing/getdiscountpercent" component={AddNewCampaignGetDiscountPercent}/>
 
       { /* Catch all route */ }
       <Route path="*" component={NotFound} status={404} />
