@@ -37,6 +37,7 @@ export BuyFirststTime from './NewCampaign/Amount/BuyFirststTime';
 export SpecificGroup from './SpecificGroup/SpecificGroup';
 export GwpBuyAmount from './NewCampaign/Gwp/GwpBuyAmount';
 export GwpBuyAny from './NewCampaign/Gwp/GwpBuyAny';
+export GwpBuyItem from './NewCampaign/Gwp/GwpBuyItem';
 export AddNewCartRule from './AddNewCartRule/AddNewCartRule';
 export AddNewCartRuleByPercent from './AddNewCartRuleByPercent/AddNewCartRuleByPercent';
 export AddNewCartRuleByAmount from './AddNewCartRuleByAmount/AddNewCartRuleByAmount';

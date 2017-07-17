@@ -20,7 +20,7 @@ export default class NewCampaignMenu extends Component {
       const styles = require('./newCampaignMenu.scss');
       return (
             <div className={styles['panel-content']}>
-                <p className={styles['list-menu']}>Set Campaign Info || {this.props.subMenu} || {this.props.mainMenu} || {this.state.amount}</p>
+                <p className={styles['list-menu']}>Set Campaign Info</p>
                 <p className={styles['list-menu']}>- Percent Discount (0)</p>
                 <div className={styles['list-menu']} onClick={ ()=> this.setState({ amount: !this.state.amount }) }>
                     - Amount Discount (0)
@@ -41,7 +41,7 @@ export default class NewCampaignMenu extends Component {
                     <ul className={styles['gwp-globle-menu']}>
                         <li className={ classNames( styles['gwp-globle-menu-list'], subMenu === `Gwpa` ? styles['menu-active'] : '' ) }><Link to={ `/marketing/gwp/buyamount` }><label><input type="radio" >Buy amount XXX baht GET GWP (0)</input></label></Link></li>
                         <li className={ classNames( styles['gwp-globle-menu-list'], subMenu === `Gwpb` ? styles['menu-active'] : '' ) }><Link to={ `/marketing/gwp/buyany` }><label><input type="radio">Buy A + any item GET GWP (0)</input></label></Link></li>
-                        <li className={ classNames( styles['gwp-globle-menu-list'], subMenu === `Gwpc` ? styles['menu-active'] : '' ) }><Link to={ `/marketing/gwp/buyany` }><label><input type="radio">Buy item X  GET GWP (0)</input></label></Link></li>
+                        <li className={ classNames( styles['gwp-globle-menu-list'], subMenu === `Gwpc` ? styles['menu-active'] : '' ) }><Link to={ `/marketing/gwp/buyitem` }><label><input type="radio">Buy item X  GET GWP (0)</input></label></Link></li>
                     </ul>
                 </Collapse>
                 <p className={styles['list-menu']}>- Shipping Fee (0)</p>
