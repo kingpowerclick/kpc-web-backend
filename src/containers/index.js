@@ -45,3 +45,4 @@ export ShippingGlobalFeeWithShippingFee from './ShippingGlobalFeeWithShippingFee
 export AddNewShippingFeeGlobal from './AddNewShippingFeeGlobal/AddNewShippingFeeGlobal';
 export AddSpecificGroup from './AddSpecificGroup/AddSpecificGroup';
 export GetFreeShippingFee from './GetFreeShippingFee/GetFreeShippingFee';
+export AddNewCampaignPercentDiscount from './AddNewCampaignPercentDiscount/AddNewCampaignPercentDiscount';
