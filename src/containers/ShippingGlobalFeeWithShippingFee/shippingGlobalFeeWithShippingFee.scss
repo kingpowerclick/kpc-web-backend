@@ -1,6 +1,6 @@
 @import "../../styles/addons.scss";
 
-.add-new-campaign-by-amount-view {
+.shipping-global-fee-with-shipping-fee-view {
   @include kpc-width(1280px);
   @include kpc-layout-equal(12);
   .page-header {
@@ -110,7 +110,8 @@
       }
 
       .add-new-box {
-        margin-left: 140px;
+        clear: both;
+        margin-left: 190px;
 
         a {
           i {
@@ -154,6 +155,12 @@
         padding-left: 0px !important;
         padding-right: 0px !important;
         // margin-left: 30px;
+
+        .small-input{
+            width: 60px;
+            height: 30px;
+            border-radius: 3px;
+        }
 
         .border-bottom {
           background-color: #f9fcff;

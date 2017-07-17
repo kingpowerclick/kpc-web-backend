@@ -1,6 +1,6 @@
 @import "../../styles/addons.scss";
 
-.add-new-campaign-by-percent-view {
+.add-specific-group-view {
   @include kpc-width(1280px);
   @include kpc-layout-equal(12);
   .page-header {
@@ -74,10 +74,6 @@
           }
         }
       }
-      .menu-active{
-        background-color: #0b56a4;
-        color: #fff;
-      }
     }
   }
 
@@ -146,26 +142,39 @@
 
       .control-optional {
         float: left;
-        border: solid 1px #c1d9e9;
         border-bottom: none;
         border-top: none;
-        background-color: #f9fcff;
         @include kpc-layout-equal(9);
         padding-left: 0px !important;
         padding-right: 0px !important;
         // margin-left: 30px;
 
-        .border-bottom {
-          background-color: #f9fcff;
-          border-bottom: solid 1px #c1d9e9;
-        }
 
         .content-option {
           margin: 15px;
 
-          label {
-            margin-left: 15px;
-          }
+		  textarea{
+			  width: 100%;
+			  border-radius: 3px;
+			  height: 80px;
+              border: 1px solid $border;
+		  }
+
+		  .small-input{
+			  height: 40px;
+			  width: 10%;
+			  border-radius: 3px;
+		  }
+
+		  .note-example{
+			  padding-left: 15px;
+			  color: #9b9b9b;
+
+		  }
+
+		  .cart-rule-unit{
+			  padding-left: 15px;
+		  }
 
           .qty {
             display: inline-flex;
@@ -175,20 +184,24 @@
             border: solid 1px #b7d1e5;
             margin: 15px 0;
           }
+
           ul {
-            margin-left: 15px;
             list-style: none;
             padding: 0;
 
             li {
               padding: 0 0 15px;
+
+			  input{
+				  border-radius: 3px;
+			  }
+
+			  label {
+				  padding: 0 15px;
+	          }
             }
           }
         }
-      }
-      .top-border {
-        background-color: #f9fcff;
-        border-top: solid 1px #c1d9e9;
       }
     }
   }
