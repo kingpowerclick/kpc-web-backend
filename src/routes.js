@@ -43,6 +43,7 @@ import {
     AddNewCartRuleByAmount,
     GwpBuyAmount,
     GwpBuyAny,
+    GwpBuyItem,
     AddNewCartRule,
     ShippingGlobalFeeFreeCountry,
     ShippingGlobalFeeWithShippingFee,
@@ -122,6 +123,7 @@ export default (store) => {
       <Route path="marketing/addnewcartrulebypercent" component={AddNewCartRuleByPercent}/>
       <Route path="marketing/gwp/buyamount" component={GwpBuyAmount}/>
       <Route path="marketing/gwp/buyany" component={GwpBuyAny}/>
+      <Route path="marketing/gwp/buyitem" component={GwpBuyItem}/>
       <Route path="marketing/addnewcartrule" component={AddNewCartRule}/>
       <Route path="marketing/addnewcartrulebyamount" component={AddNewCartRuleByAmount}/>
       <Route path="marketing/shippingglobalfeefreecountry" component={ShippingGlobalFeeFreeCountry}/>

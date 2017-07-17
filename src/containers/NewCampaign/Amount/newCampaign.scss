@@ -109,9 +109,9 @@
       }
 
       .add-new-box {
-        margin-left: 140px;
-
+        @include kpc-layout-offset(3, 3);
         a {
+          margin-left: -15px;
           i {
             padding-right: 10px;
           }
