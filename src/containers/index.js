@@ -51,3 +51,4 @@ export AddNewCampaignGetDiscountPercent from './AddNewCampaignGetDiscountPercent
 export AddNewCampaignGetDiscountPercentOff from './AddNewCampaignGetDiscountPercentOff/AddNewCampaignGetDiscountPercentOff';
 export AddNewCampaignBuyItemXGetDiscount from './AddNewCampaignBuyItemXGetDiscount/AddNewCampaignBuyItemXGetDiscount';
 export AddNewCampaignBuyXGetY from './AddNewCampaignBuyXGetY/AddNewCampaignBuyXGetY';
+export AddNewCampaign3rdItem from './AddNewCampaign3rdItem/AddNewCampaign3rdItem';
