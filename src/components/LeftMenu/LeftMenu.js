@@ -7,7 +7,6 @@ import {OverlayTrigger, Tooltip} from 'react-bootstrap';
 export default class LeftMenu extends Component {
     showSubmenu = () => {
       const menu = document.getElementsByClassName('menu-product').length;
-      console.log('menu : ' + menu);
       if (menu > 0) {
         document.getElementById('Products').classList.add('hidden');
         document.getElementById('Products').classList.remove('menu-product');
@@ -20,7 +19,6 @@ export default class LeftMenu extends Component {
     }
     showSubmenuMarket = () => {
       const marketing = document.getElementsByClassName('menu-marketing').length;
-      console.log('marketing : ' + marketing);
       if (marketing > 0) {
         document.getElementById('Marketing').classList.add('hidden');
         document.getElementById('Marketing').classList.remove('menu-marketing');
