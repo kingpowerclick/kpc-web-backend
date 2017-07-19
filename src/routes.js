@@ -56,7 +56,7 @@ import {
     AddNewCampaignGetDiscountPercentOff,
     AddNewCampaignBuyItemXGetDiscount,
     AddNewCampaignBuyXGetY,
-    AddNewCampaign3rdItem,
+    AddNewCampaignThirdItem,
 
   } from 'containers';
 
@@ -143,7 +143,7 @@ export default (store) => {
       <Route path="marketing/getdiscountpercentoff" component={AddNewCampaignGetDiscountPercentOff}/>
       <Route path="marketing/buyxgetdiscount" component={AddNewCampaignBuyItemXGetDiscount}/>
       <Route path="marketing/buyxgety" component={AddNewCampaignBuyXGetY}/>
-      <Route path="marketing/3rditem" component={AddNewCampaign3rdItem}/>
+      <Route path="marketing/thirditem" component={AddNewCampaignThirdItem}/>
 
 
       { /* Catch all route */ }
