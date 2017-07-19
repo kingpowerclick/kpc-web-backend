@@ -3,9 +3,9 @@ import classNames from 'classnames';
 import { Breadcrumb, NewCampaginMenu} from 'components';
 import { SplitButton, MenuItem } from 'react-bootstrap';
 
-export default class AddNewCampaign3rdItem extends Component {
+export default class AddNewCampaignThirdItem extends Component {
     render() {
-      const styles = require('./addNewCampaign3rdItem.scss');
+      const styles = require('./addNewCampaignThirdItem.scss');
       return (
         <div className="container-fluid">
     		<div className="row">
