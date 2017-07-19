@@ -1,0 +1,38 @@
+@import "../../styles/addons.scss";
+
+.filter-page {
+	float: right;
+	display: inline-grid;
+
+	.filter-records {
+		float: left;
+		display: flex;
+		width: 250px;
+		text-align: right;
+		margin-bottom: 20px;
+
+		.btn-record {
+			width: 120px;
+		}
+
+		.btn-record-select {
+			width: 35px;
+		}
+
+		.per-page {
+			margin-left: 10px;
+			font-size: $kpc-font16;
+			color: $kpc-black;
+			line-height: 31px;
+		}
+	}
+
+	.filter-pagination {
+		float: left;
+		text-align: right;
+
+		.pagination-ul {
+			margin:0;
+		}
+	}
+}

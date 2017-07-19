@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import { Breadcrumb} from 'components';
+import { Breadcrumb,
+        IncludeProductBrand,
+        IncludeProductEachItem,
+        IncludeProductMassUpload,
+        IncludeProductSpecificGroup
+} from 'components';
+
 import { SplitButton, MenuItem } from 'react-bootstrap';
 
 export default class AddSpecificGroup extends Component {
@@ -60,32 +66,34 @@ export default class AddSpecificGroup extends Component {
                                 </div>
                                 <div className={styles['control-optional']}>
                                     <div className={styles['content-option']}>
-                                        <label>
-                                            <SplitButton title="Active" pullRight id="split-button-pull-right">
-                                                <MenuItem eventKey="1">Action</MenuItem>
-                                                <MenuItem eventKey="2">Another action</MenuItem>
-                                                <MenuItem eventKey="3">Something else here</MenuItem>
-                                                <MenuItem eventKey="4">Separated link</MenuItem>
-                                            </SplitButton>
-                                        </label>
+                                        <SplitButton title="Active" pullRight id="split-button-pull-right">
+                                            <MenuItem eventKey="1">Action</MenuItem>
+                                            <MenuItem eventKey="2">Another action</MenuItem>
+                                            <MenuItem eventKey="3">Something else here</MenuItem>
+                                            <MenuItem eventKey="4">Separated link</MenuItem>
+                                        </SplitButton>
                                     </div>
                                 </div>
                             </div>
 							<p className={styles['list-menu']}>Include Product</p>
                             <div className={ classNames(styles['control-group'], 'row') }>
                                 <div className={styles['control-label']}>
-                                    <label className={styles['control-label']}>This group can be included the product by</label>
+                                    <label className={styles['control-label']}>Select products to include</label>
                                 </div>
                                 <div className={styles['control-optional']}>
-                                    <div className={styles['content-option']}>
-                                        <label>
-                                            <SplitButton title="Active" pullRight id="split-button-pull-right">
-                                                <MenuItem eventKey="1">Action</MenuItem>
-                                                <MenuItem eventKey="2">Another action</MenuItem>
-                                                <MenuItem eventKey="3">Something else here</MenuItem>
-                                                <MenuItem eventKey="4">Separated link</MenuItem>
+                                    <div className={ styles['content-option'] }>
+                                        <div className={ styles['dropdown-option'] }>
+                                            <SplitButton title="Brand" pullRight id="split-button-pull-right">
+                                                <MenuItem eventKey="1">Brand</MenuItem>
+                                                <MenuItem eventKey="2">Category</MenuItem>
+                                                <MenuItem eventKey="3">Each Item</MenuItem>
+                                                <MenuItem eventKey="4">Mass Upload</MenuItem>
                                             </SplitButton>
-                                        </label>
+                                        </div>
+                                        <IncludeProductBrand/>
+                                        <IncludeProductEachItem/>
+                                        <IncludeProductMassUpload/>
+                                        <IncludeProductSpecificGroup/>
                                     </div>
                                 </div>
                             </div>

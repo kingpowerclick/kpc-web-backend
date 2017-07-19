@@ -52,7 +52,7 @@ export default class TablePromoCode extends Component {
                     <td className={ styles['overflow-td'] }>11/05/2017 06:03:12 AM</td>
                     <td>No</td>
                     <td>0</td>
-                </tr>
+                </tr>''
             </tbody>
         </table>
     );

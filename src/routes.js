@@ -50,6 +50,7 @@ import {
     AddNewShippingFeeGlobal,
     AddSpecificGroup,
     GetFreeShippingFee,
+    AddSpecificGroupBrand,
     AddNewCampaignPercentDiscount,
     AddNewCampaignGetDiscountPercent,
     AddNewCampaignGetDiscountPercentOff,
@@ -135,6 +136,7 @@ export default (store) => {
       <Route path="marketing/addnewshippingfeeglobal" component={AddNewShippingFeeGlobal}/>
       <Route path="marketing/addspecificgroup" component={AddSpecificGroup}/>
       <Route path="marketing/getfreeshippingfee" component={GetFreeShippingFee}/>
+      <Route path="marketing/addspecificgroup/brand" component={AddSpecificGroupBrand}/>
       <Route path="marketing/percentdiscount" component={AddNewCampaignPercentDiscount}/>
       <Route path="marketing/getdiscountpercent" component={AddNewCampaignGetDiscountPercent}/>
       <Route path="marketing/getdiscountpercentoff" component={AddNewCampaignGetDiscountPercentOff}/>

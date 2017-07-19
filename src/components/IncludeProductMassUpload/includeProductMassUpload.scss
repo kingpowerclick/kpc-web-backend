@@ -1,0 +1,39 @@
+@import "../../styles/addons.scss";
+
+.include-box {
+    padding: 15px 20px;
+    border: 1px solid $marketing-table-border;
+    background: $marketing-table-background;
+    margin-top: 36px;
+
+    .title {
+        font-size: $kpc-font14;
+        margin-bottom: 20px;
+    }
+
+    .require {
+        margin-bottom: 20px;
+        display: flex;
+        
+        input {
+        width: 80%;
+        margin-right: 20px;
+        }
+
+        label {
+        margin-top: 5px;
+        font-weight: normal;
+        }
+    }
+
+    .btn-blue {
+        margin-top:20px;
+        padding: 5px 29px;
+    }
+
+    .click-to-download {
+        border-top: 1px solid $border-blue;
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+}

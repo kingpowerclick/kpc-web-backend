@@ -1,0 +1,63 @@
+@import "../../styles/addons.scss";
+
+.include-box {
+    padding: 15px 20px;
+    border: 1px solid $marketing-table-border;
+    background: $marketing-table-background;
+    margin-top: 36px;
+
+    .title {
+        font-size: $kpc-font14;
+        margin-bottom: 20px;
+    }
+
+    .require {
+        margin-bottom: 20px;
+        display: flex;
+        
+        input {
+        width: 80%;
+        margin-right: 20px;
+        }
+
+        label {
+        margin-top: 5px;
+        font-weight: normal;
+        }
+    }
+    
+    .search {
+        width: 40%;
+        margin-bottom: 20px;
+    }
+
+    .search-by-alphabet {
+        ul {
+        li{
+            display: inline-block;
+            padding: 0;
+            padding-right: 13px;
+        }
+        }
+    }
+
+    .product-brand {
+        border: 1px solid $pastel-gray;
+        background: $kpc-white;
+        padding: 20px 15px;
+
+        .product-brand-inner {
+        ul {
+            li{
+            display: inline-block;
+            padding: 0;
+            width: 33%;
+            }
+        }
+        }
+    }
+    .btn-blue {
+        margin-top:20px;
+        padding: 5px 29px;
+    }
+}

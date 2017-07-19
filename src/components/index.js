@@ -14,6 +14,7 @@ export WidgetForm from './WidgetForm/WidgetForm';
 export LeftMenu from './LeftMenu/LeftMenu';
 export Footer from './Footer/Footer';
 export FilterPage from './FilterPage/FilterPage';
+export FilterPageSpecific from './FilterPageSpecific/FilterPageSpecific';
 
 export Breadcrumb from './Breadcrumb/Breadcrumb';
 
@@ -38,3 +39,8 @@ export MarketingCampaign from './MarketingCampaign/MarketingCampaign';
 
 export NewCampaginMenu from './NewCampaignMenu/NewCampaignMenu';
 export TablePromoCode from './TablePromoCode/TablePromoCode';
+export IncludeProductBrand from './IncludeProductBrand/IncludeProductBrand';
+export IncludeProductEachItem from './IncludeProductEachItem/IncludeProductEachItem';
+export IncludeProductMassUpload from './IncludeProductMassUpload/IncludeProductMassUpload';
+export IncludeProductSpecificGroup from './IncludeProductSpecificGroup/IncludeProductSpecificGroup';
+export ProductTable from './ProductTable/ProductTable';
