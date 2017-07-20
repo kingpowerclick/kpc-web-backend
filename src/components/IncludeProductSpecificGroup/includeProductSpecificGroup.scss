@@ -37,6 +37,7 @@
         padding: 20px 15px;
         margin-top: 20px;
         margin-bottom: 20px;
+        clear: both;
 
         .product-brand-inner {
         ul {
@@ -48,6 +49,26 @@
         }
         }
     }
+
+    .wrapper-option {
+        margin-bottom: 20px;
+
+        .filter-pagination {
+            float: right;
+            ul {
+                margin: 0;
+            }
+            
+        }
+        
+        .btn-addproduct {
+            display: flex;
+            float: left;
+            margin-bottom: 20px;
+        }
+
+    }
+
     .btn-blue {
         
         padding: 5px 29px;
