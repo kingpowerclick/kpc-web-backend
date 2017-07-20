@@ -14,6 +14,7 @@ export default class NewCampaignMenu extends Component {
       this.state = {};
       this.state.gwp = this.props.mainMenu === `Gwp` ? 'Gwp' : '';
       this.state.amount = this.props.mainMenu === `Amount` ? 'Amount' : '';
+      this.state.shipping = this.props.mainMenu === `Shipping` ? 'Shipping' : '';
     }
     render() {
       const { subMenu } = this.props;
@@ -44,7 +45,16 @@ export default class NewCampaignMenu extends Component {
                         <li className={ classNames( styles['gwp-globle-menu-list'], subMenu === `Gwpc` ? styles['menu-active'] : '' ) }><Link to={ `/marketing/gwp/buyitem` }><label><input type="radio">Buy item X  GET GWP (0)</input></label></Link></li>
                     </ul>
                 </Collapse>
-                <p className={styles['list-menu']}>- Shipping Fee (0)</p>
+                <div className={styles['list-menu']} onClick={ ()=> this.setState({ shipping: !this.state.shipping }) }>
+                    - Shipping Fee (0)
+                </div>
+                <Collapse className={ styles['panel-collapse'] } in={ this.state.shipping }>
+                    <ul className={styles['gwp-globle-menu']}>
+                        <li className={ classNames( styles['gwp-globle-menu-list'], subMenu === `Shippinga` ? styles['menu-active'] : '' ) }><Link to={ `/marketing/shipping/buyamountcountry` }><label><input type="radio" >Buy amount XXX baht GET GWP (0)</input></label></Link></li>
+                        <li className={ classNames( styles['gwp-globle-menu-list'], subMenu === `Shippingb` ? styles['menu-active'] : '' ) }><Link to={ `/marketing/shipping/buyamountshipping` }><label><input type="radio">Buy A + any item GET GWP (0)</input></label></Link></li>
+                        <li className={ classNames( styles['gwp-globle-menu-list'], subMenu === `Shippingc` ? styles['menu-active'] : '' ) }><Link to={ `/marketing/shipping/buyitem` }><label><input type="radio">Buy item X  GET GWP (0)</input></label></Link></li>
+                    </ul>
+                </Collapse>
                 <p className={styles['list-menu']}>- End of the Bill Discount (0)</p>
             </div>
         );

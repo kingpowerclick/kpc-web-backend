@@ -43,6 +43,9 @@ import {
     GwpBuyAmount,
     GwpBuyAny,
     GwpBuyItem,
+    ShippingFeeBuyAmountCountry,
+    ShippingFeeBuyAmountShipping,
+    ShippingFeeBuyItem,
     AddNewCartRule,
     ShippingGlobalFeeFreeCountry,
     ShippingGlobalFeeWithShippingFee,
@@ -129,6 +132,9 @@ export default (store) => {
       <Route path="marketing/gwp/buyamount" component={GwpBuyAmount}/>
       <Route path="marketing/gwp/buyany" component={GwpBuyAny}/>
       <Route path="marketing/gwp/buyitem" component={GwpBuyItem}/>
+      <Route path="marketing/shipping/buyamountcountry" component={ShippingFeeBuyAmountCountry}/>
+      <Route path="marketing/shipping/buyamountshipping" component={ShippingFeeBuyAmountShipping}/>
+      <Route path="marketing/shipping/buyitem" component={ShippingFeeBuyItem}/>
       <Route path="marketing/addnewcartrule" component={AddNewCartRule}/>
       <Route path="marketing/addnewcartrulebyamount" component={AddNewCartRuleByAmount}/>
       <Route path="marketing/shippingglobalfeefreecountry" component={ShippingGlobalFeeFreeCountry}/>
