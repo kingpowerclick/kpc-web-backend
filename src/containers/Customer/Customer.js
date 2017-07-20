@@ -7,7 +7,7 @@ export default class CustomerOrder extends Component {
   render() {
     const styles = require('./customer.scss');
     const filterActionSelectOption = ['Subscribe to Newsletter', 'Unsubscribe from Newsletter'];
-    const filterIdSelectOption = ['Customer ID', 'Customer name', 'Phone', 'Email', 'Passport ID'];
+    const filterIdSelectOption = ['ID Card', 'Customer name', 'Phone', 'Email', 'Passport ID'];
     return (
         <div className="container-fluid">
             <div className="row">

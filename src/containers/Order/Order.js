@@ -49,7 +49,11 @@ export default class Order extends Component {
                                                 <th className={ styles['order-purchase-date'] }>Purchase date</th>
                                                 <th className={ styles['order-bill-name'] }>Bill-to name</th>
                                                 <th className={ styles['order-ship-name'] }>Ship-to name</th>
-                                                <th className={ styles['order-grand-total'] }>Grand total (base)</th>
+                                                <th className={ styles['order-grand-total'] }>Sub-Total</th>
+                                                <th className={ styles['order-grand-total'] }>Discount</th>
+                                                <th className={ styles['order-grand-total'] }>Grand total</th>
+                                                <th className={ styles['order-grand-total'] }>Promo Code</th>
+                                                <th className={ styles['order-grand-total'] }>P|D|P&D</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -65,18 +69,9 @@ export default class Order extends Component {
                                                 <td className={ styles['overflow-td'] }>Miss Nuttaya Chutibuat</td>
                                                 <td className={ styles['overflow-td'] }>Miss Nuttaya Chutibuat</td>
                                                 <td>1,000.00 THB</td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox"/></td>
-                                                <td>100014</td>
-                                                <td className={ styles['overflow-td'] }>Miss Nuttaya Chutibuat</td>
-                                                <td>Pending Payment</td>
-                                                <td>BBL PAY</td>
-                                                <td className={ styles['overflow-td'] }>nuttaya.c@gmail.com</td>
-                                                <td>Thai Store</td>
-                                                <td>11/11/16</td>
-                                                <td className={ styles['overflow-td'] }>Miss Nuttaya Chutibuat</td>
-                                                <td className={ styles['overflow-td'] }>Miss Nuttaya Chutibuat</td>
+                                                <td>00.00 THB</td>
+                                                <td>1,000.00 THB</td>
+                                                <td>1,000.00 THB</td>
                                                 <td>1,000.00 THB</td>
                                             </tr>
                                             <tr>
@@ -91,18 +86,9 @@ export default class Order extends Component {
                                                 <td className={ styles['overflow-td'] }>Miss Nuttaya Chutibuat</td>
                                                 <td className={ styles['overflow-td'] }>Miss Nuttaya Chutibuat</td>
                                                 <td>1,000.00 THB</td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox"/></td>
-                                                <td>100014</td>
-                                                <td className={ styles['overflow-td'] }>Miss Nuttaya Chutibuat</td>
-                                                <td>Pending Payment</td>
-                                                <td>BBL PAY</td>
-                                                <td className={ styles['overflow-td'] }>nuttaya.c@gmail.com</td>
-                                                <td>Thai Store</td>
-                                                <td>11/11/16</td>
-                                                <td className={ styles['overflow-td'] }>Miss Nuttaya Chutibuat</td>
-                                                <td className={ styles['overflow-td'] }>Miss Nuttaya Chutibuat</td>
+                                                <td>00.00 THB</td>
+                                                <td>1,000.00 THB</td>
+                                                <td>1,000.00 THB</td>
                                                 <td>1,000.00 THB</td>
                                             </tr>
                                             <tr>
@@ -117,18 +103,9 @@ export default class Order extends Component {
                                                 <td className={ styles['overflow-td'] }>Miss Nuttaya Chutibuat</td>
                                                 <td className={ styles['overflow-td'] }>Miss Nuttaya Chutibuat</td>
                                                 <td>1,000.00 THB</td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox"/></td>
-                                                <td>100014</td>
-                                                <td className={ styles['overflow-td'] }>Miss Nuttaya Chutibuat</td>
-                                                <td>Pending Payment</td>
-                                                <td>BBL PAY</td>
-                                                <td className={ styles['overflow-td'] }>nuttaya.c@gmail.com</td>
-                                                <td>Thai Store</td>
-                                                <td>11/11/16</td>
-                                                <td className={ styles['overflow-td'] }>Miss Nuttaya Chutibuat</td>
-                                                <td className={ styles['overflow-td'] }>Miss Nuttaya Chutibuat</td>
+                                                <td>00.00 THB</td>
+                                                <td>1,000.00 THB</td>
+                                                <td>1,000.00 THB</td>
                                                 <td>1,000.00 THB</td>
                                             </tr>
                                             <tr>
@@ -143,18 +120,9 @@ export default class Order extends Component {
                                                 <td className={ styles['overflow-td'] }>Miss Nuttaya Chutibuat</td>
                                                 <td className={ styles['overflow-td'] }>Miss Nuttaya Chutibuat</td>
                                                 <td>1,000.00 THB</td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox"/></td>
-                                                <td>100014</td>
-                                                <td className={ styles['overflow-td'] }>Miss Nuttaya Chutibuat</td>
-                                                <td>Pending Payment</td>
-                                                <td>BBL PAY</td>
-                                                <td className={ styles['overflow-td'] }>nuttaya.c@gmail.com</td>
-                                                <td>Thai Store</td>
-                                                <td>11/11/16</td>
-                                                <td className={ styles['overflow-td'] }>Miss Nuttaya Chutibuat</td>
-                                                <td className={ styles['overflow-td'] }>Miss Nuttaya Chutibuat</td>
+                                                <td>00.00 THB</td>
+                                                <td>1,000.00 THB</td>
+                                                <td>1,000.00 THB</td>
                                                 <td>1,000.00 THB</td>
                                             </tr>
                                             <tr>
@@ -168,6 +136,95 @@ export default class Order extends Component {
                                                 <td>11/11/16</td>
                                                 <td className={ styles['overflow-td'] }>Miss Nuttaya Chutibuat</td>
                                                 <td className={ styles['overflow-td'] }>Miss Nuttaya Chutibuat</td>
+                                                <td>1,000.00 THB</td>
+                                                <td>00.00 THB</td>
+                                                <td>1,000.00 THB</td>
+                                                <td>1,000.00 THB</td>
+                                                <td>1,000.00 THB</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox"/></td>
+                                                <td>100014</td>
+                                                <td className={ styles['overflow-td'] }>Miss Nuttaya Chutibuat</td>
+                                                <td>Pending Payment</td>
+                                                <td>BBL PAY</td>
+                                                <td className={ styles['overflow-td'] }>nuttaya.c@gmail.com</td>
+                                                <td>Thai Store</td>
+                                                <td>11/11/16</td>
+                                                <td className={ styles['overflow-td'] }>Miss Nuttaya Chutibuat</td>
+                                                <td className={ styles['overflow-td'] }>Miss Nuttaya Chutibuat</td>
+                                                <td>1,000.00 THB</td>
+                                                <td>00.00 THB</td>
+                                                <td>1,000.00 THB</td>
+                                                <td>1,000.00 THB</td>
+                                                <td>1,000.00 THB</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox"/></td>
+                                                <td>100014</td>
+                                                <td className={ styles['overflow-td'] }>Miss Nuttaya Chutibuat</td>
+                                                <td>Pending Payment</td>
+                                                <td>BBL PAY</td>
+                                                <td className={ styles['overflow-td'] }>nuttaya.c@gmail.com</td>
+                                                <td>Thai Store</td>
+                                                <td>11/11/16</td>
+                                                <td className={ styles['overflow-td'] }>Miss Nuttaya Chutibuat</td>
+                                                <td className={ styles['overflow-td'] }>Miss Nuttaya Chutibuat</td>
+                                                <td>1,000.00 THB</td>
+                                                <td>00.00 THB</td>
+                                                <td>1,000.00 THB</td>
+                                                <td>1,000.00 THB</td>
+                                                <td>1,000.00 THB</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox"/></td>
+                                                <td>100014</td>
+                                                <td className={ styles['overflow-td'] }>Miss Nuttaya Chutibuat</td>
+                                                <td>Pending Payment</td>
+                                                <td>BBL PAY</td>
+                                                <td className={ styles['overflow-td'] }>nuttaya.c@gmail.com</td>
+                                                <td>Thai Store</td>
+                                                <td>11/11/16</td>
+                                                <td className={ styles['overflow-td'] }>Miss Nuttaya Chutibuat</td>
+                                                <td className={ styles['overflow-td'] }>Miss Nuttaya Chutibuat</td>
+                                                <td>1,000.00 THB</td>
+                                                <td>00.00 THB</td>
+                                                <td>1,000.00 THB</td>
+                                                <td>1,000.00 THB</td>
+                                                <td>1,000.00 THB</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox"/></td>
+                                                <td>100014</td>
+                                                <td className={ styles['overflow-td'] }>Miss Nuttaya Chutibuat</td>
+                                                <td>Pending Payment</td>
+                                                <td>BBL PAY</td>
+                                                <td className={ styles['overflow-td'] }>nuttaya.c@gmail.com</td>
+                                                <td>Thai Store</td>
+                                                <td>11/11/16</td>
+                                                <td className={ styles['overflow-td'] }>Miss Nuttaya Chutibuat</td>
+                                                <td className={ styles['overflow-td'] }>Miss Nuttaya Chutibuat</td>
+                                                <td>1,000.00 THB</td>
+                                                <td>00.00 THB</td>
+                                                <td>1,000.00 THB</td>
+                                                <td>1,000.00 THB</td>
+                                                <td>1,000.00 THB</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox"/></td>
+                                                <td>100014</td>
+                                                <td className={ styles['overflow-td'] }>Miss Nuttaya Chutibuat</td>
+                                                <td>Pending Payment</td>
+                                                <td>BBL PAY</td>
+                                                <td className={ styles['overflow-td'] }>nuttaya.c@gmail.com</td>
+                                                <td>Thai Store</td>
+                                                <td>11/11/16</td>
+                                                <td className={ styles['overflow-td'] }>Miss Nuttaya Chutibuat</td>
+                                                <td className={ styles['overflow-td'] }>Miss Nuttaya Chutibuat</td>
+                                                <td>1,000.00 THB</td>
+                                                <td>00.00 THB</td>
+                                                <td>1,000.00 THB</td>
+                                                <td>1,000.00 THB</td>
                                                 <td>1,000.00 THB</td>
                                             </tr>
                                         </tbody>
