@@ -7,14 +7,14 @@ export default class OrderDetailCancelDetail extends Component {
     const styles = require('./orderDetailCancelDetail.scss');
 
     return (
-      <div className="container-fulid">
+      <div className="container-fluid">
         <div className="row">
         	<div className={ classNames(styles['order-detail-cancel-detail-view']) }>
     	    	<header className={ styles['page-header']}>
     	    		<div className={ styles['page-title']}>
     	        		<h1 className={ styles.header }><strong>Order #88810002386</strong></h1>
+                         <Breadcrumb breadcrumb={ "Orders >  No.#88810002386" }/>
     	    		</div>
-              <Breadcrumb breadcrumb={ "Orders >  No.#88810002386" }/>
               <OrderCustomerDetail/>
               <div className={ styles['sub-menu']}>
                   <ul>
@@ -47,14 +47,14 @@ export default class OrderDetailCancelDetail extends Component {
 									    		<th className={ styles['product-name'] }>Product</th>
 									    		<th className={ styles['product-thumbnail'] }></th>
 									    		<th className={ styles['product-item-status'] }>Item Status</th>
-									    		<th className={ styles['product-price'] }>Price</th>
 									    		<th className={ styles['product-original-price'] }>Original Price</th>
+                                                <th className={ styles['product-price'] }>Price</th>
 									    		<th className={ styles['product-qty'] }>QTY</th>
 									    		<th className={ styles['product-sub-total'] }>Subtotal</th>
 									    		<th className={ styles['produt-tax-amount'] }>Tax Amount</th>
 									    		<th className={ styles['product-tax-ercent'] }>Tax Percent</th>
 									    		<th className={ styles['product-discount-amount'] }>Discount Amount</th>
-									    		<th className={ styles['product-row-total'] }>Row Total</th>
+									    		<th className={ styles['product-status'] }>Status</th>
 									    	</tr>
 										</thead>
 										<tbody>
@@ -69,7 +69,7 @@ export default class OrderDetailCancelDetail extends Component {
 									    		<td>0.00 TH</td>
 									    		<td>0.00 TH</td>
 									    		<td>318.50 THB</td>
-									    		<td>2,866.50 THB</td>
+									    		<td>Pending</td>
 									    	</tr>
 									    	<tr>
                                                 <td><img src="http://via.placeholder.com/50x50"/></td>
@@ -82,7 +82,7 @@ export default class OrderDetailCancelDetail extends Component {
 									    		<td>0.00 TH</td>
 									    		<td>0.00 TH</td>
 									    		<td>318.50 THB</td>
-									    		<td>2,866.50 THB</td>
+                                                <td>Pending</td>
 									    	</tr>
 
 										</tbody>
@@ -107,18 +107,19 @@ export default class OrderDetailCancelDetail extends Component {
 			    				<div className={ styles['tab-content'] }>
 									<table className="table table-striped">
 										<thead>
-									    	<tr className={ styles['title-table']}>
+                                            <tr className={ styles['title-table']}>
 									    		<th className={ styles['product-name'] }>Product</th>
 									    		<th className={ styles['product-thumbnail'] }></th>
 									    		<th className={ styles['product-item-status'] }>Item Status</th>
-									    		<th className={ styles['product-price'] }>Price</th>
 									    		<th className={ styles['product-original-price'] }>Original Price</th>
+                                                <th className={ styles['product-price'] }>Price</th>
 									    		<th className={ styles['product-qty'] }>QTY</th>
 									    		<th className={ styles['product-sub-total'] }>Subtotal</th>
-									    		<th className={ styles['produt-tax-amount'] }>Tax Amount</th>
-									    		<th className={ styles['product-tax-ercent'] }>Tax Percent</th>
+									    		<th className={ styles['product-tax-amount'] }>Tax Amount</th>
+									    		<th className={ styles['product-tax-percent'] }>Tax Percent</th>
 									    		<th className={ styles['product-discount-amount'] }>Discount Amount</th>
-									    		<th className={ styles['product-row-total'] }>Row Total</th>
+									    		<th className={ styles['product-status'] }>Status</th>
+									    		<th className={ styles['product-action'] }>Action</th>
 									    	</tr>
 										</thead>
 										<tbody>
@@ -130,10 +131,11 @@ export default class OrderDetailCancelDetail extends Component {
 									    		<td>3,185.00 THB</td>
 									    		<td>1</td>
 									    		<td>3,185.00 THB</td>
-									    		<td>0.00 TH</td>
-									    		<td>0.00 TH</td>
+									    		<td>0.00 THB</td>
+									    		<td>0.00 THB</td>
 									    		<td>318.50 THB</td>
-									    		<td>2,866.50 THB</td>
+                                                <td>Pending</td>
+                                                <td className={ styles['del-action'] }><a href="#"><i className="fa fa-times-circle"></i> Delete </a></td>
 									    	</tr>
 										</tbody>
 									</table>
@@ -403,6 +405,6 @@ Free 1 SULWHASOO First Care Activating Serum EX 90ml SKU: 631405</td>
             </div>
           </div>
       	</div>
-		);
+	);
   }
 }

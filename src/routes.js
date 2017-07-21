@@ -112,7 +112,7 @@ export default (store) => {
       <Route path="accountedit" component={AccountEdit}/>
       <Route path="product/managecustomattribute" component={ProductManageCustomAttribute}/>
       <Route path="parentproduct/add" component={AddParentProduct}/>
-      <Route path="orderdetailcanceldetai/edit" component={OrderDetailEditDetail}/>
+      <Route path="orderdetailcanceldetail/edit" component={OrderDetailEditDetail}/>
       <Route path="marketing/addnewgwp" component={MarketingAddNewGwp}/>
       <Route path="product/add" component={AddProduct}/>
       <Route path="marketing" component={Marketing}/>
