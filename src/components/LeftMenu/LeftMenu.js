@@ -70,26 +70,31 @@ export default class LeftMenu extends Component {
                 </OverlayTrigger>
                 <OverlayTrigger placement="right" overlay={<Tooltip id="menu-marketing">Marketing</Tooltip>}>
                     <a className={ styles.menu } href="#" onClick={ this.showSubmenuMarket }> <i className="fa fa-bookmark"></i>
-                        <div className={ classNames(styles['sub-menu'], 'hidden') } id="Marketing">
-                            <ul className="list-unstyled">
-                            <li className={ styles['sub-menu-head'] }>Marketing</li>
-                            <li className={ classNames('dropdown', styles['sub-menu-list']) }>
-                                <i className={ classNames('fa', 'fa-play', styles['sub-menu-list-hover']) }></i> Marketing
-                            </li>
-                            <li className={ classNames('dropdown', styles['sub-menu-list']) }>
-                                <i className={ classNames('fa', 'fa-play', styles['sub-menu-list-hover']) }></i> Specific Group
-                            </li>
-                            <li className={ classNames('dropdown', styles['sub-menu-list']) }>
-                                <i className={ classNames('fa', 'fa-play', styles['sub-menu-list-hover']) }></i> Brand and Member Discount Limitation
-                            </li>
-                            <li className={styles.footer}></li>
-                            </ul>
-                        </div>
                     </a>
                 </OverlayTrigger>
                 <OverlayTrigger placement="right" overlay={<Tooltip id="menu-setting">Setting</Tooltip>}>
                     <a className={ classNames(styles.menu, 'hidden') } href="#"> <i className="fa fa-cog"></i> </a>
                 </OverlayTrigger>
+                <div className={ classNames(styles['sub-menu'], 'hidden') } id="Marketing">
+                    <ul className="list-unstyled">
+                    <li className={ styles['sub-menu-head'] }>Marketing</li>
+                    <li className={ classNames('dropdown', styles['sub-menu-list']) }>
+                        <i className={ classNames('fa', 'fa-play', styles['sub-menu-list-hover']) }></i> Marketing
+                    </li>
+                    <li className={ classNames('dropdown', styles['sub-menu-list']) }>
+                        <i className={ classNames('fa', 'fa-play', styles['sub-menu-list-hover']) }></i> Specific Group
+                    </li>
+                    <li className={ classNames('dropdown', styles['sub-menu-list']) }>
+                        <i className={ classNames('fa', 'fa-play', styles['sub-menu-list-hover']) }></i> Brand and Member Discount Limitation
+                    </li>
+                    <li className={ classNames('dropdown', styles['sub-menu-list']) }>
+                        <Link to={ `/marketing/masterbandandmember` } className={ styles['sub-link'] }>
+                            <i className={ classNames('fa', 'fa-play', styles['sub-menu-list-hover']) }></i> Brand and Member Discount Limitation
+                        </Link>
+                    </li>
+                    <li className={styles.footer}></li>
+                    </ul>
+                </div>
             </div>
         );
     }

@@ -1,8 +1,8 @@
 @import "../../styles/addons.scss";
 
 .order-detail-edit-detail-view {
-    @include kpc-width(1280px);
-    @include kpc-layout-equal(12);
+  @include kpc-width(1280px);
+  @include kpc-layout-equal(12);
 
   .page-header {
     display: block;
