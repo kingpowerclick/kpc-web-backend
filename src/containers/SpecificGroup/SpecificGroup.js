@@ -68,7 +68,6 @@ export default class SpecificGroup extends Component {
 									    		<th className={ styles['specific-group-create-date'] }>Create date</th>
 									    		<th className={ styles['specific-group-status'] }>Status</th>
 									    		<th className={ styles['specific-group-edit'] }></th>
-									    		<th className={ styles['specific-group-view'] }></th>
 									    	</tr>
 										</thead>
 										<tbody>
@@ -92,7 +91,6 @@ export default class SpecificGroup extends Component {
 													</div>
 												</td>
 									    		<td><a href="#">EDIT</a></td>
-									    		<td><a href="#">VIEW</a></td>
 									    	</tr>
 											<tr>
 									    		<td><input type="checkbox"/></td>
@@ -114,7 +112,6 @@ export default class SpecificGroup extends Component {
 													</div>
 												</td>
 									    		<td><a href="#">EDIT</a></td>
-									    		<td><a href="#">VIEW</a></td>
 									    	</tr>
 											<tr>
 									    		<td><input type="checkbox"/></td>
@@ -136,7 +133,6 @@ export default class SpecificGroup extends Component {
 													</div>
 												</td>
 									    		<td><a href="#">EDIT</a></td>
-									    		<td><a href="#">VIEW</a></td>
 									    	</tr>
 										</tbody>
 									</table>
