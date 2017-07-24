@@ -1,0 +1,212 @@
+@import "../../styles/addons.scss";
+%personal-detail-left-right{
+	@include kpc-layout(12, 6, 6);
+	padding-left: 40px !important;
+	padding-right: 50px !important;
+	font-size: $kpc-font16;
+}
+
+.customer-order-view{
+	@include kpc-width(1280px);
+	.page-header{
+		display: block;
+		margin-bottom: 30px;
+        .page-title {
+			@include kpc-layout-equal(12);
+		}
+        .header {
+			@include kpc-header();
+		}
+        .back{
+            @include kpc-layout-equal(12);
+        }
+		.sub-breadcrumb{
+            padding: 0 10px;
+            color: $line;
+            display: inline-block;
+        }
+    }
+	.wrapper-content{
+		@include kpc-layout-equal(12);
+		.wrapper-customer-order-tab {
+			font-size: $kpc-font16;
+			.customer-order-tab a{
+				padding: 10px 60px;
+				border-radius: 5px 5px 0 0;
+			}
+			.tab-active a{
+				background-color: $kpc-blue;
+				color: $kpc-white;
+			}
+		}
+		.filter-customer-order {
+			@include clearfix();
+			margin-top: 30px;
+            .customer-order-title{
+                font-size: 21px;
+                @include font-bold();
+            }
+			.filter-left{
+				display: inline-table;
+			}
+			.filter-radio {
+				label{
+					padding-right: 20px;
+				}
+				float: left;
+				margin-right: 30px;
+			}
+			.filter-right {
+				float: right;
+			}
+		}
+        .table-detail{
+            .tab-content {
+                overflow-x: scroll;
+                margin-bottom: 40px;
+            }
+            table {
+                table-layout: fixed;
+                thead {
+                    .title-table {
+                        color: $kpc-blue;
+                        font-size: $kpc-font14;
+                        th {
+                            padding: 25px 8px;
+                            text-align: center;
+                        }
+                    }
+                    .order-no{
+                        width: 100px;
+                    }
+                    .order-date{
+                        width: 150px;
+                    }
+                    .ship-to-name{
+                        width: 250px;
+                    }
+                    .order-total{
+                        width: 150px;
+                    }
+                    .order-status{
+                        width: 200px;
+                    }
+                }
+                tbody {
+                    font-size: 14px;
+                    text-align: center;
+                    td{
+                        padding: 20px 8px;
+                    }
+                }
+                tbody > tr:nth-of-type(odd) {
+                    background-color: #f9fcff;
+                }
+            }
+        }
+    }
+}
+.customer-order-tab-infomation{
+	.customer-title{
+		font-size: 21px;
+		@include font-bold();
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.personal-avatar{
+		@include kpc-layout(6, 3, 3);
+		border: 1px solid $border;
+		border-right: none;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		.avatar-image{
+			width: 100px;
+			height: 100px;
+		}
+		.avatar{
+			@include kpc-layout-equal(3);
+		}
+		.avatar-name{
+			@include kpc-layout-equal(9);
+			padding-left: 40px !important;
+		}
+	}
+	.personal-detail{
+		@include kpc-layout(6, 9, 9);
+		border: 1px solid $border;
+		.personal-detail-left, .personal-detail-right{
+			margin-top: 55px;
+			margin-bottom: 55px;
+			@extend %personal-detail-left-right;
+		}
+		.personal-detail-left{
+			border-right: 1px solid $border;
+		}
+		.personal-detail-mid{
+			@include kpc-layout-equal(12);	
+			text-align: center;
+			padding-bottom: 55px;		
+		}
+	}
+	.detail-label{
+		@include kpc-layout(12, 5, 5);	
+		text-align: left;		
+	}
+	.infomation-detail{
+		@include kpc-layout(12, 7, 7);			
+	}
+	.my-personal-detail{
+		@include kpc-layout-equal(12);
+	}
+	.personal-address{
+		margin-top: 80px;
+		@include kpc-layout-equal(12);
+		.customer-title-address{
+			@include kpc-border-top();
+		}
+		.select-address{
+			@include kpc-layout(6, 4, 4);
+			padding-left: 0px !important;
+		}
+		.address-info{
+			@include kpc-layout(6, 8, 8);
+			padding-right: 0px !important;
+		}
+		.personal-detail-left, .personal-detail-right{
+			@extend %personal-detail-left-right;
+		}
+		.personal-detail-right{
+			border-left: 1px solid $border;
+		}
+		.personal-detail-mid{
+			@include kpc-layout-equal(12);	
+			text-align: center;
+			padding-bottom: 30px;		
+			padding-top: 50px;
+		}
+		.personal-address-title{
+			font-size: 21px;
+			@include font-bold();
+		}
+		.personal-address-detail{
+			.personal-address-detail-name{
+				padding-bottom: 10px;
+			}
+			color: $text-detail-gray;
+		}
+	}
+
+	.detail-group{
+		line-height: 50px;
+		.infomation-detail{
+			@include kpc-layout(12, 7, 7);
+			@include font-bold();
+			float: right;
+		}
+		.input-label{
+			@include kpc-layout(12, 5, 5);
+			float: left;
+			@include font-bold();
+		}
+	}
+}
