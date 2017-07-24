@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
 import { FilterPage,
-		ProductColumes,
 		FilterActionSelect,
 		FilterId,
 		MarketingCampaign,
@@ -26,7 +25,6 @@ export default class Marketing extends Component {
                   		</div>
 			    		<div className={ styles['page-filter']}>
 							<ul className={ styles['list-filter']}>
-								<ProductColumes/>
 								<li className={ classNames( styles.filter, styles['add-product'])}>
 									<div className="dropdown">
 										<button className={ classNames(styles['btn-blue'], 'btn', 'btn-default', 'dropdown-toggle')} type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -52,8 +50,8 @@ export default class Marketing extends Component {
 		                        	<div className={ classNames(styles['filter-product'])}>
 					    				<div className={ classNames(styles['wrapper-filter'])}>
 					    					<div className={ styles['filter-left']}>
-												<FilterActionSelect title={ "Action" } selectOption={ ['Delete Product'] }/>
-		                                    	<FilterId title={ "Product ID" } selectOption={ ['Product ID', 'SKU No.', 'Product Name', 'Brandname', 'Batch No.'] }/>
+												<FilterActionSelect title={ "Action" } selectOption={ ['Active', 'In-Active'] }/>
+		                                    	<FilterId title={ "Product ID" } selectOption={ ['Name', 'Promo code', 'Status(Active)', 'Status(In-Active)'] }/>
 					    					</div>
 					    					<div className={ classNames(styles['filter-right']) }>
 						    					<FilterPage/>

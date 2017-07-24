@@ -7,14 +7,14 @@ export default class OrderDetailEditDetail extends Component {
     const styles = require('./orderDetailEditDetail.scss');
 
     return (
-      <div className="container-fulid">
+      <div className="container-fluid">
         <div className="row">
         	<div className={ classNames(styles['order-detail-edit-detail-view']) }>
     	    	<header className={ styles['page-header']}>
     	    		<div className={ styles['page-title']}>
     	        		<h1 className={ styles.header }><strong>Order #88810002386</strong></h1>
+                        <Breadcrumb breadcrumb={ "Orders > No.#88810002386" }/>
     	    		</div>
-              <Breadcrumb breadcrumb={ "Orders > No.#88810002386" }/>
               <OrderCustomerDetail/>
               <div className={ styles['sub-menu']}>
                   <ul>
@@ -44,17 +44,18 @@ export default class OrderDetailEditDetail extends Component {
 									<table className="table table-striped">
 										<thead>
 									    	<tr className={ styles['title-table']}>
-									    		<th className={ styles['product-name'] }>Product</th>
-									    		<th className={ styles['product-thumbnail'] }></th>
-									    		<th className={ styles['product-item-status'] }>Item Status</th>
-									    		<th className={ styles['product-price'] }>Price</th>
-									    		<th className={ styles['product-original-price'] }>Original Price</th>
-									    		<th className={ styles['product-qty'] }>QTY</th>
-									    		<th className={ styles['product-sub-total'] }>Subtotal</th>
-									    		<th className={ styles['produt-tax-amount'] }>Tax Amount</th>
-									    		<th className={ styles['product-tax-ercent'] }>Tax Percent</th>
-									    		<th className={ styles['product-discount-amount'] }>Discount Amount</th>
-									    		<th className={ styles['product-row-total'] }>Row Total</th>
+                                                <th className={ styles['product-name'] }>Product</th>
+                                                <th className={ styles['product-thumbnail'] }></th>
+                                                <th className={ styles['product-item-status'] }>Item Status</th>
+                                                <th className={ styles['product-original-price'] }>Original Price</th>
+                                                <th className={ styles['product-price'] }>Price</th>
+                                                <th className={ styles['product-qty'] }>QTY</th>
+                                                <th className={ styles['product-sub-total'] }>Subtotal</th>
+                                                <th className={ styles['product-tax-amount'] }>Tax Amount</th>
+                                                <th className={ styles['product-tax-percent'] }>Tax Percent</th>
+                                                <th className={ styles['product-discount-amount'] }>Discount Amount</th>
+                                                <th className={ styles['product-status'] }>Status</th>
+                                                <th className={ styles['product-action'] }>Action</th>
 									    	</tr>
 										</thead>
 										<tbody>
@@ -63,15 +64,21 @@ export default class OrderDetailEditDetail extends Component {
 									    		<td>SULWHASOO First Care Activating Serum EX 90ml SKU: 631405</td>
 									    		<td>Ordered</td>
 									    		<td>3,185.00 THB</td>
-									    		<td>3,185.00 THB</td>
+									    		<td>3,185.00 THB
+                                                    <div className="checkbox"><label><input type="checkbox">CustomPrice*</input></label>
+                                                    <input type="text" disabled></input>
+                                                </div>
+
+                                                </td>
 									    		<td>1</td>
 									    		<td>3,185.00 THB</td>
-									    		<td>0.00 TH</td>
-									    		<td>0.00 TH</td>
+									    		<td>0.00 THB</td>
+									    		<td>0.00 THB</td>
 									    		<td>318.50 THB</td>
-									    		<td>2,866.50 THB</td>
+                                                <td>Pending</td>
+                                                <td className={ styles['del-action'] }><a href="#"><i className="fa fa-times-circle"></i> Delete </a></td>
 									    	</tr>
-									    	<tr>
+                                            <tr>
                                                 <td><img src="http://via.placeholder.com/50x50"/></td>
 									    		<td>SULWHASOO First Care Activating Serum EX 90ml SKU: 631405</td>
 									    		<td>Ordered</td>
@@ -79,12 +86,12 @@ export default class OrderDetailEditDetail extends Component {
 									    		<td>3,185.00 THB</td>
 									    		<td>1</td>
 									    		<td>3,185.00 THB</td>
-									    		<td>0.00 TH</td>
-									    		<td>0.00 TH</td>
+									    		<td>0.00 THB</td>
+									    		<td>0.00 THB</td>
 									    		<td>318.50 THB</td>
-									    		<td>2,866.50 THB</td>
+                                                <td>Pending</td>
+                                                <td className={ styles['del-action'] }><a href="#"><i className="fa fa-times-circle"></i> Delete </a></td>
 									    	</tr>
-
 										</tbody>
 									</table>
 								</div>
@@ -107,22 +114,23 @@ export default class OrderDetailEditDetail extends Component {
 			    				<div className={ styles['tab-content'] }>
 									<table className="table table-striped">
 										<thead>
-									    	<tr className={ styles['title-table']}>
-									    		<th className={ styles['product-name'] }>Product</th>
-									    		<th className={ styles['product-thumbnail'] }></th>
-									    		<th className={ styles['product-item-status'] }>Item Status</th>
-									    		<th className={ styles['product-price'] }>Price</th>
-									    		<th className={ styles['product-original-price'] }>Original Price</th>
-									    		<th className={ styles['product-qty'] }>QTY</th>
-									    		<th className={ styles['product-sub-total'] }>Subtotal</th>
-									    		<th className={ styles['produt-tax-amount'] }>Tax Amount</th>
-									    		<th className={ styles['product-tax-ercent'] }>Tax Percent</th>
-									    		<th className={ styles['product-discount-amount'] }>Discount Amount</th>
-									    		<th className={ styles['product-row-total'] }>Row Total</th>
+                                            <tr className={ styles['title-table']}>
+                                                <th className={ styles['product-name'] }>Product</th>
+                                                <th className={ styles['product-thumbnail'] }></th>
+                                                <th className={ styles['product-item-status'] }>Item Status</th>
+                                                <th className={ styles['product-original-price'] }>Original Price</th>
+                                                <th className={ styles['product-price'] }>Price</th>
+                                                <th className={ styles['product-qty'] }>QTY</th>
+                                                <th className={ styles['product-sub-total'] }>Subtotal</th>
+                                                <th className={ styles['product-tax-amount'] }>Tax Amount</th>
+                                                <th className={ styles['product-tax-percent'] }>Tax Percent</th>
+                                                <th className={ styles['product-discount-amount'] }>Discount Amount</th>
+                                                <th className={ styles['product-status'] }>Status</th>
+                                                <th className={ styles['product-action'] }>Action</th>
 									    	</tr>
 										</thead>
 										<tbody>
-									    	<tr>
+                                            <tr>
                                                 <td><img src="http://via.placeholder.com/50x50"/></td>
 									    		<td>SULWHASOO First Care Activating Serum EX 90ml SKU: 631405</td>
 									    		<td>Ordered</td>
@@ -130,15 +138,24 @@ export default class OrderDetailEditDetail extends Component {
 									    		<td>3,185.00 THB</td>
 									    		<td>1</td>
 									    		<td>3,185.00 THB</td>
-									    		<td>0.00 TH</td>
-									    		<td>0.00 TH</td>
+									    		<td>0.00 THB</td>
+									    		<td>0.00 THB</td>
 									    		<td>318.50 THB</td>
-									    		<td>2,866.50 THB</td>
+                                                <td>Pending</td>
+                                                <td className={ styles['del-action'] }><a href="#"><i className="fa fa-times-circle"></i> Delete </a></td>
 									    	</tr>
 										</tbody>
 									</table>
 								</div>
 			    			</div>
+                            <div className={ styles['coupon-code'] }>
+                            <label>Apply Coupon Code (only 1 code)</label>
+                            <div className={ styles['input-coupon-code'] }>
+                                <input type="text"></input>
+                                <div className={ classNames(styles['btn-blue'], 'btn') }>Edit</div>
+                            </div>
+                                <p className={ styles['err-code']}>This code is invalide</p>
+                            </div>
 			    	</section>
                 </div>
                 </div>

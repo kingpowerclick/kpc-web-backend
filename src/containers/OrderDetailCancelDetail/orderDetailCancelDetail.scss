@@ -3,6 +3,7 @@
 .order-detail-cancel-detail-view {
   @include kpc-width(1280px);
   @include kpc-layout-equal(12);
+
   .page-header {
     display: block;
     margin-bottom: 30px;
@@ -72,57 +73,64 @@
                   }
                 }
 
-                .product-checkbox {
-                  width: 20px;
-                }
-
-                .product-id {
-                  width: 55px;
-                }
-
                 .product-thumbnail {
-                  width: 110px;
-                }
-
-                .product-sku {
-                  width: 85px;
+                  width: 100px;
                 }
 
                 .product-name {
-                  width: 80px;
+                  width: 65px;
                 }
 
-                .product-type {
+                .product-item-status {
+                  width: 60px;
+                }
+
+                .product-original-price {
                   width: 60px;
                 }
 
                 .product-price {
-                  width: 95px;
+                  width: 65px;
                 }
 
                 .product-qty {
-                  width: 50px;
+                  width: 40px;
                 }
 
-                .produt-brand {
-                  width: 130px;
+                .product-sub-total {
+                  width: 70px;
                 }
 
-                .product-merchiandise {
-                  width: 120px;
-                }
-
-                .product-visibility {
+                .product-tax-amount {
                   width: 65px;
+                }
+
+                .product-tax-percent {
+                  width: 65px;
+                }
+
+                .product-discount-amount {
+                  width: 70px;
                 }
 
                 .product-status {
                   width: 65px;
                 }
+
+                .product-action {
+                  width: 50px;
+                }
               }
 
               tbody {
                 font-size: 14px;
+                tr{
+                    td{
+                        .del-action{
+                            color: #ff2d55;
+                        }
+                    }
+                }
               }
 
               tbody > tr:nth-of-type(odd) {
@@ -178,7 +186,7 @@
         }
 
         .status-delivery {
-          margin-left: 77%;
+          margin-left: 73%;
           float: right;
 
           ul {
@@ -197,17 +205,19 @@
             }
           }
         }
+
         .delivery-by {
-          margin-left: 54%;
+          margin-left: 45%;
           float: right;
 
           ul {
             list-style: none;
             padding: 0;
             margin-top: 10px;
+            display: inline-flex;
 
             li {
-              display: inline-flex;
+              display: inline-table;
               padding: 0 15px;
               border-right: 1px solid #d7d7d7;
               text-align: right;
