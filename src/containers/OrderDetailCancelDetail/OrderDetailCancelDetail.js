@@ -54,7 +54,7 @@ export default class OrderDetailCancelDetail extends Component {
 									    		<th className={ styles['produt-tax-amount'] }>Tax Amount</th>
 									    		<th className={ styles['product-tax-ercent'] }>Tax Percent</th>
 									    		<th className={ styles['product-discount-amount'] }>Discount Amount</th>
-									    		<th className={ styles['product-row-total'] }>Row Total</th>
+									    		<th className={ styles['product-row-total'] }>Status</th>
 									    	</tr>
 										</thead>
 										<tbody>
@@ -69,7 +69,7 @@ export default class OrderDetailCancelDetail extends Component {
 									    		<td>0.00 TH</td>
 									    		<td>0.00 TH</td>
 									    		<td>318.50 THB</td>
-									    		<td>2,866.50 THB</td>
+									    		<td>Ordering</td>
 									    	</tr>
 									    	<tr>
                                                 <td><img src="http://via.placeholder.com/50x50"/></td>
@@ -82,7 +82,7 @@ export default class OrderDetailCancelDetail extends Component {
 									    		<td>0.00 TH</td>
 									    		<td>0.00 TH</td>
 									    		<td>318.50 THB</td>
-									    		<td>2,866.50 THB</td>
+									    		<td>Pending</td>
 									    	</tr>
 
 										</tbody>
@@ -133,7 +133,7 @@ export default class OrderDetailCancelDetail extends Component {
 									    		<td>0.00 TH</td>
 									    		<td>0.00 TH</td>
 									    		<td>318.50 THB</td>
-									    		<td>2,866.50 THB</td>
+									    		<td>Shipping</td>
 									    	</tr>
 										</tbody>
 									</table>

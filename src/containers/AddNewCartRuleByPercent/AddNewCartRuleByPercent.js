@@ -81,10 +81,11 @@ export default class AddNewCartRuleByPercent extends Component {
                                             <label>Product is </label>
                                             <label>
                                                 <SplitButton title="none" pullRight id="split-button-pull-right">
-                                                    <MenuItem eventKey="1">Action</MenuItem>
-                                                    <MenuItem eventKey="2">Another action</MenuItem>
-                                                    <MenuItem eventKey="3">Something else here</MenuItem>
-                                                    <MenuItem eventKey="4">Separated link</MenuItem>
+                                                    <MenuItem eventKey="1">By Category</MenuItem>
+                                                    <MenuItem eventKey="2">By Brands</MenuItem>
+                                                    <MenuItem eventKey="3">By Each Item</MenuItem>
+                                                    <MenuItem eventKey="4">By Specific Group</MenuItem>
+                                                    <MenuItem eventKey="4">By Mass Upload</MenuItem>
                                                 </SplitButton>
                                             </label>
                                         </div>
