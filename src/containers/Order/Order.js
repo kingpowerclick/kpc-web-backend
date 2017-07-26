@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import { FilterPage, Breadcrumb, OrderFilters, CustomerColumes, ExportToCSV } from 'components';
+import { FilterPage, FilterActionSelect, FilterId, Breadcrumb, OrderFilters, CustomerColumes, ExportToCSV } from 'components';
 
 export default class Order extends Component {
   render() {
@@ -27,8 +27,8 @@ export default class Order extends Component {
                             <div className={ classNames(styles['filter-customer-list'])}>
                                 <div className={ classNames(styles['wrapper-filter'])}>
                                     <div className={ styles['filter-left']}>
-                                        {/* <FilterActionSelect/> */}
-                                        {/* <FilterId/> */}
+                                        <FilterActionSelect title={ "Action" } selectOption={ ['Hold', 'Unhold', 'Print invoice', 'Print Order Detail', 'Print all', 'Cancel order'] }/>
+                                        <FilterId title={ "Order ID" } selectOption={ ['Order ID', 'Customer name', 'Email'] }/>
                                     </div>
                                     <div className={ classNames(styles['filter-right']) }>
                                     </div>
